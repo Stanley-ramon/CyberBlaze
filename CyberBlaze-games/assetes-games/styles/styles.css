@@ -1,0 +1,24 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url("../imgs/Captura de tela 2024-10-03 213226.png");
+  background-size: cover; /* Faz a imagem cobrir todo o background */
+  background-position: center; /* Centraliza a imagem */
+  backdrop-filter: blur(5px); /* Aplica o efeito de desfoque */
+  -webkit-backdrop-filter: blur(5px); /* Compatibilidade com navegadores webkit */
+  height: 100vh; /* O body cobre a altura total da viewport */
+  margin: 0; /* Remove a margem do body */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.jogos__titulo {
+  display: flex;
+  color: orange;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5rem;
+  margin-top: 7rem;
+}/*# sourceMappingURL=styles.css.map */
