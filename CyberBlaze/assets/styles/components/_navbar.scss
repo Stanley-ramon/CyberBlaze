@@ -3,6 +3,11 @@
     margin-left: 3%;
     text-align: center;
     align-items: center;
+
+    &__imagem__logo {
+      height: 60px;
+      width: 80px;
+    }
   
     &__logo {
       display: flex;
@@ -12,37 +17,33 @@
       text-transform: uppercase;
       gap: 1.1rem;
       color: white;
+      display: block;
     }
-  }
-  
-  .navbar {
-    display: flex;
-    margin: 0 22% 0 5%;
-    
-    &-lista {
+
+    &__navbar {
       display: flex;
-      justify-content: space-between;
-      gap: 8%;
-      text-wrap: nowrap;
-      list-style: none;
-    }
-  
-    &__link {
-      text-transform: uppercase;
-      text-decoration: none;
-      color: white;
-  
-      &:hover {
-        color: orange;
+      margin: 0 22% 0 5%;
+      
+      &-lista {
+        display: none;
+        justify-content: space-between;
+        gap: 8%;
+        text-wrap: nowrap;
+        list-style: none;
+      }
+    
+      &__link {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+    
+        &:hover {
+          color: orange;
+        }
       }
     }
   }
-  
-  .imagem__logo {
-    height: 60px;
-    width: 80px;
-  }
-  
+
   .botoes {
     display: flex;
     text-align: center;
@@ -69,7 +70,7 @@
       }
     }
   
-    &.entrar {
+    &__entrar {
       font-size: 0.7rem;
       padding: 0.3rem;
       background: rgb(85, 85, 242);
@@ -92,26 +93,103 @@
     .cabecalho {
       display: flex;
       text-align: center;
-      gap: 8rem;
+      gap: 9rem;
       margin-top: 1rem;
       align-items: center;
+  
+
+      &__imagem__logo {
+        height: 50px;
+        width: 70px;
+      }
   
       &__logo {
         display: none;
       }
-  
-      .imagem__logo {
-        height: 50px;
-        width: 70px;
-        display: block;
-      }
-  
-      .entrar {
-        display: flex;
-        font-size: 1rem;
-        width: 4rem;
-        justify-content: center;
-        border-radius: 8px;
+
+      &__navbar {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          position: relative;
+          gap: 1.5rem;
+        &__botao {
+            display: none;
+        }
+
+        &__rotulo {
+
+            &-menu-humburguer {
+              width: 24px;
+              height: 24px;
+              background-image: url("/CyberBlaze/assets/imgs/svg/Menu.svg");
+              background-repeat: no-repeat;
+              background-position: center;
+              display: inline-block;
+              margin-right: 0.7rem;
+            }
+        }
+
+        &-lista {
+          display: none;
+          position: absolute;
+          top: 20%;
+          right: 0;
+          list-style: none;
+          background: rgb(114, 110, 110);
+          width: 100vw;
+          z-index: 10000;
+          height: 70vh;
+          text-align:left;
+          
+          &-icone {
+            text-align: center;
+            align-items: center;
+            border: 2px solid blue;
+          }
+          &__link {
+            display: flex;
+            margin-top: 2rem;
+            padding: 0.5rem;
+            color: white;
+            text-decoration: none;
+            font-size: 1.6rem;
+            text-align: center;
+            
+          }
+        }
+
+        &__botao:checked ~ &__rotulo > &__rotulo-menu-humburguer {
+          background-image: url("/CyberBlaze/assets/imgs/svg/Menu\ Aberto.svg");
+        }
+
+        &__botao:checked ~ &-lista {
+          display: block;
+        }
+
+        &__botoes {
+            display: flex;
+            text-decoration: none;
+            flex-direction: row-reverse;
+            
+            &__entrar {
+              background: rgb(66, 66, 238);
+              border: 2px solid rgb(66, 66, 238);
+              color: white;
+              text-align: center;
+              text-decoration: none;
+              padding: 0.5rem 1.4rem;
+              font-size: 1.1rem;
+              border-radius: 5px;
+              font-weight: 700;
+              font-family: 'Montserrat' sans-serif;
+            }
+
+            &__idioma {
+              display: none;
+            }
+        }
+
       }
   
       &__menu-humburguer {
@@ -122,10 +200,6 @@
         display: inline-block;
         background-repeat: no-repeat;
       }
-    }
-  
-    .navbar {
-      display: none;
     }
   
     .idioma {

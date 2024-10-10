@@ -12,24 +12,29 @@
 </head>
 <body>
     <header class="cabecalho">
-        <img class="imagem__logo" src="./assets/imgs/design da chama roxa.png" alt="Logo">
+        <img class="cabecalho__imagem__logo" src="./assets/imgs/design da chama roxa.png" alt="Logo">
         <p class="cabecalho__logo">Cyberblaze</p>
-        <nav class="navbar">
-            <ul class="navbar-lista">
-                <li><a class="navbar__link" href="../CyberBlaze-games/assetes-games/games.html">jogos</a></li>
-                <li><a class="navbar__link" href="#">baixados</a></li>
-                <li><a class="navbar__link" href="#">perguntas frequentes</a></li>
-                <li><a class="navbar__link" href="#">central de ajuda</a></li>
-                <li><a class="navbar__link" href="#">blogue</a></li>
-            </ul>
+        <nav class="cabecalho__navbar">
+            <div class="cabecalho__navbar__botoes">
+                <a class="cabecalho__navbar__botoes__idioma" href="#">
+                    <img src="./assets/imgs/icons8-brasil-emoji-48.png" class="bandeira-brasil" alt="Brasil">
+                        Português
+                </a>
+                <a class="cabecalho__navbar__botoes__entrar" href="#">Entrar</a>
+            </div>
+            <input type="checkbox" id="menu" class="cabecalho__navbar__botao">
+            <label for="menu" class="cabecalho__navbar__rotulo">
+                <span class="cabecalho__navbar__rotulo-menu-humburguer"></span>
+            </label>
+            <ul class="cabecalho__navbar-lista">
+                    <a class="cabecalho__navbar-lista-icone" href="#"><img src="./assets/imgs/icons8-brasil-emoji-48.png">Brasil</a>
+                    <li><a class="cabecalho__navbar-lista__link" href="../CyberBlaze-games/assetes-games/games.html">jogos</a></li>
+                    <li><a class="cabecalho__navbar-lista__link" href="#">baixados</a></li>
+                    <li><a class="cabecalho__navbar-lista__link" href="#">perguntas frequentes</a></li>
+                    <li><a class="cabecalho__navbar-lista__link" href="#">central de ajuda</a></li>
+                    <li><a class="cabecalho__navbar-lista__link" href="#">blogue</a></li>
+                </ul>
         </nav>
-        <div class="botoes">
-            <a class="botao idioma" href="#">
-                <img src="./assets/imgs/icons8-brasil-emoji-48.png" class="bandeira-brasil" alt="Brasil">
-                Português
-            </a>
-            <a class="botao entrar" href="#">Entrar</a>
-        </div>
     </header>
 
     <section class="principal">
