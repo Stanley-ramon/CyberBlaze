@@ -234,6 +234,7 @@ body {
   }
   .cabecalho__menu-humburguer {
     background-image: url("../img/Menu.svg");
+    background-color: orange;
     width: 24px;
     height: 24px;
     background-position: center;
