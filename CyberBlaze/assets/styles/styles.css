@@ -149,100 +149,85 @@ body {
 @media screen and (min-width: 0px) and (max-width: 520px) {
   .cabecalho {
     display: flex;
-    text-align: center;
-    gap: 9rem;
-    margin-top: 1rem;
+    justify-content: space-between;
     align-items: center;
-  }
-  .cabecalho__imagem__logo {
-    height: 50px;
-    width: 70px;
   }
   .cabecalho__logo {
     display: none;
   }
   .cabecalho__navbar {
     display: flex;
-    align-items: center;
-    text-align: center;
     position: relative;
-    gap: 1.5rem;
-  }
-  .cabecalho__navbar__botao {
-    display: none;
-  }
-  .cabecalho__navbar__rotulo-menu-humburguer {
-    width: 24px;
-    height: 24px;
-    background-image: url("/CyberBlaze/assets/imgs/svg/Menu.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-    margin-right: 0.7rem;
-  }
-  .cabecalho__navbar-lista {
-    display: none;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    list-style: none;
-    background: rgb(114, 110, 110);
-    width: 100vw;
-    z-index: 10000;
-    height: 70vh;
-    text-align: left;
-  }
-  .cabecalho__navbar-lista-icone {
+    gap: 1rem;
+    margin: 4% 7% 0 0;
     text-align: center;
     align-items: center;
-    border: 2px solid blue;
-  }
-  .cabecalho__navbar-lista__link {
-    display: flex;
-    margin-top: 2rem;
-    padding: 0.5rem;
-    color: white;
-    text-decoration: none;
-    font-size: 1.6rem;
-    text-align: center;
-  }
-  .cabecalho__navbar__botao:checked ~ .cabecalho__navbar__rotulo > .cabecalho__navbar__rotulo-menu-humburguer {
-    background-image: url("/CyberBlaze/assets/imgs/svg/Menu Aberto.svg");
-  }
-  .cabecalho__navbar__botao:checked ~ .cabecalho__navbar-lista {
-    display: block;
-  }
-  .cabecalho__navbar__botoes {
-    display: flex;
-    text-decoration: none;
-    flex-direction: row-reverse;
-  }
-  .cabecalho__navbar__botoes__entrar {
-    background: rgb(66, 66, 238);
-    border: 2px solid rgb(66, 66, 238);
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 0.5rem 1.4rem;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    font-weight: 700;
-    font-family: "Montserrat" sans-serif;
   }
   .cabecalho__navbar__botoes__idioma {
     display: none;
   }
-  .cabecalho__menu-humburguer {
-    background-image: url("../img/Menu.svg");
-    background-color: orange;
-    width: 24px;
-    height: 24px;
-    background-position: center;
-    display: inline-block;
-    background-repeat: no-repeat;
+  .cabecalho__navbar__botoes__entrar {
+    font-size: 1rem;
+    padding: 0.7rem 0.8rem;
+    background: rgb(103, 103, 220);
+    border-color: rgb(85, 85, 242);
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-family: "Montserrat sans,serif";
   }
-  .idioma {
+  .cabecalho__navbar__botoes__entrar:hover {
+    border-color: white;
+    font-size: 1.5rem;
+    color: rgb(105, 29, 105);
+  }
+  .cabecalho__navbar__botao {
     display: none;
+  }
+  .cabecalho__navbar__rotulo {
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+  }
+  .cabecalho__navbar__rotulo .cabecalho__navbar__rotulo-menu-humburguer {
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .cabecalho__navbar-lista {
+    display: none;
+    position: absolute;
+    top: 200%;
+    right: 0;
+    background: #444;
+    border-radius: 5px;
+    z-index: 10000;
+  }
+  .cabecalho__navbar-lista-icone {
+    display: none;
+  }
+  .cabecalho__navbar-lista__link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+  }
+  .cabecalho__navbar-lista__link:hover {
+    background: #555;
+  }
+  .cabecalho__navbar__botao:checked ~ .cabecalho__navbar-lista {
+    display: block;
+  }
+  .cabecalho__navbar__botao:checked ~ .cabecalho__navbar__rotulo .cabecalho__navbar__rotulo-menu-humburguer rect:nth-of-type(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .cabecalho__navbar__botao:checked ~ .cabecalho__navbar__rotulo .cabecalho__navbar__rotulo-menu-humburguer rect:nth-of-type(2) {
+    display: none;
+  }
+  .cabecalho__navbar__botao:checked ~ .cabecalho__navbar__rotulo .cabecalho__navbar__rotulo-menu-humburguer rect:nth-of-type(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
   }
 }
 @keyframes slide-down {

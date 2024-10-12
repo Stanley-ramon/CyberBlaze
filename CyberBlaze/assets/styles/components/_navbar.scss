@@ -92,119 +92,105 @@
   @media screen and (min-width: 0px) and (max-width: 520px) {
     .cabecalho {
       display: flex;
-      text-align: center;
-      gap: 9rem;
-      margin-top: 1rem;
+      justify-content: space-between;
       align-items: center;
-  
 
-      &__imagem__logo {
-        height: 50px;
-        width: 70px;
-      }
-  
       &__logo {
         display: none;
       }
-
+  
       &__navbar {
-          display: flex;
-          align-items: center;
-          text-align: center;
-          position: relative;
-          gap: 1.5rem;
-        &__botao {
-            display: none;
-        }
+        display: flex;
+        position: relative;
+        gap: 1rem;
+        margin: 4% 7% 0 0;
+        text-align: center;
+        align-items: center;
 
-        &__rotulo {
-
-            &-menu-humburguer {
-              width: 24px;
-              height: 24px;
-              background-image: url("/CyberBlaze/assets/imgs/svg/Menu.svg");
-              background-repeat: no-repeat;
-              background-position: center;
-              display: inline-block;
-              margin-right: 0.7rem;
-            }
-        }
-
-        &-lista {
-          display: none;
-          position: absolute;
-          top: 20%;
-          right: 0;
-          list-style: none;
-          background: rgb(114, 110, 110);
-          width: 100vw;
-          z-index: 10000;
-          height: 70vh;
-          text-align:left;
-          
-          &-icone {
-            text-align: center;
-            align-items: center;
-            border: 2px solid blue;
-          }
-          &__link {
-            display: flex;
-            margin-top: 2rem;
-            padding: 0.5rem;
-            color: white;
-            text-decoration: none;
-            font-size: 1.6rem;
-            text-align: center;
-            
-          }
-        }
-
-        &__botao:checked ~ &__rotulo > &__rotulo-menu-humburguer {
-          background-image: url("/CyberBlaze/assets/imgs/svg/Menu\ Aberto.svg");
-        }
-
-        &__botao:checked ~ &-lista {
-          display: block;
-        }
-
-        &__botoes {
-            display: flex;
-            text-decoration: none;
-            flex-direction: row-reverse;
-            
-            &__entrar {
-              background: rgb(66, 66, 238);
-              border: 2px solid rgb(66, 66, 238);
-              color: white;
-              text-align: center;
-              text-decoration: none;
-              padding: 0.5rem 1.4rem;
-              font-size: 1.1rem;
-              border-radius: 5px;
-              font-weight: 700;
-              font-family: 'Montserrat' sans-serif;
-            }
-
+          &__botoes {
             &__idioma {
               display: none;
             }
-        }
 
-      }
+            &__entrar {
+              font-size: 1rem;
+              padding: 0.7rem 0.8rem;
+              background: rgb(103, 103, 220);
+              border-color: rgb(85, 85, 242);
+              text-decoration: none;
+              color: white;
+              border-radius: 8px;
+              text-transform: uppercase;
+              font-family: "Montserrat sans,serif";
+          
+              &:hover {
+                border-color: white;
+                font-size: 1.5rem;
+                color: rgb(105, 29, 105);
+              }
+            }
+
+
+          }
   
-      &__menu-humburguer {
-        background-image: url("../img/Menu.svg");
-        background-color: orange;
-        width: 24px;
-        height: 24px;
-        background-position: center;
-        display: inline-block;
-        background-repeat: no-repeat;
-      }
-    }
+          &__botao {
+              display: none; // Esconde o checkbox
+          }
   
-    .idioma {
-      display: none;
-    }
+          &__rotulo {
+              cursor: pointer;
+              position: relative;
+              z-index: 10;
+  
+              .cabecalho__navbar__rotulo-menu-humburguer {
+                  transition: transform 0.3s ease;
+                  display: flex; // Para alinhar os traços corretamente
+                  flex-direction: column; // Organiza os traços em coluna
+                  gap: 4px; // Espaçamento entre os traços
+              }
+          }
+  
+          &-lista {
+              display: none; // Esconde a lista inicialmente
+              position: absolute; // Posiciona a lista em relação ao seu contêiner pai
+              top: 200%; // Distância do topo
+              right: 0; // Alinha à direita
+              background: #444; // Cor de fundo da lista
+              border-radius: 5px; // Bordas arredondadas
+              z-index:10000; // Garante que a lista fique abaixo do 'X'
+
+              &-icone {
+                display: none;
+
+              }
+  
+              &__link {
+                  color: #fff;
+                  text-decoration: none;
+                  padding: 0.5rem 1rem; // Mais espaçamento para os links
+                  display: block;
+  
+                  &:hover {
+                      background: #555; // Efeito de hover
+                  }
+              }
+          }
+  
+          // Mostra a lista e transforma o menu-hambúrguer em 'X' ao clicar
+          &__botao:checked ~ &-lista {
+              display: block; // Exibe a lista
+          }
+  
+          &__botao:checked ~ &__rotulo .cabecalho__navbar__rotulo-menu-humburguer rect:nth-of-type(1) {
+              transform: rotate(45deg) translate(5px, 5px); // Rotação do primeiro traço
+          }
+          &__botao:checked ~ &__rotulo .cabecalho__navbar__rotulo-menu-humburguer rect:nth-of-type(2) {
+              display: none; // Esconde o segundo traço
+          }
+          &__botao:checked ~ &__rotulo .cabecalho__navbar__rotulo-menu-humburguer rect:nth-of-type(3) {
+              transform: rotate(-45deg) translate(5px, -5px); // Rotação do terceiro traço
+          }
+      }
+   }
   }
   
