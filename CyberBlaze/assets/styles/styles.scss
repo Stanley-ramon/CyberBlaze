@@ -1,5 +1,8 @@
 @use './abstract/reset';
 @use './abstract/root';
 
+@use './components/mixins';
 @use './components/navbar';
 @use './components/container-principal';
+@use './components/segundo-container';
+@use './components/terceiro-container';

@@ -57,12 +57,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(29, 21, 29);
+  background: linear-gradient(to right, #16151B, #1A1A24, #1B1E27);
   color: white;
   height: 100Vh;
   width: 100vw;
   font-size: 1rem;
   font-weight: 400;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .cabecalho {
@@ -374,10 +376,11 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
+    text-align: start;
+    font-family: "Montserrat", sans-serif;
   }
   .principal__caixa__texto {
     font-size: 1.2rem;
-    font-family: "Montserrat" sans-serif;
     padding-right: 0.2rem;
   }
   .principal__caixa__popup-container {
@@ -420,8 +423,6 @@ body {
     font-size: 0.8rem;
     border-left: 4px solid orange;
     padding: 0.4rem 1rem 0.7rem 0.4rem;
-    align-items: center;
-    font-family: "Montserrat" sans-serif;
     background: linear-gradient(to right, rgba(207, 189, 155, 0.8), rgba(255, 165, 0, 0) 100%);
     color: #fff;
     position: relative;
@@ -432,17 +433,16 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    text-align: start;
   }
   .principal__precos__subtitulo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    font-family: "Montserrat" sans-serif;
     text-wrap: wrap;
   }
   .principal__precos__subtitulo__destaque {
-    font-size: 1.6rem;
-    font-family: "Montserrat" sans-serif;
-    font-weight: 800;
+    font-size: 1.2rem;
+    font-weight: 700;
   }
   .principal__precos__texto {
     font-size: 0.8rem;
@@ -479,4 +479,67 @@ body {
     border-radius: 1.2rem;
     margin-left: 17%;
   }
+}
+.segunda__sessao {
+  @includeflex-center;
+}
+.segunda__sessao__titulo {
+  font-size: 1.2rem;
+  margin: 4rem 0 2rem 0;
+  font-weight: 700;
+}
+.segunda__sessao-imagem {
+  width: 320px;
+  height: 240x;
+}
+.segunda__sessao-cards {
+  margin-top: 3.5rem;
+}
+.segunda__sessao-cards__lista {
+  display: flex;
+  flex-direction: column;
+}
+.segunda__sessao-cards__lista__itens {
+  display: flex;
+  margin: 0.8rem;
+  text-align: center;
+  align-items: start;
+  color: rgb(172, 157, 157);
+}
+.segunda__sessao-cards__lista__itens__imagem {
+  width: 50px;
+  height: 50px;
+  padding-right: 1rem;
+}
+.segunda__sessao-cards__lista__itens__container {
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.segunda__sessao-cards__lista__itens__container__titulo {
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+}
+.segunda__sessao-cards__lista__itens__container__texto {
+  font-size: 0.8rem;
+}
+.segunda__sessao-cards__lista__itens__container__descricao {
+  font-size: 0.8rem;
+}
+
+.terceira__sessao {
+  display: flex;
+  gap: 0.7rem;
+  flex-direction: column;
+}
+.terceira__sessao__link {
+  color: white;
+  text-decoration: none;
+}
+.terceira__sessao__dev {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 800;
 }/*# sourceMappingURL=styles.css.map */

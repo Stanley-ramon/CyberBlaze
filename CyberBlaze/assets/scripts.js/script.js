@@ -32,5 +32,5 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         const popup = document.querySelector('.principal__caixa__popup-container');
         popup.classList.add('show'); // Adiciona a classe 'show' para exibir o popup
-    }, 2000); // Tempo em milissegundos (2000ms = 2 segundos)
+    }, 300); // Tempo em milissegundos (2000ms = 2 segundos)
 });
