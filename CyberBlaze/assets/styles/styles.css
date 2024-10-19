@@ -57,9 +57,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: linear-gradient(to right, #16151B, #1A1A24, #1B1E27);
+  /*background: linear-gradient(to right, #16151B, #1A1A24, #1B1E27);*/
+  background: linear-gradient(135deg, #000000, #4b0082 50%, #000000 100%);
   color: white;
-  height: 100Vh;
+  min-height: 100vh;
   width: 100vw;
   font-size: 1rem;
   font-weight: 400;
@@ -68,7 +69,6 @@ body {
 }
 
 .cabecalho {
-  display: flex;
   margin-left: 3%;
   text-align: center;
   align-items: center;
@@ -78,7 +78,6 @@ body {
   width: 80px;
 }
 .cabecalho__logo {
-  display: flex;
   text-align: center;
   align-items: center;
   font-size: 20px;
@@ -88,7 +87,6 @@ body {
   display: block;
 }
 .cabecalho__navbar {
-  display: flex;
   margin: 0 22% 0 5%;
 }
 .cabecalho__navbar-lista {
@@ -108,14 +106,12 @@ body {
 }
 
 .botoes {
-  display: flex;
   text-align: center;
   align-items: center;
   gap: 1rem;
 }
 
 .botao {
-  display: flex;
   text-align: center;
   align-items: center;
   gap: 0.4rem;
@@ -336,15 +332,17 @@ body {
 .principal__botao-link {
   text-decoration: none;
   color: white;
-  border: 2px solid linear-gradient(to right, #FF7F50, #8A2BE2);
+  border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
   padding: 1rem;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
+  font-weight: 800;
   border-radius: 13px;
-  background: linear-gradient(to right, #FF7F50, #8A2BE2);
+  background: linear-gradient(to right, #f4855d, #4b0082);
 }
 .principal__botao-link:hover {
-  background: linear-gradient(to right, #8A2BE2, #FF7F50);
-  font-size: 1.7rem;
+  background: linear-gradient(to right, #4b0082, #f4855d);
+  font-size: 1.2rem;
 }
 .principal__segundo__container {
   display: flex;
@@ -360,24 +358,14 @@ body {
 
 @media screen and (min-width: 0px) and (max-width: 520px) {
   .principal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 1rem;
     flex-direction: column;
     margin-top: 10%;
-  }
-  .principal__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    font-family: "Montserrat", sans-serif;
   }
   .principal__caixa {
     position: relative;
-    display: flex;
-    flex-direction: column;
     text-align: start;
-    font-family: "Montserrat", sans-serif;
   }
   .principal__caixa__texto {
     font-size: 1.2rem;
@@ -388,7 +376,6 @@ body {
     top: -100%;
     left: 0;
     width: 100%;
-    display: flex;
     background-color: none;
     z-index: 1000;
     opacity: 0; /* Inicialmente invisível */
@@ -398,7 +385,6 @@ body {
     animation: slide-down 1s ease-in-out forwards, bounce 3s 0.4s ease-in-out;
   }
   .principal__caixa__popup-container__conteudo {
-    display: flex;
     background: none !important;
     border-radius: 10px;
     text-wrap: wrap;
@@ -412,12 +398,11 @@ body {
     font-family: "Montserrat", sans-serif;
   }
   .principal__sublinhados {
-    display: flex;
     margin: 7rem 4rem 1rem 0;
     gap: 1.8rem;
   }
   .principal__sublinhados__texto {
-    display: flex;
+    text-align: start;
     flex-wrap: wrap;
     text-wrap: wrap;
     font-size: 0.8rem;
@@ -430,8 +415,6 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
   .principal__precos {
-    display: flex;
-    flex-direction: column;
     gap: 0.5rem;
     text-align: start;
   }
@@ -449,7 +432,6 @@ body {
     color: rgb(148, 141, 141);
   }
   .principal__segundo__container {
-    display: flex;
     margin-top: 0.5rem;
     flex-direction: column;
     text-align: center;
@@ -457,21 +439,23 @@ body {
     gap: 1rem;
   }
   .principal__segundo__container__botao {
-    display: flex;
     margin: 0.7rem;
   }
   .principal__segundo__container__botao-link {
     text-decoration: none;
     color: white;
-    border: 2px solid linear-gradient(to right, #FF7F50, #8A2BE2);
-    padding: 0.8rem 1.5rem;
-    font-size: 1.5rem;
-    border-radius: 5px;
+    border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
+    padding: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 13px;
     background: linear-gradient(to right, #FF7F50, #8A2BE2);
   }
   .principal__segundo__container__botao-link:hover {
     background: linear-gradient(to right, #8A2BE2, #FF7F50);
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
   .principal__segundo__container__imagem {
     height: 330px;
@@ -480,11 +464,8 @@ body {
     margin-left: 17%;
   }
 }
-.segunda__sessao {
-  @includeflex-center;
-}
 .segunda__sessao__titulo {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 4rem 0 2rem 0;
   font-weight: 700;
 }
@@ -518,7 +499,7 @@ body {
   gap: 1rem;
 }
 .segunda__sessao-cards__lista__itens__container__titulo {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   color: white;
 }

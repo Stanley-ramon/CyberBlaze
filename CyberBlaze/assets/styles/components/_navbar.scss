@@ -1,5 +1,4 @@
 .cabecalho {
-    display: flex;
     margin-left: 3%;
     text-align: center;
     align-items: center;
@@ -10,7 +9,6 @@
     }
   
     &__logo {
-      display: flex;
       text-align: center;
       align-items: center;
       font-size: 20px;
@@ -21,7 +19,6 @@
     }
 
     &__navbar {
-      display: flex;
       margin: 0 22% 0 5%;
       
       &-lista {
@@ -45,14 +42,12 @@
   }
 
   .botoes {
-    display: flex;
     text-align: center;
     align-items: center;
     gap: 1rem;
   }
   
   .botao {
-    display: flex;
     text-align: center;
     align-items: center;
     gap: 0.4rem;
@@ -129,8 +124,6 @@
                 color: rgb(105, 29, 105);
               }
             }
-
-
           }
   
           &__botao {

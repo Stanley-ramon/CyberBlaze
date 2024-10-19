@@ -1,8 +1,6 @@
 .segunda__sessao {
-    @includeflex-center;
-
     &__titulo {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin: 4rem 0 2rem 0;
         font-weight: 700;
     }
@@ -10,7 +8,6 @@
     &-imagem {
         width: 320px;
         height: 240x;
-        
     }
 
     &-cards {
@@ -39,7 +36,7 @@
                     gap: 1rem;
                     
                     &__titulo {
-                        font-weight: 500;
+                        font-weight: 600;
                         font-size: 1rem;
                         color: white;
                     }

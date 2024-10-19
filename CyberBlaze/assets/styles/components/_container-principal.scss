@@ -129,15 +129,17 @@
       &-link {
         text-decoration: none;
         color: white;
-        border: 2px solid linear-gradient(to right, #FF7F50, #8A2BE2);
+        border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
         padding: 1rem;
+        font-family: "Montserrat", sans-serif;
         font-size: 1rem;
+        font-weight: 800;
         border-radius: 13px;
-        background: linear-gradient(to right, #FF7F50, #8A2BE2);
+        background: linear-gradient(to right, #f4855d,#4b0082);
 
         &:hover {
-          background: linear-gradient(to right, #8A2BE2, #FF7F50);
-          font-size: 1.7rem;
+          background: linear-gradient(to right, #4b0082, #f4855d);
+          font-size: 1.2rem;
         }
       }
     }
@@ -158,26 +160,14 @@
 
   @media screen and (min-width: 0px) and (max-width: 520px) {
     .principal {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       gap: 1rem;
       flex-direction: column;
       margin-top: 10%;
-
-      &__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-       
-      }
+      font-family: "Montserrat", sans-serif;
     
       &__caixa {
         position: relative; // Para que o popup seja posicionado em relação a esta div
-        display: flex;
-        flex-direction: column;
         text-align: start;
-        font-family: "Montserrat", sans-serif;
     
         &__texto {
           font-size: 1.2rem;
@@ -189,7 +179,6 @@
           top: -100%; // Começa fora da tela (acima da caixa)
           left: 0;
           width: 100%;
-          display: flex;
           background-color: none; // Fundo escuro semi-transparente
           z-index: 1000;
           opacity: 0; /* Inicialmente invisível */
@@ -200,7 +189,6 @@
           }
     
           &__conteudo {
-            display: flex;
             background: none !important;
             border-radius: 10px;
             text-wrap: wrap;
@@ -211,19 +199,18 @@
               color: white;
               font-weight: 800;
               text-wrap: wrap;
-              font-family: "Montserrat", sans-serif;
+               font-family: "Montserrat", sans-serif;
             }
           }
         }
       }
 
       &__sublinhados {
-        display: flex;
         margin: 7rem 4rem 1rem 0;
         gap: 1.8rem;
     
         &__texto {
-          display: flex;
+          text-align: start;
           flex-wrap: wrap;
           text-wrap: wrap;
           font-size: 0.8rem;
@@ -247,8 +234,6 @@
       }
 
       &__precos {
-        display: flex;
-        flex-direction: column;
         gap: 0.5rem;
         text-align: start;
     
@@ -270,7 +255,6 @@
       }
 
       &__segundo__container {
-          display: flex;
           margin-top: 0.5rem;
           flex-direction: column;
           text-align: center;
@@ -278,21 +262,23 @@
           gap: 1rem;
 
           &__botao {
-              display: flex;
               margin: 0.7rem;
 
               &-link {
                 text-decoration: none;
                 color: white;
-                border: 2px solid linear-gradient(to right, #FF7F50, #8A2BE2);
-                padding: 0.8rem 1.5rem;
-                font-size: 1.5rem;
-                border-radius: 5px;
+                border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
+                padding: 1rem;
+                font-family: "Montserrat", sans-serif;
+                font-size: 1.2rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                border-radius: 13px;
                 background: linear-gradient(to right, #FF7F50, #8A2BE2);
-        
+
                 &:hover {
                   background: linear-gradient(to right, #8A2BE2, #FF7F50);
-                  font-size: 1.7rem;
+                  font-size: 1.3rem;
                 }
             }
           }
@@ -302,10 +288,8 @@
               width: 330px;
               border-radius: 1.2rem;
               margin-left: 17%;
-              
            }
       }
     }
-    
 }
   
