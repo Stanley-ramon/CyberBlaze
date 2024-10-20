@@ -2,7 +2,8 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-image: url("../imgs/Captura de tela 2024-10-03 213226.png");
+  background-image: url("../imgs/Captura de tela 2024-10-20 100447.png");
+  background-image: 50vw;
   background-size: cover; /* Faz a imagem cobrir todo o background */
   background-position: center; /* Centraliza a imagem */
   backdrop-filter: blur(5px); /* Aplica o efeito de desfoque */
@@ -14,11 +15,32 @@ body {
   justify-content: center;
 }
 
-.jogos__titulo {
+.jogos {
   display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.jogos__botao {
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+  border: 3px solid black;
+  border-radius: 0.8rem;
+  width: 15%;
+  margin: 7% 0 0 5%;
+  background-color: white;
+  color: black;
+  padding: 0.3rem;
+  font-weight: 600;
+}
+.jogos__titulo {
+  margin-top: 45%;
   color: orange;
-  text-align: center;
   text-transform: uppercase;
-  font-size: 5rem;
-  margin-top: 7rem;
+  font-size: 1.8rem;
+}
+.jogos__link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=styles.css.map */

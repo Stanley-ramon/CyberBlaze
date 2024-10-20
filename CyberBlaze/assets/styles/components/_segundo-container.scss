@@ -22,6 +22,15 @@
                 text-align: center;
                 align-items: start;
                 color:  rgb(172, 157, 157);
+                 /* Adicionando animação para aparecer da direita para a esquerda */
+                 opacity: 0;
+                 transform: translateX(100%);
+                 transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+ 
+                 &.mostrar {
+                     opacity: 1;
+                     transform: translateX(0);
+                 }
 
                 &__imagem {
                     width: 50px;
@@ -43,6 +52,24 @@
 
                     &__texto {
                         font-size: 0.8rem;
+                    }
+
+                    &__imagens {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: end;
+                        &__imagem {
+                            height: 1.2rem;
+                            width: 1.2rem;
+                            background-color: white;
+                            border-radius: 1rem;
+                            margin-right: 0.5rem;
+                        }
+
+                        &__texto {
+                            font-size: 0.7rem;
+                            color: white;
+                        }
                     }
                     &__descricao {
                         font-size: 0.8rem;;

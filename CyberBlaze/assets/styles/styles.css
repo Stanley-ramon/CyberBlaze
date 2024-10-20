@@ -486,6 +486,14 @@ body {
   text-align: center;
   align-items: start;
   color: rgb(172, 157, 157);
+  /* Adicionando animação para aparecer da direita para a esquerda */
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+.segunda__sessao-cards__lista__itens.mostrar {
+  opacity: 1;
+  transform: translateX(0);
 }
 .segunda__sessao-cards__lista__itens__imagem {
   width: 50px;
@@ -505,6 +513,22 @@ body {
 }
 .segunda__sessao-cards__lista__itens__container__texto {
   font-size: 0.8rem;
+}
+.segunda__sessao-cards__lista__itens__container__imagens {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+.segunda__sessao-cards__lista__itens__container__imagens__imagem {
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: white;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+}
+.segunda__sessao-cards__lista__itens__container__imagens__texto {
+  font-size: 0.7rem;
+  color: white;
 }
 .segunda__sessao-cards__lista__itens__container__descricao {
   font-size: 0.8rem;
