@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (entry.isIntersecting) {
                 entry.target.classList.add('mostrar');
             } else {
-                entry.target.classList.remove('mostrar'); // Para animar novamente ao rolar para cima
+                entry.target.classList.remove('mostrar');
             }
         });
     }, { threshold: 0.1 });
