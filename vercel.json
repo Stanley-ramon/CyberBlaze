@@ -1,6 +1,6 @@
 {
     "rewrites": [
-      { "source": "/cyberBlaze", "destination": "/cyberBlaze/index.html" },
+      { "source": "", "destination": "/cyberBlaze/index.html" },
       { "source": "/Cyberblaze-games", "destination": "/Cyberblaze-games/games.html" }
     ]
   }
