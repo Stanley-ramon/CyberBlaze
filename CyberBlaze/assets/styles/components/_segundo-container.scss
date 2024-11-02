@@ -1,7 +1,7 @@
 .segunda__sessao {
     &__titulo {
         font-size: 1.3rem;
-        margin: 4rem 0 2rem 0;
+        margin: 4rem 0 3rem 0;
         font-weight: 700;
     }
 
@@ -31,6 +31,7 @@
                      opacity: 1;
                      transform: translateX(0);
                  }
+                 
 
                 &__imagem {
                     width: 50px;
@@ -78,4 +79,8 @@
             }
         }
     }
+}
+
+.display {
+    display: none;
 }

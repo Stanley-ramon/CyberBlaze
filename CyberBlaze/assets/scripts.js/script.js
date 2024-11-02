@@ -1,35 +1,28 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     // Variável para guardar a última posição de scroll
     let lastScrollPosition = window.pageYOffset;
-    
+
     // Seleciona o container do popup
     const popupContainer = document.querySelector('.principal__caixa__popup-container');
-    
+
     // Função para detectar o scroll
     window.addEventListener('scroll', function() {
-        // Posição atual do scroll
         let currentScrollPosition = window.pageYOffset;
 
-        // Se o usuário está rolando para cima (scroll para cima)
         if (currentScrollPosition < lastScrollPosition) {
-            // Adiciona a classe que mostra o popup
             popupContainer.classList.add('show');
         } else {
-            // Remove a classe se o usuário estiver rolando para baixo (scroll para baixo)
             popupContainer.classList.remove('show');
         }
 
-        // Atualiza a última posição de scroll
         lastScrollPosition = currentScrollPosition;
     });
-    
+
     // Evento de load para exibir o popup após o carregamento da página
     window.addEventListener('load', () => {
-        // Aguarda 2 segundos após o carregamento da página
         setTimeout(() => {
-            popupContainer.classList.add('show'); // Adiciona a classe 'show' para exibir o popup
-        }, 300); // Tempo em milissegundos
+            popupContainer.classList.add('show');
+        }, 300);
     });
 
     // Seleciona os itens da lista da seção .segunda__sessao
@@ -49,5 +42,24 @@ document.addEventListener('DOMContentLoaded', function () {
     // Observa cada item da lista
     itens.forEach(item => {
         observer.observe(item);
+    });
+
+    // Seleciona todos os títulos que precisam de animação
+    const titulos = document.querySelectorAll('.terceira__sessao__titulo');
+
+    // Observer para animar os títulos ao entrar na viewport
+    const titleObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show'); // Adiciona a classe para animar o título
+            } else {
+                entry.target.classList.remove('show'); // Remove a classe se sair da viewport
+            }
+        });
+    }, { threshold: 0.1 });
+
+    // Observa cada título
+    titulos.forEach(titulo => {
+        titleObserver.observe(titulo);
     });
 });

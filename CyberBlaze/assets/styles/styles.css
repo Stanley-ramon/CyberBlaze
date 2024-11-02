@@ -466,7 +466,7 @@ body {
 }
 .segunda__sessao__titulo {
   font-size: 1.3rem;
-  margin: 4rem 0 2rem 0;
+  margin: 4rem 0 3rem 0;
   font-weight: 700;
 }
 .segunda__sessao-imagem {
@@ -534,16 +534,67 @@ body {
   font-size: 0.8rem;
 }
 
+.display {
+  display: none;
+}
+
 .terceira__sessao {
+  margin: 35% 0 30% 0;
+  align-items: center;
+  text-align: center;
+}
+.terceira__sessao__titulo {
+  margin: 4rem 0 5rem 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  opacity: 0; /* Inicialmente invisível */
+  transform: translateY(-20px); /* Posicionado levemente acima */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.terceira__sessao__titulo.show {
+  opacity: 1; /* Visível */
+  transform: translateY(0); /* Posição final */
+}
+.terceira__sessao-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-right: 1.6rem;
+  gap: 2rem;
+}
+.terceira__sessao-cards__itens {
+  display: flex;
+  text-align: start;
+  font-size: 1rem;
+  align-items: center;
+  padding: 0.5rem;
+}
+.terceira__sessao-cards__itens-imagem {
+  width: 130px;
+  height: 90px;
+  margin: -1rem;
+}
+.terceira__sessao-cards__itens__texto {
+  font-size: 0.7rem;
+  color: gray;
+}
+.terceira__sessao-cards__itens__titulo {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.quarta__sessao {
   display: flex;
   gap: 0.7rem;
   flex-direction: column;
 }
-.terceira__sessao__link {
+.quarta__sessao__link {
   color: white;
   text-decoration: none;
 }
-.terceira__sessao__dev {
+.quarta__sessao__dev {
   color: white;
   font-size: 1.2rem;
   font-weight: 800;
