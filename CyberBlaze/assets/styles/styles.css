@@ -61,11 +61,12 @@ body {
   background: linear-gradient(135deg, #000000, #4b0082 50%, #000000 100%);
   color: white;
   min-height: 100vh;
-  width: 100vw;
+  width: auto;
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden; /* Adiciona esta linha para evitar rolagem horizontal */
 }
 
 .cabecalho {
@@ -177,8 +178,9 @@ body {
   }
   .cabecalho__navbar__botoes__entrar:hover {
     border-color: white;
-    font-size: 1.5rem;
-    color: rgb(105, 29, 105);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
   }
   .cabecalho__navbar__botao {
     display: none;
@@ -458,10 +460,13 @@ body {
     font-size: 1.3rem;
   }
   .principal__segundo__container__imagem {
-    height: 330px;
-    width: 330px;
+    width: 100%; /* Garante que a imagem ocupe 100% da largura do contêiner */
+    max-width: 330px; /* Limita o tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção da imagem */
     border-radius: 1.2rem;
-    margin-left: 17%;
+    margin: 0 auto; /* Centraliza a imagem */
+    -o-object-fit: cover;
+       object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
   }
 }
 .segunda__sessao__titulo {
@@ -472,6 +477,7 @@ body {
 .segunda__sessao-imagem {
   width: 320px;
   height: 240x;
+  border-radius: 10px;
 }
 .segunda__sessao-cards {
   margin-top: 3.5rem;

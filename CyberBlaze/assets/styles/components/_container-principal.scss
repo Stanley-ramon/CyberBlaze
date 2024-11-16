@@ -284,11 +284,14 @@
           }
 
           &__imagem {
-              height: 330px;
-              width: 330px;
-              border-radius: 1.2rem;
-              margin-left: 17%;
-           }
+            width: 100%; /* Garante que a imagem ocupe 100% da largura do contêiner */
+            max-width: 330px; /* Limita o tamanho máximo da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 1.2rem;
+            margin: 0 auto; /* Centraliza a imagem */
+            object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
+        }
+        
       }
     }
 }
