@@ -591,17 +591,111 @@ body {
   margin-bottom: 0.7rem;
 }
 
-.quarta__sessao {
+.quarta__sessao__textos {
+  margin: 1rem 1.2rem;
   display: flex;
-  gap: 0.7rem;
   flex-direction: column;
+  gap: 1rem;
 }
-.quarta__sessao__link {
-  color: white;
-  text-decoration: none;
-}
-.quarta__sessao__dev {
-  color: white;
+.quarta__sessao__textos__titulo {
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: 700;
+}
+.quarta__sessao__textos__texto {
+  font-size: 0.8rem;
+}
+.quarta__sessao__imagem {
+  width: 80%;
+  height: 35%;
+  margin-bottom: 1rem;
+}
+.quarta__sessao__listas__texto {
+  margin: 1rem 1rem 1rem 2.2rem;
+  font-size: 0.8rem;
+  text-align: initial;
+  font-weight: 600;
+}
+.quarta__sessao__segunda-div {
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 0.9rem;
+  color: rgb(148, 141, 141);
+}
+.quarta__sessao__segunda-div__imagem {
+  width: 60%;
+  height: 35%;
+  margin-bottom: 0.7rem;
+}
+.quarta__sessao__segunda-div__listas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  color: white;
+  width: 60%;
+}
+.quarta__sessao__segunda-div__listas-link {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+  border: 3px solid transparent; /* Define a borda como transparente */
+  -o-border-image: linear-gradient(to right, #f4855d, #4b0082);
+     border-image: linear-gradient(to right, #f4855d, #4b0082); /* Gradiente para a borda */
+  border-image-slice: 1; /* Garante que o gradiente cubra toda a borda */
+  border-radius: 7px;
+  padding: 1.2rem 0.2rem;
+}
+.quarta__sessao__segunda-div__listas-link-negrito {
+  font-weight: 700;
+  margin-left: 0.3rem;
+}
+.quarta__sessao .swiper-pagination {
+  position: initial;
+  margin: 0.5em 0;
+}
+.quarta__sessao .swiper-pagination-bullet {
+  background-color: white;
+}
+.quarta__sessao .swiper-slide {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.quarta__sessao .swiper-slide__botao {
+  text-decoration: none;
+  color: white;
+  border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 9px;
+  background: linear-gradient(to right, #FF7F50, #8A2BE2);
+  width: 45%;
+}
+.quarta__sessao .swiper-button-prev {
+  display: none;
+}
+.quarta__sessao .swiper-button-next {
+  display: none;
+}
+
+.quinta__sessao {
+  margin-bottom: 1rem;
+}
+.quinta__sessao__dev {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.quinta__sessao__link {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */

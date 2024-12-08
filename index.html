@@ -8,6 +8,7 @@
     <link rel="icon" href="./CyberBlaze/assets/imgs/png/chama roxa circular.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -32,7 +33,7 @@
             </label>
             <ul class="cabecalho__navbar-lista">
                 <a class="cabecalho__navbar-lista-icone" href="#"><img src="./CyberBlaze/assets/imgs/png/icons8-brasil-emoji-48.png">Brasil</a>
-                <li><a class="cabecalho__navbar-lista__link" href="./CyberBlaze/index.html">jogos</a></li>
+                <li><a class="cabecalho__navbar-lista__link" href="./cyberblaze-games/games.html">jogos</a></li>
                 <li><a class="cabecalho__navbar-lista__link" href="#">baixados</a></li>
                 <li><a class="cabecalho__navbar-lista__link" href="#">perguntas frequentes</a></li>
                 <li><a class="cabecalho__navbar-lista__link" href="#">central de ajuda</a></li>
@@ -156,17 +157,108 @@
         </div>
     </section>
 
-    <section class=" display">
-        <h3>Jogos AAA ilimitados</h3>
-        <p>Execute jogos de PC em dispositivos de baixo custo, desatualizados ou ultraportáteis!</p>
-        <P>Jogue no Mac, Linux, iOS, Android, ChromeOS ou smart TVs sem console</p>
+    <section class="quarta__sessao">
+        <div class="quarta__sessao__textos">
+            <h3 class="quarta__sessao__textos__titulo">Jogos AAA ilimitados</h3>
+            <p class="quarta__sessao__textos__texto">Execute jogos de PC em dispositivos de baixo custo, desatualizados ou ultraportáteis!
+                Jogue no Mac, Linux, iOS, Android, ChromeOS ou smart TVs sem console
+            </p>
+        </div>
+            
+                <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-pagination">
+            </div>
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./CyberBlaze/assets/imgs/png/unlimited__layout_0.png" class="quarta__sessao__imagem">
+                    <ul class="quarta__sessao__listas">
+                        <li class="quarta__sessao__listas__texto">1 - Inscreva-se no Cyberblaze</li>
+                        <li class="quarta__sessao__listas__texto">2 - Faça o login na sua conta</li>
+                        <li class="quarta__sessao__listas__texto">3 - Escolha um jogo, faça login na conta do jogo e jogue!</li>
+                    </ul>
+                    <a class="swiper-slide__botao" href="./cyberblaze-games/games.html">Jogar</a>
+                </div>
+                <div class="swiper-slide">
+                    <img class="quarta__sessao__segunda-div__imagem" src="./CyberBlaze/assets/imgs/png/imagem do pc da quarta sessao sem fundo.png">
+                    <p class="quarta__sessao__segunda-div">Aproveite nossos aplicativos para Windows PC, Mac e Linux (Ubuntu, Mint, Debian, Fedora). Execute centenas de jogos para PC em qualquer dispositivo à mão!</p>  
+                    <ul class="quarta__sessao__segunda-div__listas">
+                        <li>
+                            <a href="#" class="quarta__sessao__segunda-div__listas-link">
+                                <img src="">
+                                Baixe para <strong class="quarta__sessao__segunda-div__listas-link-negrito"> Windows </strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="quarta__sessao__segunda-div__listas-link">
+                                <img src="">
+                                Baixe para <strong class="quarta__sessao__segunda-div__listas-link-negrito"> MacOS </strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="quarta__sessao__segunda-div__listas-link">
+                                <img src="">
+                                Baixe para <strong class="quarta__sessao__segunda-div__listas-link-negrito"> Linux </strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="quarta__sessao__segunda-div__listas-link">
+                                <img src="">
+                                add to  
+                                <strong class="quarta__sessao__segunda-div__listas-link-negrito" >
+                                     ChromeBook 
+                                </strong>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+
+                    Desfrute de jogos de PC na TV sem console. Pegue um gamepad e jogue em uma tela grande!
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
     </section>
 
-    <section class="quarta__sessao">
-        <p class="quarta__sessao__dev">Em desenvolvimento...</p>
-        <a  class="quarta__sessao__link" href="https://www.instagram.com/stanley_478">@stanley_478</a>
+    <section class="quinta__sessao">
+        <p class="quinta__sessao__dev">Em desenvolvimento...</p>
+        <a  class="quinta__sessao__link" href="https://www.instagram.com/stanley_478">@stanley_478</a>
     </section>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./CyberBlaze/assets/scripts.js/script.js"></script>
+    <script>
+        // Verifica o tamanho da tela e ajusta o espaço entre os slides
+        function ajustarEspacoEntreSlides() {
+            const tamanhoDaTela = window.innerWidth;
+            const espacoEntreSlides = (tamanhoDaTela >= 350) ? 55 : 10; // Ajuste os valores conforme necessário
+
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: espacoEntreSlides,
+                slidesPerView: 1,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+            });
+        }
+
+        // Chama a função ao carregar a página
+        window.onload = ajustarEspacoEntreSlides;
+
+        // Chama a função ao redimensionar a janela
+        window.addEventListener('resize', ajustarEspacoEntreSlides);
+    </script>
 </body>
 </html>

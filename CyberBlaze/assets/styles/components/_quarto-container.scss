@@ -1,15 +1,115 @@
 .quarta__sessao {
-    display: flex;
-    gap: 0.7rem;
-    flex-direction: column;
-      &__link {
-        color: white;
-        text-decoration: none;
-      }
-      &__dev {
-          color: white; 
-          font-size: 1.2rem;
-          font-weight: 800;
+  &__textos {
+      margin: 1rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      &__titulo {
+        font-size: 1.2rem;
+        font-weight: 700;
       }
 
+      &__texto {
+        font-size: 0.8rem;
+      }
+  }
+
+   &__imagem{
+    width: 80%;
+    height: 35%;
+    margin-bottom: 1rem;;
+   }
+
+   &__listas {
+       &__texto {
+           margin: 1rem 1rem 1rem 2.2rem;;
+           font-size: 0.8rem;
+           text-align: initial;
+           font-weight: 600;
+       }
+   }
+
+   &__segunda-div {
+       font-size: 0.8rem;
+       font-weight: 400;
+       padding: 0.9rem;
+       color: rgb(148, 141, 141);
+
+       &__imagem {
+        width: 60%;
+        height: 35%;
+        margin-bottom: 0.7rem;;
+       }
+
+       &__listas {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 2rem;;
+        color: white;
+        width: 60%;
+           &-link {
+              display: flex;
+              text-align: center;
+              align-items: center;
+              justify-content: center;
+              text-decoration: none;
+              color: white;
+              font-size: 0.8rem;
+              border: 3px solid transparent; /* Define a borda como transparente */
+              border-image: linear-gradient(to right, #f4855d, #4b0082); /* Gradiente para a borda */
+              border-image-slice: 1; /* Garante que o gradiente cubra toda a borda */
+              border-radius: 7px;
+              padding: 1.2rem 0.2rem;
+              &-negrito {
+                font-weight: 700;
+                margin-left: 0.3rem;
+              }
+           }
+       }
+   }
+
+   .swiper {
+       &-pagination {
+          position: initial;
+          margin: 0.5em 0;
+          
+          &-bullet {
+            background-color: white;
+          }
+       }
+
+       &-slide {
+          margin-bottom: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+
+          &__botao {
+            text-decoration: none;
+            color: white;
+            border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
+            padding: 1rem;
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-radius: 9px;
+            background: linear-gradient(to right, #FF7F50, #8A2BE2);
+            width: 45%;
+          }
+       }
+
+       &-button {
+            &-prev {
+            display: none;
+            }
+
+            &-next {
+              display: none;
+            }
+       }
+   }
 }
