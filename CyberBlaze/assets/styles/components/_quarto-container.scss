@@ -62,6 +62,11 @@
               border-image-slice: 1; /* Garante que o gradiente cubra toda a borda */
               border-radius: 7px;
               padding: 1.2rem 0.2rem;
+
+              &-icone {
+                margin-right: 1rem;
+              }
+
               &-negrito {
                 font-weight: 700;
                 margin-left: 0.3rem;

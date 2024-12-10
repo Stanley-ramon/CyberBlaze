@@ -649,6 +649,9 @@ body {
   border-radius: 7px;
   padding: 1.2rem 0.2rem;
 }
+.quarta__sessao__segunda-div__listas-link-icone {
+  margin-right: 1rem;
+}
 .quarta__sessao__segunda-div__listas-link-negrito {
   font-weight: 700;
   margin-left: 0.3rem;
