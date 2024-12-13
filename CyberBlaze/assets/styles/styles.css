@@ -630,7 +630,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-bottom: 2rem;
   color: white;
   width: 60%;
 }
@@ -647,14 +646,41 @@ body {
      border-image: linear-gradient(to right, #f4855d, #4b0082); /* Gradiente para a borda */
   border-image-slice: 1; /* Garante que o gradiente cubra toda a borda */
   border-radius: 7px;
-  padding: 1.2rem 0.2rem;
+  padding: 0.7rem 0.2rem;
 }
 .quarta__sessao__segunda-div__listas-link-icone {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
-.quarta__sessao__segunda-div__listas-link-negrito {
+.quarta__sessao__segunda-div__listas-link-textos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.7rem;
+}
+.quarta__sessao__segunda-div__listas-link-textos-negrito {
+  font-size: 0.9rem;
   font-weight: 700;
   margin-left: 0.3rem;
+}
+.quarta__sessao .botao {
+  display: flex;
+  text-align: start;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: white;
+  color: rgb(102, 97, 97);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 7px;
+  padding: 0.7rem 0.2rem;
+  border: 2px solid white;
+}
+.quarta__sessao .botao__negrito {
+  font-size: 1rem;
+  font-weight: 700;
 }
 .quarta__sessao .swiper-pagination {
   position: initial;
