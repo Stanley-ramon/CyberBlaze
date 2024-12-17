@@ -719,21 +719,46 @@ body {
 .quarta__sessao .swiper-button-next {
   display: none;
 }
-
-.quinta__sessao {
+.quarta__sessao__footer {
+  background-image: url("/Cyberblaze/assets/imgs/quarta sessao/imagem quinta sessao sem fundo.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  margin: 4rem 0;
+}
+.quarta__sessao__footer__lista {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.quarta__sessao__footer__lista-items {
+  font-size: 1rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.quarta__sessao__footer__lista-items__imagem {
+  height: 15%;
+  width: 15%;
+}
+.quarta__sessao__footer__lista-items__imagem-android {
+  margin: 0 -5rem 0 4rem;
+}
+.quarta__sessao__footer__lista-items__texts {
+  text-wrap: wrap;
+  padding: 3rem;
+  font-weight: 700;
+}
+.sexta__sessao {
   margin-bottom: 1rem;
 }
-.quinta__sessao__dev {
+.sexta__sessao__dev {
   color: white;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
-.quinta__sessao__link {
+.sexta__sessao__link {
   text-decoration: none;
   color: white;
-}
-
-.quinto {
-  background-image: url("/Cyberblaze/assets/imgs/quinta sessao/imagem quinta sessao sem fundo.png");
-  height: 100vh;
 }/*# sourceMappingURL=styles.css.map */

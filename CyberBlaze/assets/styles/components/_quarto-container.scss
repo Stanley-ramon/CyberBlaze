@@ -82,7 +82,7 @@
               }
            }
        }
-   }
+  }
 
    .botao {
         display: flex;
@@ -145,4 +145,44 @@
             }
        }
    }
+
+   &__footer {
+      background-image: url("/Cyberblaze/assets/imgs/quarta sessao/imagem quinta sessao sem fundo.png");
+      height: 100vh;
+      background-repeat: no-repeat;
+      margin: 4rem 0;
+      
+
+      &__lista{
+         display: flex;
+         flex-direction: column;
+         gap: 2rem;
+        &-items {
+          font-size: 1rem;;
+          display: flex;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          gap: 3rem;
+          
+          &__imagem {
+               height: 15%;
+               width: 15%;
+
+               &-android { 
+                margin: 0 -5rem 0 4rem ;
+               }
+            }
+
+          &__texts {
+            text-wrap: wrap;
+            padding: 3rem;
+            font-weight: 700;
+              &__text {
+                
+              }
+          }
+          }
+      }
+   } 
 }
