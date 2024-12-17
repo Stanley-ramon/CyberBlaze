@@ -743,13 +743,19 @@ body {
   width: 15%;
 }
 .quarta__sessao__footer__lista-items__imagem-android {
-  margin: 0 -5rem 0 4rem;
+  height: 20%;
+  width: 20%;
 }
 .quarta__sessao__footer__lista-items__texts {
   text-wrap: wrap;
-  padding: 3rem;
   font-weight: 700;
+  font-size: 1.2rem;
 }
+.quarta__sessao__footer__lista-items__texts__text {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
 .sexta__sessao {
   margin-bottom: 1rem;
 }
