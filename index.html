@@ -158,15 +158,15 @@
     </section>
 
     <section class="quarta__sessao">
-        <div class="quarta__sessao__textos">
+        <div class="quarta__sessao__textos terceira__sessao__titulo">
             <h3 class="quarta__sessao__textos__titulo">Jogos AAA ilimitados</h3>
             <p class="quarta__sessao__textos__texto">Execute jogos de PC em dispositivos de baixo custo, desatualizados ou ultraportáteis!
                 Jogue no Mac, Linux, iOS, Android, ChromeOS ou smart TVs sem console
             </p>
         </div>
             
-                <!-- Slider main container -->
-        <div class="swiper">
+                <!-- Slider do quarto container -->
+        <div id="swiper-do-container-4" class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-pagination">
             </div>
@@ -292,11 +292,6 @@
                     </ul>
                 </div>
             </div>
-            <!-- If we need pagination -->
-        
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
            
         </div>
 
@@ -363,6 +358,43 @@
         </div>
     </section>
 
+    <section class="section-games-carousel"> 
+        <h3 class="section-games-carousel__title  terceira__sessao__titulo">Muitos jogos para todos os gostos</h3>
+
+        <!-- Slider do quinto container -->
+
+        <div id="games-carousel__slider" class="swiper section-games-carousel__slider">
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-pagination">
+            </div>
+            <div class="swiper-wrapper section-games-carousel__swipers">
+            <!-- Slides -->
+                <div class="swiper-slide">
+                    <img class="section-games-carousel__image" src="./CyberBlaze/assets/imgs/quinta sessao/gta 5.png">
+                </div>
+                <div class="swiper-slide">
+                    <img class="section-games-carousel__image" src="./CyberBlaze/assets/imgs/quinta sessao/Resident EVII.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img class="section-games-carousel__image" src="./CyberBlaze/assets/imgs/quinta sessao/Endling_cover_art.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img class="section-games-carousel__image" src="./CyberBlaze/assets/imgs/quinta sessao/dishonored.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img class="section-games-carousel__image" src="./CyberBlaze/assets/imgs/quinta sessao/Call of Duty III.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img class="section-games-carousel__image" src="./CyberBlaze/assets/imgs/quinta sessao/Forzan horizon 5.png">
+                </div>
+                <div class="swiper-slide">
+                    <img class="section-games-carousel__image" src="./CyberBlaze/assets/imgs/quinta sessao/God of War.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="sexta__sessao">
         <p class="sexta__sessao__dev">Em desenvolvimento...</p>
         <a  class="sexta__sessao__link" href="https://www.instagram.com/stanley_478">@stanley_478</a>
@@ -371,26 +403,52 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./CyberBlaze/assets/scripts.js/script.js"></script>
     <script>
-        // Verifica o tamanho da tela e ajusta o espaço entre os slides
-        function ajustarEspacoEntreSlides() {
-            const tamanhoDaTela = window.innerWidth;
-            const espacoEntreSlides = (tamanhoDaTela >= 350) ? 55 : 10; // Ajuste os valores conforme necessário
+        // Verifica o tamanho da tela e ajusta o espaço entre os slides do primeiro Swiper (container 4)
+function ajustarEspacoEntreSlidesContainer4() {
+    const tamanhoDaTela = window.innerWidth;
+    const espacoEntreSlides = (tamanhoDaTela >= 350) ? 55 : 10; // Ajuste os valores conforme necessário
 
-            const swiper = new Swiper('.swiper', {
-                spaceBetween: espacoEntreSlides,
-                slidesPerView: 1,
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'bullets',
-                },
-            });
-        }
+    new Swiper('#swiper-do-container-4', {
+        spaceBetween: espacoEntreSlides,
+        slidesPerView: 1,
+        pagination: {
+            el: '#swiper-do-container-4 .swiper-pagination',
+            type: 'bullets',
+        },
+    });
+}
 
-        // Chama a função ao carregar a página
-        window.onload = ajustarEspacoEntreSlides;
+// Verifica o tamanho da tela e ajusta o espaço entre os slides do segundo Swiper (container 5)
+function ajustarEspacoEntreSlidesGamescarouselslider() {
+    const tamanhoDaTela = window.innerWidth;
+    const espacoEntreSlides = (tamanhoDaTela >= 350) ? 55 : 10; // Ajuste os valores conforme necessário
 
-        // Chama a função ao redimensionar a janela
-        window.addEventListener('resize', ajustarEspacoEntreSlides);
+    new Swiper('#games-carousel__slider', {
+        slidesPerView: '2', // Permite múltiplos slides visíveis
+        spaceBetween: espacoEntreSlides, // Define o espaçamento dinâmico entre os slides
+        loop: true, // Ativa o loop infinito
+        loopedSlides: 2, // Número de slides no loop (ajustar conforme a quantidade de slides)
+        autoplay: {
+            delay: 0, // Sem pausas
+            disableOnInteraction: true, // Continua após interação
+        },
+        speed: 2000, // Controle da suavidade da transição (quanto maior, mais fluido e lento o deslizamento)
+        allowTouchMove: true, // Desabilita o movimento manual (opcional para não interferir no automático)
+        freeMode: true, // Remove travas nos slides, tornando o movimento fluido
+    });
+}
+
+// Chama as funções ao carregar a página
+window.onload = function () {
+    ajustarEspacoEntreSlidesContainer4();
+    ajustarEspacoEntreSlidesGamescarouselslider();
+};
+
+// Chama as funções ao redimensionar a janela
+window.addEventListener('resize', function () {
+    ajustarEspacoEntreSlidesContainer4();
+    ajustarEspacoEntreSlidesGamescarouselslider();
+});
     </script>
 </body>
 </html>

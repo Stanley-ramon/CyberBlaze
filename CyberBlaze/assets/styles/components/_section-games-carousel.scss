@@ -1,0 +1,46 @@
+.section-games-carousel {
+    margin-bottom: 2rem;
+    &__slider {
+        overflow: hidden;
+        width: 100%; /* Ajuste o tamanho conforme necessário */
+        height: 75%; /* Altura do carrossel */
+        position: relative;
+
+                /* Animação contínua */
+        @keyframes scroll {
+            0% {
+            transform: translateX(0);
+            }
+            
+            100% {
+            transform: translateX(-350%); /* Move para a esquerda continuamente */
+            }
+        }
+    }
+
+    &__title {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin: 2rem 0 2rem 0;
+    }
+
+    &__image {
+        height: 120%;
+        width: 120%;
+        border-radius: 7px;
+    }
+
+    &__swipers {
+        display: flex;
+        width: calc(200%); /* Largura do loop contínuo */
+        animation: scroll 22s linear infinite; /* Movimento contínuo */
+
+        &__swiper {
+            min-width: 50%; /* Cada slide ocupa 50% do carrossel */
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
