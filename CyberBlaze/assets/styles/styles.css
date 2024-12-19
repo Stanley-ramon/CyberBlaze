@@ -728,7 +728,7 @@ body {
   background-image: url("/CyberBlaze/assets/imgs/quarta sessao/imagem quinta sessao sem fundo.png");
   height: 100vh;
   background-repeat: no-repeat;
-  margin: 4rem 0;
+  margin-top: 1rem;
 }
 .quarta__sessao__footer__lista {
   display: flex;
@@ -782,7 +782,7 @@ body {
 .section-games-carousel__title {
   font-size: 1.3rem;
   font-weight: 700;
-  margin: 2rem 0 2rem 0;
+  margin: 4rem 0 2.5rem 0;
 }
 .section-games-carousel__image {
   height: 120%;
