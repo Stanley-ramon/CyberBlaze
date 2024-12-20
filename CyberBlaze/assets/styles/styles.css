@@ -763,43 +763,65 @@ body {
 
 .section-games-carousel {
   margin-bottom: 2rem;
-}
-.section-games-carousel__slider {
-  overflow: hidden;
-  width: 100%; /* Ajuste o tamanho conforme necessário */
-  height: 75%; /* Altura do carrossel */
-  position: relative;
-  /* Animação contínua */
-}
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-350%); /* Move para a esquerda continuamente */
-  }
+  /* Slider 1: movimento da direita para a esquerda */
+  /* Slider 2: movimento da esquerda para a direita */
 }
 .section-games-carousel__title {
   font-size: 1.3rem;
   font-weight: 700;
   margin: 2.5rem 0 2rem 0;
 }
-.section-games-carousel__image {
-  height: 120%;
-  width: 120%;
-  border-radius: 7px;
+.section-games-carousel__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-.section-games-carousel__swipers {
+.section-games-carousel__slider {
+  overflow: hidden;
+  width: 100%; /* Ajuste o tamanho conforme necessário */
+  height: 75%; /* Altura do carrossel */
+  position: relative;
+  /* Animação para movimento da direita para a esquerda */
+  /* Animação para movimento da esquerda para a direita */
+}
+.section-games-carousel__slider__swipers {
   display: flex;
   width: 200%; /* Largura do loop contínuo */
   animation: scroll 22s linear infinite; /* Movimento contínuo */
 }
-.section-games-carousel__swipers__swiper {
+.section-games-carousel__slider__swipers__swiper {
   min-width: 50%; /* Cada slide ocupa 50% do carrossel */
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.section-games-carousel__slider__swipers__swiper__image {
+  height: 120%;
+  width: 120%;
+  border-radius: 7px;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-440%);
+  }
+}
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-440%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.section-games-carousel #games-carousel__slider-1 .section-games-carousel__slider__swipers {
+  animation: scroll-left 35s linear infinite;
+}
+.section-games-carousel #games-carousel__slider-2 .section-games-carousel__slider__swipers {
+  animation: scroll-right 35s linear infinite;
 }
 
 .sexta__sessao {

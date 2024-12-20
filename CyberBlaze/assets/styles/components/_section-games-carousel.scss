@@ -1,46 +1,75 @@
 .section-games-carousel {
-    margin-bottom: 2rem;
-    &__slider {
-        overflow: hidden;
-        width: 100%; /* Ajuste o tamanho conforme necessário */
-        height: 75%; /* Altura do carrossel */
-        position: relative;
-
-                /* Animação contínua */
-        @keyframes scroll {
-            0% {
-            transform: translateX(0);
-            }
-            
-            100% {
-            transform: translateX(-350%); /* Move para a esquerda continuamente */
-            }
-        }
-    }
-
     &__title {
         font-size: 1.3rem;
         font-weight: 700;
         margin: 2.5rem 0 2rem 0;
     }
 
-    &__image {
-        height: 120%;
-        width: 120%;
-        border-radius: 7px;
+    
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 
-    &__swipers {
-        display: flex;
-        width: calc(200%); /* Largura do loop contínuo */
-        animation: scroll 22s linear infinite; /* Movimento contínuo */
+    margin-bottom: 2rem;
 
-        &__swiper {
-            min-width: 50%; /* Cada slide ocupa 50% do carrossel */
-            flex-shrink: 0;
+    &__slider {
+        overflow: hidden;
+        width: 100%; /* Ajuste o tamanho conforme necessário */
+        height: 75%; /* Altura do carrossel */
+        position: relative;
+
+        &__swipers {
             display: flex;
-            align-items: center;
-            justify-content: center;
+            width: calc(200%); /* Largura do loop contínuo */
+            animation: scroll 22s linear infinite; /* Movimento contínuo */
+    
+            &__swiper {
+                min-width: 50%; /* Cada slide ocupa 50% do carrossel */
+                flex-shrink: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &__image {
+                    height: 120%;
+                    width: 120%;
+                    border-radius: 7px;
+                }
+            }
         }
+
+        /* Animação para movimento da direita para a esquerda */
+            @keyframes scroll-left {
+               0% {
+                  transform: translateX(0);
+               }
+
+               100% {
+                  transform: translateX(-440%);
+               }
+            }
+ 
+              /* Animação para movimento da esquerda para a direita */
+            @keyframes scroll-right {
+                0% {
+                    transform: translateX(-440%);
+                }
+
+                100% {
+                    transform: translateX(0);
+                }
+            }
+    }
+
+        /* Slider 1: movimento da direita para a esquerda */
+    #games-carousel__slider-1 .section-games-carousel__slider__swipers {
+        animation: scroll-left 35s linear infinite;
+    }
+
+        /* Slider 2: movimento da esquerda para a direita */
+    #games-carousel__slider-2 .section-games-carousel__slider__swipers {
+        animation: scroll-right 35s linear infinite;
     }
 }
