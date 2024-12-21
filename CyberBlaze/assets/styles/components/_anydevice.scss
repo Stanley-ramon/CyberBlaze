@@ -1,5 +1,5 @@
 .anydevice {
-    margin-top: 1rem;
+    margin: 1rem 0 2rem 0;
     &__title {
         font-size: 1.3rem;
         font-weight: 700;
@@ -9,5 +9,44 @@
     &__image {
         width: 105%;
         height: 100%;
+    }
+
+    &__big__title {
+        font-size: 1.5rem;
+        text-align: start;
+        padding-left: 1rem;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    &__container {
+        margin: 2rem 0 2rem 0;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        gap: 2rem;
+        font-size: 0.8rem;;
+        padding-right: 30%;
+        padding-left: 1rem;;
+        text-wrap: wrap;
+        font-weight: 700;
+    }
+
+    &__bottom {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-left: 1rem;
+        text-decoration: none;
+        color: white;
+        border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
+        padding: 1rem;
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 9px;
+        background: linear-gradient(to right, #FF7F50, #8A2BE2);
+        width: 35%;
     }
 }
