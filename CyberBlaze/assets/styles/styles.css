@@ -763,6 +763,7 @@ body {
 
 .section-games-carousel {
   margin-bottom: 2rem;
+  align-items: center;
   /* Slider 1: movimento da direita para a esquerda */
   /* Slider 2: movimento da esquerda para a direita */
 }
@@ -775,6 +776,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-bottom: 3rem;
 }
 .section-games-carousel__slider {
   overflow: hidden;
@@ -782,7 +784,7 @@ body {
   height: 75%; /* Altura do carrossel */
   position: relative;
   /* Animação para movimento da direita para a esquerda */
-  /* Animação para movimento da esquerda para a direita */
+  /* Animação para movimento da esquerda para a direita*/
 }
 .section-games-carousel__slider__swipers {
   display: flex;
@@ -822,6 +824,35 @@ body {
 }
 .section-games-carousel #games-carousel__slider-2 .section-games-carousel__slider__swipers {
   animation: scroll-right 35s linear infinite;
+}
+.section-games-carousel__bottom {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 9px;
+  background: linear-gradient(to right, #FF7F50, #8A2BE2);
+  width: 45%;
+  margin: 0 27.5% 0 27.5%;
+}
+
+.anydevice {
+  margin-top: 1rem;
+}
+.anydevice__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 2.5rem 0 2rem 0;
+}
+.anydevice__image {
+  width: 105%;
+  height: 100%;
 }
 
 .sexta__sessao {

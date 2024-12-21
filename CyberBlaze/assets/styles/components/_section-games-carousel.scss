@@ -10,9 +10,12 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        margin-bottom: 3rem;
     }
+    
 
     margin-bottom: 2rem;
+    align-items: center;
 
     &__slider {
         overflow: hidden;
@@ -41,7 +44,7 @@
         }
 
         /* Animação para movimento da direita para a esquerda */
-            @keyframes scroll-left {
+        @keyframes scroll-left {
                0% {
                   transform: translateX(0);
                }
@@ -50,8 +53,9 @@
                   transform: translateX(-440%);
                }
             }
+
  
-              /* Animação para movimento da esquerda para a direita */
+              /* Animação para movimento da esquerda para a direita*/
             @keyframes scroll-right {
                 0% {
                     transform: translateX(-440%);
@@ -61,6 +65,7 @@
                     transform: translateX(0);
                 }
             }
+            
     }
 
         /* Slider 1: movimento da direita para a esquerda */
@@ -71,5 +76,22 @@
         /* Slider 2: movimento da esquerda para a direita */
     #games-carousel__slider-2 .section-games-carousel__slider__swipers {
         animation: scroll-right 35s linear infinite;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+            text-decoration: none;
+            color: white;
+            border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
+            padding: 1rem;
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-radius: 9px;
+            background: linear-gradient(to right, #FF7F50, #8A2BE2);
+            width: 45%;
+            margin: 0 27.5% 0 27.5%;
     }
 }

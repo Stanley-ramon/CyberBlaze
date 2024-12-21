@@ -88,18 +88,24 @@ function ajustarEspacoEntreSlidesGamescarouselslider1() {
     const tamanhoDaTela = window.innerWidth;
     const espacoEntreSlides = (tamanhoDaTela >= 350) ? 30 : 10; // Ajuste os valores conforme necessário
 
+         // Duplica os slides manualmente para criar um efeito contínuo
+    const swiperWrapper = document.querySelector('#games-carousel__slider-1 .swiper-wrapper');
+    swiperWrapper.innerHTML += swiperWrapper.innerHTML; // Duplica os slides
+
     new Swiper('#games-carousel__slider-1', {
-        slidesPerView: '2', // Permite múltiplos slides visíveis
+        slidesPerView: '3', // Permite múltiplos slides visíveis
         spaceBetween: espacoEntreSlides, // Define o espaçamento dinâmico entre os slides
-        loop: true, // Ativa o loop infinito
+        loop: false, // Ativa o loop infinito
         loopedSlides: 3, // Número de slides no loop (ajustar conforme a quantidade de slides)
         autoplay: {
             delay: 0, // Sem pausas
             disableOnInteraction: true, // Continua após interação
+            reverseDirection: true, // Faz o autoplay ir no sentido inverso
         },
-        speed: 1000, // Controle da suavidade da transição (quanto maior, mais fluido e lento o deslizamento)
+        speed: 3000, // Controle da suavidade da transição (quanto maior, mais fluido e lento o deslizamento)
         allowTouchMove: true, // Desabilita o movimento manual (opcional para não interferir no automático)
         freeMode: true, // Remove travas nos slides, tornando o movimento fluido
+        freeModeMomentum: false
     });
 }
 
@@ -107,18 +113,24 @@ function ajustarEspacoEntreSlidesGamescarouselslider2() {
     const tamanhoDaTela = window.innerWidth;
     const espacoEntreSlides = (tamanhoDaTela >= 350) ? 30 : 10; // Ajuste os valores conforme necessário
 
+        // Duplica os slides manualmente para criar um efeito contínuo
+    const swiperWrapper = document.querySelector('#games-carousel__slider-2 .swiper-wrapper');
+    swiperWrapper.innerHTML += swiperWrapper.innerHTML; // Duplica os slides
+
     new Swiper('#games-carousel__slider-2', {
-        slidesPerView: '2', // Permite múltiplos slides visíveis
+        slidesPerView: '3', // Permite múltiplos slides visíveis
         spaceBetween: espacoEntreSlides, // Define o espaçamento dinâmico entre os slides
-        loop: true, // Ativa o loop infinito
+        loop: false, // Ativa o loop infinito
         loopedSlides: 3, // Número de slides no loop (ajustar conforme a quantidade de slides)
         autoplay: {
             delay: 0, // Sem pausas
-            disableOnInteraction: true, // Continua após interação
+            disableOnInteraction: false, // Continua após interação
+            reverseDirection: true, // Faz o autoplay ir no sentido inverso
         },
-        speed: 1000, // Controle da suavidade da transição (quanto maior, mais fluido e lento o deslizamento)
+        speed: 3000, // Controle da suavidade da transição (quanto maior, mais fluido e lento o deslizamento)
         allowTouchMove: true, // Desabilita o movimento manual (opcional para não interferir no automático)
         freeMode: true, // Remove travas nos slides, tornando o movimento fluido
+        freeModeMomentum: false
     });
 }
 
