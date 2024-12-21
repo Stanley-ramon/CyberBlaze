@@ -797,9 +797,9 @@ body {
   justify-content: center;
 }
 .section-games-carousel__slider__swipers__swiper__image {
-  height: 120%;
-  width: 120%;
-  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  border-radius: 9px;
 }
 @keyframes scroll-left {
   0% {

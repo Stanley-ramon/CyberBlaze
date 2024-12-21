@@ -1,3 +1,5 @@
+// Lógica para o popup e animações
+
 document.addEventListener('DOMContentLoaded', function () {
     // Variável para guardar a última posição de scroll
     let lastScrollPosition = window.pageYOffset;
@@ -6,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const popupContainer = document.querySelector('.principal__caixa__popup-container');
 
     // Função para detectar o scroll
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         let currentScrollPosition = window.pageYOffset;
 
         if (currentScrollPosition < lastScrollPosition) {
@@ -63,3 +65,74 @@ document.addEventListener('DOMContentLoaded', function () {
         titleObserver.observe(titulo);
     });
 });
+
+// Lógica para os slides Swiper
+
+// Verifica o tamanho da tela e ajusta o espaço entre os slides do primeiro Swiper (container 4)
+function ajustarEspacoEntreSlidesContainer4() {
+    const tamanhoDaTela = window.innerWidth;
+    const espacoEntreSlides = (tamanhoDaTela >= 350) ? 55 : 10; // Ajuste os valores conforme necessário
+
+    new Swiper('#swiper-do-container-4', {
+        spaceBetween: espacoEntreSlides,
+        slidesPerView: 1,
+        pagination: {
+            el: '#swiper-do-container-4 .swiper-pagination',
+            type: 'bullets',
+        },
+    });
+}
+
+// Verifica o tamanho da tela e ajusta o espaço entre os slides do segundo Swiper (container 5)
+function ajustarEspacoEntreSlidesGamescarouselslider1() {
+    const tamanhoDaTela = window.innerWidth;
+    const espacoEntreSlides = (tamanhoDaTela >= 350) ? 30 : 10; // Ajuste os valores conforme necessário
+
+    new Swiper('#games-carousel__slider-1', {
+        slidesPerView: '2', // Permite múltiplos slides visíveis
+        spaceBetween: espacoEntreSlides, // Define o espaçamento dinâmico entre os slides
+        loop: true, // Ativa o loop infinito
+        loopedSlides: 3, // Número de slides no loop (ajustar conforme a quantidade de slides)
+        autoplay: {
+            delay: 0, // Sem pausas
+            disableOnInteraction: true, // Continua após interação
+        },
+        speed: 1000, // Controle da suavidade da transição (quanto maior, mais fluido e lento o deslizamento)
+        allowTouchMove: true, // Desabilita o movimento manual (opcional para não interferir no automático)
+        freeMode: true, // Remove travas nos slides, tornando o movimento fluido
+    });
+}
+
+function ajustarEspacoEntreSlidesGamescarouselslider2() {
+    const tamanhoDaTela = window.innerWidth;
+    const espacoEntreSlides = (tamanhoDaTela >= 350) ? 30 : 10; // Ajuste os valores conforme necessário
+
+    new Swiper('#games-carousel__slider-2', {
+        slidesPerView: '2', // Permite múltiplos slides visíveis
+        spaceBetween: espacoEntreSlides, // Define o espaçamento dinâmico entre os slides
+        loop: true, // Ativa o loop infinito
+        loopedSlides: 3, // Número de slides no loop (ajustar conforme a quantidade de slides)
+        autoplay: {
+            delay: 0, // Sem pausas
+            disableOnInteraction: true, // Continua após interação
+        },
+        speed: 1000, // Controle da suavidade da transição (quanto maior, mais fluido e lento o deslizamento)
+        allowTouchMove: true, // Desabilita o movimento manual (opcional para não interferir no automático)
+        freeMode: true, // Remove travas nos slides, tornando o movimento fluido
+    });
+}
+
+// Chama as funções ao carregar a página
+window.onload = function () {
+    ajustarEspacoEntreSlidesContainer4();
+    ajustarEspacoEntreSlidesGamescarouselslider1();
+    ajustarEspacoEntreSlidesGamescarouselslider2();
+};
+
+// Chama as funções ao redimensionar a janela
+window.addEventListener('resize', function () {
+    ajustarEspacoEntreSlidesContainer4();
+    ajustarEspacoEntreSlidesGamescarouselslider1();
+    ajustarEspacoEntreSlidesGamescarouselslider2();
+});
+
