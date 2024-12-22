@@ -1,5 +1,3 @@
-// Lógica para o popup e animações
-
 document.addEventListener('DOMContentLoaded', function () {
     // Variável para guardar a última posição de scroll
     let lastScrollPosition = window.pageYOffset;
@@ -64,6 +62,25 @@ document.addEventListener('DOMContentLoaded', function () {
     titulos.forEach(titulo => {
         titleObserver.observe(titulo);
     });
+
+    // Adicionando o comportamento de animação "jump-kick" para os títulos
+    const elementosComAnimacao = document.querySelectorAll('.anydevice__big__title'); // Substitua com a classe do título que você quer animar
+
+    // Observer para animar os elementos com jump-kick ao entrar na viewport
+    const animationObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('jump-kick'); // Adiciona a classe para animar o título
+            } else {
+                entry.target.classList.remove('jump-kick'); // Remove a classe se sair da viewport
+            }
+        });
+    }, { threshold: 0.1 });
+
+    // Observa cada elemento com animação
+    elementosComAnimacao.forEach(elemento => {
+        animationObserver.observe(elemento);
+    });
 });
 
 // Lógica para os slides Swiper
@@ -88,7 +105,7 @@ function ajustarEspacoEntreSlidesGamescarouselslider1() {
     const tamanhoDaTela = window.innerWidth;
     const espacoEntreSlides = (tamanhoDaTela >= 350) ? 30 : 10; // Ajuste os valores conforme necessário
 
-         // Duplica os slides manualmente para criar um efeito contínuo
+    // Duplica os slides manualmente para criar um efeito contínuo
     const swiperWrapper = document.querySelector('#games-carousel__slider-1 .swiper-wrapper');
     swiperWrapper.innerHTML += swiperWrapper.innerHTML; // Duplica os slides
 
@@ -113,7 +130,7 @@ function ajustarEspacoEntreSlidesGamescarouselslider2() {
     const tamanhoDaTela = window.innerWidth;
     const espacoEntreSlides = (tamanhoDaTela >= 350) ? 30 : 10; // Ajuste os valores conforme necessário
 
-        // Duplica os slides manualmente para criar um efeito contínuo
+    // Duplica os slides manualmente para criar um efeito contínuo
     const swiperWrapper = document.querySelector('#games-carousel__slider-2 .swiper-wrapper');
     swiperWrapper.innerHTML += swiperWrapper.innerHTML; // Duplica os slides
 
@@ -147,4 +164,3 @@ window.addEventListener('resize', function () {
     ajustarEspacoEntreSlidesGamescarouselslider1();
     ajustarEspacoEntreSlidesGamescarouselslider2();
 });
-

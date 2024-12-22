@@ -17,19 +17,55 @@
         padding-left: 1rem;
         font-weight: 800;
         text-transform: uppercase;
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: bold;
+       
+        &.jump-kick {
+            animation: jump-kick 3s ease-in-out forwards;  /* Aplicar a animação quando a classe 'jump-kick' for adicionada */
+        }
+
+        
+
+        @keyframes jump-kick {
+            0% {
+                transform: translateY(0); /* Posição inicial */
+            }
+            30% {
+                transform: translateY(-70px); /* Salto para cima */
+            }
+            50% {
+                transform: translateY(0) translateX(40px) rotate(20deg); /* Chuta para frente */
+            }
+            70% {
+                transform: translateY(-25px); /* Pequeno salto ao retornar */
+            }
+            100% {
+                transform: translateY(0) translateX(0) rotate(0deg); /* Volta à posição original */
+            }
+        }
     }
 
     &__container {
         margin: 2rem 0 2rem 0;
         display: flex;
         flex-direction: column;
-        text-align: start;
         gap: 2rem;
-        font-size: 0.8rem;;
-        padding-right: 30%;
+        padding-right: 10%;
         padding-left: 1rem;;
-        text-wrap: wrap;
-        font-weight: 700;
+        
+        &-items {
+            display: flex;
+            gap: 0.6rem;
+            
+            &__text {
+                font-size: 0.9rem;
+                font-weight: 600;
+                text-align: start;
+                text-wrap: wrap;
+            }
+        }
+
     }
 
     &__bottom {
@@ -48,5 +84,11 @@
         border-radius: 9px;
         background: linear-gradient(to right, #FF7F50, #8A2BE2);
         width: 35%;
+    }
+
+    &-image {
+        width: 73%;
+        height: 32%;
+        padding-left: 25%;;
     }
 }
