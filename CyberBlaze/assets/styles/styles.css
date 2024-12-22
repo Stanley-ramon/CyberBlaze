@@ -866,7 +866,7 @@ body {
   font-weight: bold;
 }
 .anydevice__big__title.jump-kick {
-  animation: jump-kick 3s ease-in-out forwards; /* Aplicar a animação quando a classe 'jump-kick' for adicionada */
+  animation: jump-kick 1.7s ease-in-out forwards; /* Aplicar a animação quando a classe 'jump-kick' for adicionada */
 }
 @keyframes jump-kick {
   0% {
@@ -937,4 +937,24 @@ body {
 .sexta__sessao__link {
   text-decoration: none;
   color: white;
+}
+
+.partners {
+  margin-bottom: 2rem;
+}
+.partners__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 2.5rem 0 2rem 0;
+}
+.partners__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas de largura igual */
+  grid-template-rows: repeat(4, auto); /* 4 linhas ajustáveis ao conteúdo */
+  list-style: none; /* Remove marcadores da lista */
+  gap: 0.7rem;
+}
+.partners__list-image {
+  width: 75%;
+  height: auto; /* Mantém a proporção */
 }/*# sourceMappingURL=styles.css.map */

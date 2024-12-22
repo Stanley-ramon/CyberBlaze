@@ -1,0 +1,21 @@
+.partners {
+    margin-bottom: 2rem;;
+    &__title {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin: 2.5rem 0 2rem 0;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);/* 3 colunas de largura igual */
+        grid-template-rows: repeat(4, auto); /* 4 linhas ajustáveis ao conteúdo */
+        list-style: none; /* Remove marcadores da lista */
+        gap: 0.7rem;
+
+        &-image {
+            width: 75%;
+            height: auto; /* Mantém a proporção */
+        }
+    }
+}
