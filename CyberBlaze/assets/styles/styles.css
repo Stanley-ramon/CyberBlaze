@@ -762,6 +762,7 @@ body {
 }
 
 .section-games-carousel {
+  margin: 5rem 0 1rem 0;
   margin-bottom: 2rem;
   align-items: center;
   /* Slider 1: movimento da direita para a esquerda */
@@ -843,7 +844,7 @@ body {
 }
 
 .anydevice {
-  margin: 1rem 0 2rem 0;
+  margin: 5rem 0 2rem 0;
 }
 .anydevice__title {
   font-size: 1.3rem;
