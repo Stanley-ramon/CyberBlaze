@@ -927,12 +927,25 @@ body {
 }
 
 .sexta__sessao {
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 0.5rem;
+  padding: 0.7rem;
+  text-wrap: wrap;
 }
 .sexta__sessao__dev {
   color: white;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem 0;
+  font-size: 0.8rem;
+}
+.sexta__sessao__dev-1 {
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  border: 1px solid white;
+  border-radius: 9px;
+  padding: 0.7rem;
 }
 .sexta__sessao__link {
   text-decoration: none;
@@ -940,7 +953,7 @@ body {
 }
 
 .partners {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .partners__title {
   font-size: 1.3rem;
@@ -953,8 +966,61 @@ body {
   grid-template-rows: repeat(4, auto); /* 4 linhas ajustáveis ao conteúdo */
   list-style: none; /* Remove marcadores da lista */
   gap: 0.7rem;
+  margin-bottom: 5rem;
 }
 .partners__list-image {
   width: 75%;
   height: auto; /* Mantém a proporção */
+}
+.partners__footer__dropdown-buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0 0.3rem 0;
+  width: 100%;
+}
+.partners__footer__dropdown-buttons__button {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 400;
+  background: linear-gradient(to right, rgba(128, 128, 128, 0) 0%, rgba(128, 128, 128, 0.1) 100%);
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda padrão */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Cantos arredondados */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  /*setas > */
+}
+.partners__footer__dropdown-buttons__button:hover {
+  background: linear-gradient(to right, rgba(128, 128, 128, 0.2) 0%, rgba(128, 128, 128, 0.1) 100%);
+}
+.partners__footer__dropdown-buttons__button__dropdown-arrow {
+  transition: transform 0.3s ease; /* Animação suave da rotação */
+}
+.partners__footer__dropdown-buttons__button.active .partners__footer__dropdown-buttons__button__dropdown-arrow {
+  transform: rotate(90deg); /* Rotaciona a seta 90 graus */
+}
+.partners__footer__dropdown-buttons__dropdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none; /* Escondido por padrão */
+  background: linear-gradient(to right, rgba(128, 128, 128, 0.2) 0%, rgba(128, 128, 128, 0.1) 100%);
+  text-align: start;
+  /* Quando a lista for ativa */
+}
+.partners__footer__dropdown-buttons__dropdown-list__item {
+  padding: 10px;
+}
+.partners__footer__dropdown-buttons__dropdown-list__item__link {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+.partners__footer__dropdown-buttons__dropdown-list__item__link:hover {
+  background-color: #ddd;
+}
+.partners__footer__dropdown-buttons__dropdown-list.active {
+  display: block; /* Exibe o dropdown */
 }/*# sourceMappingURL=styles.css.map */

@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         lastScrollPosition = currentScrollPosition;
     });
 
-    // Evento de load para exibir o popup após o carregamento da página
+    // Exibe o popup após o carregamento da página
     window.addEventListener('load', () => {
         setTimeout(() => {
             popupContainer.classList.add('show');
@@ -51,9 +51,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const titleObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('show'); // Adiciona a classe para animar o título
+                entry.target.classList.add('show');
             } else {
-                entry.target.classList.remove('show'); // Remove a classe se sair da viewport
+                entry.target.classList.remove('show');
             }
         });
     }, { threshold: 0.1 });
@@ -63,16 +63,16 @@ document.addEventListener('DOMContentLoaded', function () {
         titleObserver.observe(titulo);
     });
 
-    // Adicionando o comportamento de animação "jump-kick" para os títulos
-    const elementosComAnimacao = document.querySelectorAll('.anydevice__big__title'); // Substitua com a classe do título que você quer animar
+    // Adicionando animação "jump-kick" para os títulos
+    const elementosComAnimacao = document.querySelectorAll('.anydevice__big__title');
 
     // Observer para animar os elementos com jump-kick ao entrar na viewport
     const animationObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('jump-kick'); // Adiciona a classe para animar o título
+                entry.target.classList.add('jump-kick');
             } else {
-                entry.target.classList.remove('jump-kick'); // Remove a classe se sair da viewport
+                entry.target.classList.remove('jump-kick');
             }
         });
     }, { threshold: 0.1 });
@@ -85,82 +85,68 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Lógica para os slides Swiper
 
-// Verifica o tamanho da tela e ajusta o espaço entre os slides do primeiro Swiper (container 4)
-function ajustarEspacoEntreSlidesContainer4() {
+// Função para ajustar o espaço entre slides do Swiper
+function ajustarEspacoEntreSlides(id, spaceBetweenLarge, spaceBetweenSmall) {
     const tamanhoDaTela = window.innerWidth;
-    const espacoEntreSlides = (tamanhoDaTela >= 350) ? 55 : 10; // Ajuste os valores conforme necessário
+    const espacoEntreSlides = (tamanhoDaTela >= 350) ? spaceBetweenLarge : spaceBetweenSmall;
 
-    new Swiper('#swiper-do-container-4', {
-        spaceBetween: espacoEntreSlides,
+    new Swiper(id, {
         slidesPerView: 1,
+        spaceBetween: espacoEntreSlides,
         pagination: {
-            el: '#swiper-do-container-4 .swiper-pagination',
+            el: `${id} .swiper-pagination`,
             type: 'bullets',
         },
     });
 }
 
-// Verifica o tamanho da tela e ajusta o espaço entre os slides do segundo Swiper (container 5)
-function ajustarEspacoEntreSlidesGamescarouselslider1() {
+// Função para configurar carrosséis duplicados
+function configurarCarrosselDuplicado(id, spaceBetweenLarge, spaceBetweenSmall) {
     const tamanhoDaTela = window.innerWidth;
-    const espacoEntreSlides = (tamanhoDaTela >= 350) ? 30 : 10; // Ajuste os valores conforme necessário
+    const espacoEntreSlides = (tamanhoDaTela >= 350) ? spaceBetweenLarge : spaceBetweenSmall;
 
-    // Duplica os slides manualmente para criar um efeito contínuo
-    const swiperWrapper = document.querySelector('#games-carousel__slider-1 .swiper-wrapper');
+    const swiperWrapper = document.querySelector(`${id} .swiper-wrapper`);
     swiperWrapper.innerHTML += swiperWrapper.innerHTML; // Duplica os slides
 
-    new Swiper('#games-carousel__slider-1', {
-        slidesPerView: '3', // Permite múltiplos slides visíveis
-        spaceBetween: espacoEntreSlides, // Define o espaçamento dinâmico entre os slides
-        loop: false, // Ativa o loop infinito
-        loopedSlides: 3, // Número de slides no loop (ajustar conforme a quantidade de slides)
+    new Swiper(id, {
+        slidesPerView: 3,
+        spaceBetween: espacoEntreSlides,
+        loop: false,
         autoplay: {
-            delay: 0, // Sem pausas
-            disableOnInteraction: true, // Continua após interação
-            reverseDirection: true, // Faz o autoplay ir no sentido inverso
+            delay: 0,
+            disableOnInteraction: false,
+            reverseDirection: true,
         },
-        speed: 3000, // Controle da suavidade da transição (quanto maior, mais fluido e lento o deslizamento)
-        allowTouchMove: true, // Desabilita o movimento manual (opcional para não interferir no automático)
-        freeMode: true, // Remove travas nos slides, tornando o movimento fluido
-        freeModeMomentum: false
+        speed: 3000,
+        allowTouchMove: true,
+        freeMode: true,
+        freeModeMomentum: false,
     });
 }
 
-function ajustarEspacoEntreSlidesGamescarouselslider2() {
-    const tamanhoDaTela = window.innerWidth;
-    const espacoEntreSlides = (tamanhoDaTela >= 350) ? 30 : 10; // Ajuste os valores conforme necessário
-
-    // Duplica os slides manualmente para criar um efeito contínuo
-    const swiperWrapper = document.querySelector('#games-carousel__slider-2 .swiper-wrapper');
-    swiperWrapper.innerHTML += swiperWrapper.innerHTML; // Duplica os slides
-
-    new Swiper('#games-carousel__slider-2', {
-        slidesPerView: '3', // Permite múltiplos slides visíveis
-        spaceBetween: espacoEntreSlides, // Define o espaçamento dinâmico entre os slides
-        loop: false, // Ativa o loop infinito
-        loopedSlides: 3, // Número de slides no loop (ajustar conforme a quantidade de slides)
-        autoplay: {
-            delay: 0, // Sem pausas
-            disableOnInteraction: false, // Continua após interação
-            reverseDirection: true, // Faz o autoplay ir no sentido inverso
-        },
-        speed: 3000, // Controle da suavidade da transição (quanto maior, mais fluido e lento o deslizamento)
-        allowTouchMove: true, // Desabilita o movimento manual (opcional para não interferir no automático)
-        freeMode: true, // Remove travas nos slides, tornando o movimento fluido
-        freeModeMomentum: false
-    });
-}
-
-// Chama as funções ao carregar a página
+// Ajusta os Swipers ao carregar a página
 window.onload = function () {
-    ajustarEspacoEntreSlidesContainer4();
-    ajustarEspacoEntreSlidesGamescarouselslider1();
-    ajustarEspacoEntreSlidesGamescarouselslider2();
+    ajustarEspacoEntreSlides('#swiper-do-container-4', 55, 10);
+    configurarCarrosselDuplicado('#games-carousel__slider-1', 30, 10);
+    configurarCarrosselDuplicado('#games-carousel__slider-2', 30, 10);
 };
 
-// Chama as funções ao redimensionar a janela
+// Reajusta os Swipers ao redimensionar a janela
 window.addEventListener('resize', function () {
-    ajustarEspacoEntreSlidesContainer4();
-    ajustarEspacoEntreSlidesGamescarouselslider1();
-    ajustarEspacoEntreSlidesGamescarouselslider2();
+    ajustarEspacoEntreSlides('#swiper-do-container-4', 55, 10);
+    configurarCarrosselDuplicado('#games-carousel__slider-1', 30, 10);
+    configurarCarrosselDuplicado('#games-carousel__slider-2', 30, 10);
 });
+
+// Função para alternar a visibilidade de um dropdown
+function toggleDropdown(listId) {
+    const dropdownList = document.getElementById(listId);
+    const button = dropdownList.previousElementSibling; // Botão que controla o dropdown
+    const arrow = button.querySelector('.partners__footer__dropdown-buttons__button__dropdown-arrow'); // Seta dentro do botão
+
+    // Alterna a visibilidade da lista de dropdown
+    dropdownList.classList.toggle('active');
+    
+    // Alterna a rotação da seta
+    arrow.classList.toggle('rotated');
+}

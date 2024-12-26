@@ -1,9 +1,23 @@
 .sexta__sessao {
-    margin-bottom: 1rem;;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-bottom: 0.5rem;
+    padding: 0.7rem;
+    text-wrap: wrap;
     &__dev {
         color: white;
-        font-weight: 700;
-        margin-bottom: 0.5rem;;
+        font-weight: 400;
+        margin: 0 0 0.5rem 0;
+        font-size: 0.8rem;
+
+        &-1 {
+            margin-bottom: 2rem;;
+            font-size: 0.8rem;
+            border: 1px solid white;
+            border-radius: 9px;
+            padding: 0.7rem;
+        }
     }
 
     &__link {
