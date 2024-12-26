@@ -8,16 +8,19 @@
     &__dev {
         color: white;
         font-weight: 400;
-        margin: 0 0 0.5rem 0;
+        margin-bottom: 0.5rem;
         font-size: 0.8rem;
 
         &-1 {
             margin-bottom: 2rem;;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             border: 1px solid white;
             border-radius: 9px;
             padding: 0.7rem;
         }
+    }
+    &-desen {
+         font-weight: 500;
     }
 
     &__link {
