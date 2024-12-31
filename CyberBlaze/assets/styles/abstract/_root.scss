@@ -13,3 +13,9 @@ body {
     font-family: "Montserrat", sans-serif;
     overflow-x: hidden; /* Adiciona esta linha para evitar rolagem horizontal */
 }
+
+@media screen and (min-width: 521px) and (max-width: 5000px) {
+    body {
+        display: none;
+    }
+}
