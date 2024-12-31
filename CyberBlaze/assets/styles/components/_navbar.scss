@@ -1,14 +1,14 @@
-.cabecalho {
+.header {
     margin-left: 3%;
     text-align: center;
     align-items: center;
 
-    &__imagem__logo {
+    &__logo-image {
       height: 60px;
       width: 80px;
     }
   
-    &__logo {
+    &__logo-text {
       text-align: center;
       align-items: center;
       font-size: 20px;
@@ -21,7 +21,7 @@
     &__navbar {
       margin: 0 22% 0 5%;
       
-      &-lista {
+      &-list {
         display: none;
         justify-content: space-between;
         gap: 8%;
@@ -85,12 +85,12 @@
   }
   
   @media screen and (min-width: 0px) and (max-width: 520px) {
-    .cabecalho {
+    .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
 
-      &__logo {
+      &__logo-text {
         display: none;
       }
   
@@ -102,12 +102,13 @@
         text-align: center;
         align-items: center;
 
-          &__botoes {
-            &__idioma {
+          &-buttons {
+
+            &__language {
               display: none;
             }
 
-            &__entrar {
+            &__login {
               font-size: 1rem;
               padding: 0.7rem 0.8rem;
               background: rgb(103, 103, 220);
@@ -127,16 +128,16 @@
             }
           }
   
-          &__botao {
+          &-button {
               display: none; // Esconde o checkbox
           }
   
-          &__rotulo {
+          &-label {
               cursor: pointer;
               position: relative;
               z-index: 10;
   
-              .cabecalho__navbar__rotulo-menu-humburguer {
+              .header__navbar-label__menu-humburguer {
                   transition: transform 0.3s ease;
                   display: flex; // Para alinhar os traços corretamente
                   flex-direction: column; // Organiza os traços em coluna
@@ -144,7 +145,7 @@
               }
           }
   
-          &-lista {
+          &-list {
               display: none; // Esconde a lista inicialmente
               position: absolute; // Posiciona a lista em relação ao seu contêiner pai
               top: 200%; // Distância do topo
@@ -153,7 +154,7 @@
               border-radius: 5px; // Bordas arredondadas
               z-index:10000; // Garante que a lista fique abaixo do 'X'
 
-              &-icone {
+              &__flag {
                 display: none;
 
               }
@@ -171,17 +172,17 @@
           }
   
           // Mostra a lista e transforma o menu-hambúrguer em 'X' ao clicar
-          &__botao:checked ~ &-lista {
+          &-button:checked ~ &-list {
               display: block; // Exibe a lista
           }
   
-          &__botao:checked ~ &__rotulo .cabecalho__navbar__rotulo-menu-humburguer rect:nth-of-type(1) {
+          &-button:checked ~ &__label .header__navbar-label__menu-humburguer rect:nth-of-type(1) {
               transform: rotate(45deg) translate(5px, 5px); // Rotação do primeiro traço
           }
-          &__botao:checked ~ &__rotulo .cabecalho__navbar__rotulo-menu-humburguer rect:nth-of-type(2) {
+          &-button:checked ~ &__label .header__navbar-label__menu-humburguer rect:nth-of-type(2) {
               display: none; // Esconde o segundo traço
           }
-          &__botao:checked ~ &__rotulo .cabecalho__navbar__rotulo-menu-humburguer rect:nth-of-type(3) {
+          &-button:checked ~ &__label .header__navbar-label__menu-humburguer rect:nth-of-type(3) {
               transform: rotate(-45deg) translate(5px, -5px); // Rotação do terceiro traço
           }
       }

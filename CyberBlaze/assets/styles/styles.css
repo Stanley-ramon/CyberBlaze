@@ -69,16 +69,16 @@ body {
   overflow-x: hidden; /* Adiciona esta linha para evitar rolagem horizontal */
 }
 
-.cabecalho {
+.header {
   margin-left: 3%;
   text-align: center;
   align-items: center;
 }
-.cabecalho__imagem__logo {
+.header__logo-image {
   height: 60px;
   width: 80px;
 }
-.cabecalho__logo {
+.header__logo-text {
   text-align: center;
   align-items: center;
   font-size: 20px;
@@ -87,22 +87,22 @@ body {
   color: white;
   display: block;
 }
-.cabecalho__navbar {
+.header__navbar {
   margin: 0 22% 0 5%;
 }
-.cabecalho__navbar-lista {
+.header__navbar-list {
   display: none;
   justify-content: space-between;
   gap: 8%;
   text-wrap: nowrap;
   list-style: none;
 }
-.cabecalho__navbar__link {
+.header__navbar__link {
   text-transform: uppercase;
   text-decoration: none;
   color: white;
 }
-.cabecalho__navbar__link:hover {
+.header__navbar__link:hover {
   color: orange;
 }
 
@@ -146,15 +146,15 @@ body {
 }
 
 @media screen and (min-width: 0px) and (max-width: 520px) {
-  .cabecalho {
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .cabecalho__logo {
+  .header__logo-text {
     display: none;
   }
-  .cabecalho__navbar {
+  .header__navbar {
     display: flex;
     position: relative;
     gap: 1rem;
@@ -162,10 +162,10 @@ body {
     text-align: center;
     align-items: center;
   }
-  .cabecalho__navbar__botoes__idioma {
+  .header__navbar-buttons__language {
     display: none;
   }
-  .cabecalho__navbar__botoes__entrar {
+  .header__navbar-buttons__login {
     font-size: 1rem;
     padding: 0.7rem 0.8rem;
     background: rgb(103, 103, 220);
@@ -176,27 +176,27 @@ body {
     text-transform: uppercase;
     font-family: "Montserrat sans,serif";
   }
-  .cabecalho__navbar__botoes__entrar:hover {
+  .header__navbar-buttons__login:hover {
     border-color: white;
     font-size: 1.1rem;
     font-weight: 700;
     text-transform: uppercase;
   }
-  .cabecalho__navbar__botao {
+  .header__navbar-button {
     display: none;
   }
-  .cabecalho__navbar__rotulo {
+  .header__navbar-label {
     cursor: pointer;
     position: relative;
     z-index: 10;
   }
-  .cabecalho__navbar__rotulo .cabecalho__navbar__rotulo-menu-humburguer {
+  .header__navbar-label .header__navbar-label__menu-humburguer {
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
     gap: 4px;
   }
-  .cabecalho__navbar-lista {
+  .header__navbar-list {
     display: none;
     position: absolute;
     top: 200%;
@@ -205,28 +205,28 @@ body {
     border-radius: 5px;
     z-index: 10000;
   }
-  .cabecalho__navbar-lista-icone {
+  .header__navbar-list__flag {
     display: none;
   }
-  .cabecalho__navbar-lista__link {
+  .header__navbar-list__link {
     color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
   }
-  .cabecalho__navbar-lista__link:hover {
+  .header__navbar-list__link:hover {
     background: #555;
   }
-  .cabecalho__navbar__botao:checked ~ .cabecalho__navbar-lista {
+  .header__navbar-button:checked ~ .header__navbar-list {
     display: block;
   }
-  .cabecalho__navbar__botao:checked ~ .cabecalho__navbar__rotulo .cabecalho__navbar__rotulo-menu-humburguer rect:nth-of-type(1) {
+  .header__navbar-button:checked ~ .header__navbar__label .header__navbar-label__menu-humburguer rect:nth-of-type(1) {
     transform: rotate(45deg) translate(5px, 5px);
   }
-  .cabecalho__navbar__botao:checked ~ .cabecalho__navbar__rotulo .cabecalho__navbar__rotulo-menu-humburguer rect:nth-of-type(2) {
+  .header__navbar-button:checked ~ .header__navbar__label .header__navbar-label__menu-humburguer rect:nth-of-type(2) {
     display: none;
   }
-  .cabecalho__navbar__botao:checked ~ .cabecalho__navbar__rotulo .cabecalho__navbar__rotulo-menu-humburguer rect:nth-of-type(3) {
+  .header__navbar-button:checked ~ .header__navbar__label .header__navbar-label__menu-humburguer rect:nth-of-type(3) {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 }
@@ -251,24 +251,24 @@ body {
     transform: translateY(-40px);
   }
 }
-.principal {
+.hero-section {
   display: flex;
   align-items: center;
 }
-.principal__container {
+.hero-section__content {
   margin: 0% 11% 0% 7%;
   display: flex;
   flex-direction: column;
 }
-.principal__caixa {
+.hero-section__box {
   position: relative;
   display: flex;
   flex-direction: column;
 }
-.principal__caixa__texto {
+.hero-section__box__title {
   font-size: 1.7rem;
 }
-.principal__caixa__popup-container {
+.hero-section__box__popup-container {
   position: absolute;
   top: -100%;
   left: 0;
@@ -279,25 +279,25 @@ body {
   opacity: 0; /* Inicialmente invisível */
   transition: opacity 1s ease-in-out;
 }
-.principal__caixa__popup-container.show {
+.hero-section__box__popup-container.show {
   animation: slide-down 1s ease-in-out forwards, bounce 3s 0.4s ease-in-out;
 }
-.principal__caixa__popup-container__conteudo {
+.hero-section__box__popup-container__conteudo {
   background-color: #fff;
   padding: 0.7rem;
   border-radius: 10px;
 }
-.principal__caixa__popup-container__conteudo h1 {
+.hero-section__box__popup-container__conteudo h1 {
   font-size: 2.2rem;
   color: black;
   font-weight: 700;
 }
-.principal__sublinhados {
+.hero-section__highlights {
   display: flex;
   margin: 11rem 0 3rem 0;
   gap: 1.5rem;
 }
-.principal__sublinhados__texto {
+.hero-section__highlights-text {
   display: flex;
   flex-wrap: wrap;
   text-wrap: wrap;
@@ -311,27 +311,27 @@ body {
   z-index: 1;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
-.principal__precos {
+.hero-section__pricing {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
-.principal__precos__subtitulo {
+.hero-section__pricing-title {
   font-size: 1.5rem;
   font-weight: 700;
 }
-.principal__precos__subtitulo__destaque {
+.hero-section__pricing-title__highlight {
   font-size: 1.8rem;
 }
-.principal__precos__texto {
+.hero-section__pricing-description {
   font-size: 14px;
 }
-.principal__botao {
+.hero-section__botao {
   display: flex;
   margin-top: 4rem;
   justify-content: center;
 }
-.principal__botao-link {
+.hero-section__botao-link {
   text-decoration: none;
   color: white;
   border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
@@ -342,16 +342,16 @@ body {
   border-radius: 13px;
   background: linear-gradient(to right, #f4855d, #4b0082);
 }
-.principal__botao-link:hover {
+.hero-section__botao-link:hover {
   background: linear-gradient(to right, #4b0082, #f4855d);
   font-size: 1.2rem;
 }
-.principal__segundo__container {
+.hero-section__cta {
   display: flex;
   align-items: center;
   text-align: center;
 }
-.principal__segundo__container__imagem {
+.hero-section__cta__imagem {
   height: 500px;
   width: 500px;
   margin-right: 17%;
@@ -359,21 +359,21 @@ body {
 }
 
 @media screen and (min-width: 0px) and (max-width: 520px) {
-  .principal {
+  .hero-section {
     gap: 1rem;
     flex-direction: column;
     margin-top: 10%;
     font-family: "Montserrat", sans-serif;
   }
-  .principal__caixa {
+  .hero-section__box {
     position: relative;
     text-align: start;
   }
-  .principal__caixa__texto {
+  .hero-section__box__texto {
     font-size: 1.2rem;
     padding-right: 0.2rem;
   }
-  .principal__caixa__popup-container {
+  .hero-section__box__popup-container {
     position: absolute;
     top: -100%;
     left: 0;
@@ -383,27 +383,27 @@ body {
     opacity: 0; /* Inicialmente invisível */
     transition: opacity 1s ease-in-out;
   }
-  .principal__caixa__popup-container.show {
+  .hero-section__box__popup-container.show {
     animation: slide-down 1s ease-in-out forwards, bounce 3s 0.4s ease-in-out;
   }
-  .principal__caixa__popup-container__conteudo {
+  .hero-section__box__popup-container__conteudo {
     background: none !important;
     border-radius: 10px;
     text-wrap: wrap;
     margin: -0.7rem;
   }
-  .principal__caixa__popup-container__conteudo h2 {
+  .hero-section__box__popup-container__conteudo h2 {
     font-size: 1.6rem;
     color: white;
     font-weight: 800;
     text-wrap: wrap;
     font-family: "Montserrat", sans-serif;
   }
-  .principal__sublinhados {
+  .hero-section__highlights {
     margin: 7rem 4rem 1rem 0;
     gap: 1.8rem;
   }
-  .principal__sublinhados__texto {
+  .hero-section__highlights-text {
     text-align: start;
     flex-wrap: wrap;
     text-wrap: wrap;
@@ -416,34 +416,34 @@ body {
     z-index: 1;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
-  .principal__precos {
+  .hero-section__pricing {
     gap: 0.5rem;
     text-align: start;
   }
-  .principal__precos__subtitulo {
+  .hero-section__pricing-title {
     font-size: 1.2rem;
     font-weight: 700;
     text-wrap: wrap;
   }
-  .principal__precos__subtitulo__destaque {
+  .hero-section__pricing-title__highlight {
     font-size: 1.2rem;
     font-weight: 700;
   }
-  .principal__precos__texto {
+  .hero-section__pricing-description {
     font-size: 0.8rem;
     color: rgb(148, 141, 141);
   }
-  .principal__segundo__container {
+  .hero-section__cta {
     margin-top: 0.5rem;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     gap: 1rem;
   }
-  .principal__segundo__container__botao {
+  .hero-section__cta-button {
     margin: 0.7rem;
   }
-  .principal__segundo__container__botao-link {
+  .hero-section__cta-button__link {
     text-decoration: none;
     color: white;
     border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
@@ -455,11 +455,11 @@ body {
     border-radius: 13px;
     background: linear-gradient(to right, #FF7F50, #8A2BE2);
   }
-  .principal__segundo__container__botao-link:hover {
+  .hero-section__cta-button__link:hover {
     background: linear-gradient(to right, #8A2BE2, #FF7F50);
     font-size: 1.3rem;
   }
-  .principal__segundo__container__imagem {
+  .hero-section__cta__image {
     width: 100%; /* Garante que a imagem ocupe 100% da largura do contêiner */
     max-width: 330px; /* Limita o tamanho máximo da imagem */
     height: auto; /* Mantém a proporção da imagem */
@@ -586,7 +586,7 @@ body {
   margin: -1rem;
 }
 .terceira__sessao-cards__itens__texto {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: gray;
 }
 .terceira__sessao-cards__itens__titulo {
@@ -613,7 +613,7 @@ body {
   font-weight: 700;
 }
 .quarta__sessao__textos__texto {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 .quarta__sessao__imagem {
   width: 80%;
@@ -630,7 +630,7 @@ body {
   font-size: 0.8rem;
   font-weight: 400;
   padding: 0.9rem;
-  color: rgb(148, 141, 141);
+  color: white;
 }
 .quarta__sessao__segunda-div__imagem {
   width: 60%;
@@ -772,6 +772,7 @@ body {
   font-size: 1.3rem;
   font-weight: 700;
   margin: 3rem 0 3rem 0;
+  padding: 0.2rem;
 }
 .section-games-carousel__container {
   display: flex;
@@ -850,19 +851,19 @@ body {
   font-size: 1.3rem;
   font-weight: 700;
   margin: 2.5rem 0 2rem 0;
+  padding: 0.6rem;
 }
 .anydevice__image {
   width: 100%;
   height: 100%;
 }
 .anydevice__big__title {
-  font-size: 1.5rem;
   text-align: start;
-  padding-left: 1rem;
+  padding: 0 0 0.7rem 1rem;
   font-weight: 800;
   text-transform: uppercase;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 .anydevice__big__title.jump-kick {
@@ -935,7 +936,7 @@ body {
   text-wrap: wrap;
 }
 .sexta__sessao__dev {
-  color: white;
+  color: rgb(148, 141, 141);
   font-weight: 400;
   margin-bottom: 0.5rem;
   font-size: 0.8rem;

@@ -12,63 +12,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="cabecalho">
-        <img class="cabecalho__imagem__logo" src="./CyberBlaze/assets/imgs/header/design_da_chama_roxa-com o fundo removido.png" alt="Logo">
-        <p class="cabecalho__logo">CyberBlaze</p>
-        <nav class="cabecalho__navbar">
-            <div class="cabecalho__navbar__botoes">
-                <a class="cabecalho__navbar__botoes__idioma" href="#">
+    <header class="header">
+        <img class="header__logo-image" src="./CyberBlaze/assets/imgs/header/design_da_chama_roxa-com o fundo removido.png" alt="Logo">
+        <p class="header__logo-text">CyberBlaze</p>
+        <nav class="header__navbar">
+            <div class="header__navbar-buttons">
+                <a class="header__navbar-buttons__language" href="#">
                     <img src="./CyberBlaze/assets/imgs/header/icons8-brasil-emoji-48.png" class="bandeira-brasil" alt="Brasil">
                     Português
                 </a>
-                <a class="cabecalho__navbar__botoes__entrar" href="#">Entrar</a>
+                <a class="header__navbar-buttons__login" href="./login/login.html">Entrar</a>
             </div>
-            <input type="checkbox" id="menu" class="cabecalho__navbar__botao">
-            <label for="menu" class="cabecalho__navbar__rotulo">
-                <svg class="cabecalho__navbar__rotulo-menu-humburguer" width="30" height="24" viewBox="0 0 30 24" xmlns="http://www.w3.org/2000/svg">
+            <input type="checkbox" id="menu" class="header__navbar-button">
+            <label for="menu" class="header__navbar-label">
+                <svg class="header__navba-label__menu-humburguer" width="30" height="24" viewBox="0 0 30 24" xmlns="http://www.w3.org/2000/svg">
                     <rect width="12" height="4" fill="#fff" />
                     <rect y="10" width="30" height="4" fill="#fff" />
                     <rect y="20" width="18" height="4" fill="#fff" />
                 </svg>
             </label>
-            <ul class="cabecalho__navbar-lista">
-                <a class="cabecalho__navbar-lista-icone" href="#"><img src="./CyberBlaze/assets/imgs/header/icons8-brasil-emoji-48.png">Brasil</a>
-                <li><a class="cabecalho__navbar-lista__link" href="./cyberblaze-games/games.html">jogos</a></li>
-                <li><a class="cabecalho__navbar-lista__link" href="#">baixados</a></li>
-                <li><a class="cabecalho__navbar-lista__link" href="#">perguntas frequentes</a></li>
-                <li><a class="cabecalho__navbar-lista__link" href="#">central de ajuda</a></li>
-                <li><a class="cabecalho__navbar-lista__link" href="#">blogue</a></li>
+            <ul class="header__navbar-list">
+                <a class="header__navbar-list__flag" href="#">
+                    <img src="./CyberBlaze/assets/imgs/header/icons8-brasil-emoji-48.png">
+                    Brasil
+                </a>
+                <li>
+                    <a class="header__navbar-list__link" href="./cyberblaze-games/games.html">jogos</a>
+                </li>
+                <li>
+                    <a class="header__navbar-list__link" href="#">baixados</a>
+                </li>
+                <li>
+                    <a class="header__navbar-list__link" href="#">perguntas frequentes</a>
+                </li>
+                <li>
+                    <a class="header__navbar-list__link" href="#">central de ajuda</a>
+                </li>
+                <li>
+                    <a class="header__navbar-list__link" href="#">blogue</a>
+                </li>
             </ul>
         </nav>
     </header>
     
-    <section class="principal">
-        <div class="principal__container">
-            <div class="principal__caixa">
-                <h1 class="principal__caixa__texto">PLATAFORMA DE JOGOS EM NUVEM</h1>
-                <div class="principal__caixa__popup-container">
-                    <div class="principal__caixa__popup-container__conteudo">
+    <section class="hero-section">
+        <div class="hero-section__content">
+            <div class="hero-section__box">
+                <h1 class="hero-section__box-texto">PLATAFORMA DE JOGOS EM NUVEM</h1>
+                <div class="hero-section__box__popup-container">
+                    <div class="hero-section__box__popup-container__conteudo">
                         <h2>JOGUE SEUS JOGOS SEMPRE. EM QUALQUER LUGAR</h2>
                     </div>
                 </div>
             </div>
-            <div class="principal__sublinhados">
-                <p class="principal__sublinhados__texto">Execute jogos para PC em qualquer dispositivo</p>
-                <p class="principal__sublinhados__texto">Sem downloads! Jogar no navegador</p>
+            <div class="hero-section__highlights">
+                <p class="hero-section__highlights-text">Execute jogos para PC em qualquer dispositivo</p>
+                <p class="hero-section__highlights-text">Sem downloads! Jogar no navegador</p>
             </div>
-            <div class="principal__precos">
-                <h3 class="principal__precos__subtitulo">
+            <div class="hero-section__pricing">
+                <h3 class="hero-section__pricing-title">
                     Configurações altas — Preços baixos <strong>de</strong>
-                    <strong class="principal__precos__subtitulo__destaque">R$ 49,89.</strong>
+                    <strong class="hero-section__pricing-title__highlight">R$ 49,89.</strong>
                 </h3>
-                <p class="principal__precos__texto">por mês com assinatura semestral.</p>
+                <p class="hero-section__pricing-description">por mês com assinatura semestral.</p>
             </div>
         </div>
-        <div class="principal__segundo__container">
-            <div class="principal__segundo__container__botao"> 
-                <a href="./cyberblaze-games/games.html" class="principal__segundo__container__botao-link">Jogar agora</a>
+        <div class="hero-section__cta">
+            <div class="hero-section__cta-button"> 
+                <a href="./cyberblaze-games/games.html" class="hero-section__cta-button__link">Jogar agora</a>
             </div>
-            <img src="./CyberBlaze/assets/imgs/sessao principal/imagem do container principal sem fundo.png" class="principal__segundo__container__imagem" alt="Imagem Principal">
+            <img src="./CyberBlaze/assets/imgs/sessao principal/imagem do container principal sem fundo.png" class="hero-section__cta__image" alt="Imagem Principal">
         </div>
     </section>
 
@@ -571,11 +584,11 @@
     </section>
 
     <section class="sexta__sessao">
-        <p class="sexta__sessao__dev-1">Este é um projeto de estudo. A prática é o segredo para melhorar!</p>
-        <P class="sexta__sessao__dev">® 2024 CyberBlaze. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.</P>
+        <p class="sexta__sessao__dev-1">Este é um projeto de estudo. A prática constante é o caminho para evoluir!</p>
+        <P class="sexta__sessao__dev">® 2025 CyberBlaze. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.</P>
         <P class="sexta__sessao-desen">Desenvolvido por
             <a  class="sexta__sessao__link" href="https://www.instagram.com/stanley_478">
-                @stanley_478
+                @Stanley_478
             </a>
         </P>
     </section>

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let lastScrollPosition = window.pageYOffset;
 
     // Seleciona o container do popup
-    const popupContainer = document.querySelector('.principal__caixa__popup-container');
+    const popupContainer = document.querySelector('.hero-section__box__popup-container');
 
     // Função para detectar o scroll
     window.addEventListener('scroll', function () {

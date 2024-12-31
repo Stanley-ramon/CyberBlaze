@@ -1,0 +1,42 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #000, #4B0082, #8A2BE2);
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.main__botao {
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+  border: 3px solid black;
+  border-radius: 0.8rem;
+  width: 15%;
+  margin: 7% 0 0 5%;
+  background-color: white;
+  color: black;
+  padding: 0.3rem;
+  font-weight: 600;
+}
+.main__titulo {
+  margin-top: 45%;
+  color: orange;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+.main__link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=styles.css.map */

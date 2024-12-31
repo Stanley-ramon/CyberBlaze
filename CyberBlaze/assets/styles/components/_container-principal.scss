@@ -23,22 +23,22 @@
     }
   }
   
-  .principal {
+  .hero-section {
     display: flex;
     align-items: center;
   
-    &__container {
+    &__content {
       margin: 0% 11% 0% 7%;
       display: flex;
       flex-direction: column;
     }
   
-    &__caixa {
+    &__box {
       position: relative; // Para que o popup seja posicionado em relação a esta div
       display: flex;
       flex-direction: column;
   
-      &__texto {
+      &__title {
         font-size: 1.7rem;
       }
   
@@ -71,12 +71,12 @@
       }
     }
   
-    &__sublinhados {
+    &__highlights {
       display: flex;
       margin: 11rem 0 3rem 0;
       gap: 1.5rem;
   
-      &__texto {
+      &-text {
         display: flex;
         flex-wrap: wrap;
         text-wrap: wrap;
@@ -102,21 +102,21 @@
     }
     }
   
-    &__precos {
+    &__pricing {
       display: flex;
       flex-direction: column;
       gap: 0.7rem;
   
-      &__subtitulo {
+      &-title {
         font-size: 1.5rem;
         font-weight: 700;
   
-        &__destaque {
+        &__highlight {
           font-size: 1.8rem;
         }
       }
   
-      &__texto {
+      &-description{
         font-size: 14px;
       }
     }
@@ -144,7 +144,7 @@
       }
     }
   
-    &__segundo__container {
+    &__cta {
       display: flex;
       align-items: center;
       text-align: center;
@@ -159,13 +159,13 @@
   }
 
   @media screen and (min-width: 0px) and (max-width: 520px) {
-    .principal {
+    .hero-section {
       gap: 1rem;
       flex-direction: column;
       margin-top: 10%;
       font-family: "Montserrat", sans-serif;
     
-      &__caixa {
+      &__box {
         position: relative; // Para que o popup seja posicionado em relação a esta div
         text-align: start;
     
@@ -205,11 +205,11 @@
         }
       }
 
-      &__sublinhados {
+      &__highlights {
         margin: 7rem 4rem 1rem 0;
         gap: 1.8rem;
     
-        &__texto {
+        &-text {
           text-align: start;
           flex-wrap: wrap;
           text-wrap: wrap;
@@ -233,38 +233,38 @@
         }
       }
 
-      &__precos {
+      &__pricing {
         gap: 0.5rem;
         text-align: start;
     
-        &__subtitulo {
+        &-title {
           font-size: 1.2rem;
           font-weight: 700;
            text-wrap: wrap;
     
-          &__destaque {
+          &__highlight{
             font-size: 1.2rem;
             font-weight: 700;
           }
         }
     
-        &__texto {
+        &-description {
           font-size: 0.8rem;
           color: rgb(148, 141, 141);
         }
       }
 
-      &__segundo__container {
+      &__cta {
           margin-top: 0.5rem;
           flex-direction: column;
           text-align: center;
           justify-content: center;
           gap: 1rem;
 
-          &__botao {
+          &-button {
               margin: 0.7rem;
 
-              &-link {
+              &__link {
                 text-decoration: none;
                 color: white;
                 border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
@@ -283,7 +283,7 @@
             }
           }
 
-          &__imagem {
+          &__image {
             width: 100%; /* Garante que a imagem ocupe 100% da largura do contêiner */
             max-width: 330px; /* Limita o tamanho máximo da imagem */
             height: auto; /* Mantém a proporção da imagem */
