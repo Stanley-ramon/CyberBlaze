@@ -1,0 +1,41 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 1rem;
+        margin: 20% 0 0 22%;
+        
+        &-group {
+            &__input {
+                background: transparent;
+                color: white;
+            }
+        }
+
+        &-check {
+              display: flex;
+        }
+       
+        &-button {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background: linear-gradient(to right, #FF7F50, #8A2BE2);
+            color:white;
+            width: 80%;
+            font-size: 1rem;
+            padding: 1rem 2rem;
+            border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
+            border-radius: 10px;
+        }
+
+
+    }
+}
