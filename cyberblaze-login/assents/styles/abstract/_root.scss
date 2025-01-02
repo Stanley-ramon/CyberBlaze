@@ -7,6 +7,11 @@ body {
     height: 100vh;
     color: white;
     display: flex;
-    text-align: center;
-    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+    align-items: center;
+    justify-content: start;
+    font-size: 1rem;
+    font-weight: 400;
+   
 }

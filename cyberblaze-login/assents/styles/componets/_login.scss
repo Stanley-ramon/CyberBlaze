@@ -1,41 +1,164 @@
 .main {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
+    margin: 2rem 2rem 0 2rem;
+    gap: 3rem;
+    text-align: center;
+    
+    &__titles {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+       
+        font-size: 1.5rem;
+        text-transform: uppercase;
+
+        &-title {
+            
+        }
+
+        &-subtitle {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
     
     &__inputs {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: start;
         gap: 1rem;
-        margin: 20% 0 0 22%;
+        width: 100%;
+
+        &-text {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform:uppercase;
+        }
         
+        
+        &-button__google {
+            display: flex;
+            width: 100%;
+            padding: 0.2rem 2rem;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            border-radius: 8px;
+            color: rgb(92, 87, 87);
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            gap: 0.4rem;
+        }
+
+        &-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            width: 100%;
+            margin: 1rem 0;
+
+            &::before,
+            &::after {
+                content: "";
+                flex: 1;
+                height: 0.5px;
+                background-color: white;
+            }
+        }
+
         &-group {
+            position: relative;
+           text-align: start;
+           width: 100%;
+           input::-ms-reveal, 
+           input::-ms-clear, 
+           input::-webkit-clear-button, 
+           input::-webkit-inner-spin-button, 
+           input::-webkit-reveal-button {
+               display: none; /* Remove os ícones padrão */
+           }
+
             &__input {
+                padding-right: 2.5rem;;
                 background: transparent;
                 color: white;
+                border: none;
+                border-bottom: 1px solid white;
+                outline: none;
+                width: 100%; /* Adicione esta linha */
+                box-sizing: border-box;
+
+            }
+
+            .toggle-password {
+                position: absolute;
+                right: 0.5rem;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+            }
+        
+            .toggle-password svg {
+                width: 19px;
+                height: 19px;
+                transition: fill 0.3s ease; /* Efeito suave ao mudar a cor */
             }
         }
 
         &-check {
               display: flex;
+              text-align: center;
+              align-items: center;
+              gap: 5rem;
+
+              &__container {
+                    display: flex;
+                    align-items: center;
+
+                    &-text {
+                        font-size: 0.7rem;
+                    }
+
+              }
+
+              &__link {
+                font-size: 0.9rem;;
+                color:rgb(255, 255, 255);
+              }
         }
        
-        &-button {
+        &-button__login {
             display: flex;
             justify-content: center;
             text-align: center;
             align-items: center;
             background: linear-gradient(to right, #FF7F50, #8A2BE2);
             color:white;
-            width: 80%;
+            width: 100%;
             font-size: 1rem;
-            padding: 1rem 2rem;
+            padding: 0.7rem 1.5rem;
             border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
             border-radius: 10px;
+            text-transform: uppercase;
+            font-weight: 700;
         }
+        
+        &-create {
+            display: flex;
+            gap: 0.5rem;
+            color: rgb(231, 227, 227);
+            font-size: 0.9rem;
 
+            &__link {
+                color: black;
+            }
+        }
 
     }
 }
