@@ -226,7 +226,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;  
-      margin-left: 3%;
+      margin: 2% 0 0 3%;
       text-align: center;
 
       &__logo {
@@ -252,6 +252,7 @@
       &__navbar {
         margin: 0 4% 0 5%;
         display: flex;
+        position: relative;
         align-items: center;
 
         &-buttons {
@@ -302,7 +303,7 @@
           position: relative;
           z-index: 10;
 
-          .header__navbar-label__menu-humburguer {
+          &__menu-humburguer {
               transition: transform 0.3s ease;
               display: flex; // Para alinhar os traços corretamente
               flex-direction: column; // Organiza os traços em coluna
@@ -313,23 +314,33 @@
         &-list {
           display: none; // Esconde a lista inicialmente
           position: absolute; // Posiciona a lista em relação ao seu contêiner pai
+          padding: 10%;
           top: 200%; // Distância do topo
           right: 0; // Alinha à direita
           background: #444; // Cor de fundo da lista
           border-radius: 5px; // Bordas arredondadas
           z-index:10000; // Garante que a lista fique abaixo do 'X'
-        }
-      
-        &__link {
-          text-transform: uppercase;
-          text-decoration: none;
-          color: white;
-      
-          &:hover {
-            color: orange;
+
+          &__link {
+            display: flex;
+            justify-content: start;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            margin: 0.4rem 1rem 1rem 0;
+            text-align: start;
+            align-items: center;
+        
+            &:hover {
+              color: orange;
+            }
+          }
+
+          &__flag {
+            display: none;
           }
         }
-
+      
           // Mostra a lista e transforma o menu-hambúrguer em 'X' ao clicar
         &-button:checked ~ &-list {
           display: block; // Exibe a lista
