@@ -221,7 +221,7 @@
   }
 }
 
-  @media screen and (min-width: 770px) and (max-width: 990px)  {
+  @media screen and (min-width: 770px) and (max-width: 950px)  {
     .header {
       display: flex;
       justify-content: space-between;
@@ -350,5 +350,141 @@
       
     }
     
+  }
+
+  @media screen and (min-width: 950px) {
+    .header {
+      display: flex;
+      position: fixed;
+      background: black;
+      width: 100vw;
+      justify-content: space-between;
+      padding: 1.5rem;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      align-items: center;  
+      text-align: center;
+
+      &__logo {
+        display: flex;
+        align-items: center;
+
+        &-image {
+          height: 60px;
+          width: 80px;
+        }
+
+        &-text {
+          text-align: center;
+          align-items: center;
+          font-size: 20px;
+          text-transform: uppercase;
+          gap: 0.5rem;
+          color: white;
+          display: block;
+        }
+      }
+    
+      &__navbar {
+        margin: 0 4% 0 5%;
+        display: flex;
+        position: relative;
+        align-items: center;
+
+        &-buttons {
+          display: flex;
+          justify-content: space-between;
+
+          &__language {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            border-radius: 7px;
+            font-size: 0.6rem;
+            padding: 0.1rem 0.6rem;
+            gap: 0.2rem;
+
+            &-flag {
+              height: 2rem;
+              width: 2rem;
+            }
+          }
+
+          &__login {
+            display: flex;
+            margin-left: 1rem;
+            font-size: 1rem;
+            padding: 0 1.5rem;;
+            background: rgb(85, 85, 242);
+            border-color: rgb(85, 85, 242);
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            align-items: center;
+            border-radius: 10px;
+            font-weight: 700;
+          }
+        }
+
+        &-button {
+          display: none;
+        }
+
+        &-label {
+          margin-left: 1rem;
+          cursor: pointer;
+          position: relative;
+          z-index: 10;
+
+          &__menu-humburguer {
+              transition: transform 0.3s ease;
+              display: flex; // Para alinhar os traços corretamente
+              flex-direction: column; // Organiza os traços em coluna
+              gap: 4px; // Espaçamento entre os traços
+          }
+        }
+        
+        &-list {
+          display: none; // Esconde a lista inicialmente
+          position: absolute; // Posiciona a lista em relação ao seu contêiner pai
+          padding: 10%;
+          top: 200%; // Distância do topo
+          right: 0; // Alinha à direita
+          background: #444; // Cor de fundo da lista
+          border-radius: 5px; // Bordas arredondadas
+          z-index:10000; // Garante que a lista fique abaixo do 'X'
+
+          &__link {
+            display: flex;
+            justify-content: start;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            margin: 0.4rem 1rem 1rem 0;
+            text-align: start;
+            align-items: center;
+        
+            &:hover {
+              color: orange;
+            }
+          }
+
+          &__flag {
+            display: none;
+          }
+        }
+      
+          // Mostra a lista e transforma o menu-hambúrguer em 'X' ao clicar
+        &-button:checked ~ &-list {
+          display: block; // Exibe a lista
+        }
+        
+      }
+      
+    }
   }
   
