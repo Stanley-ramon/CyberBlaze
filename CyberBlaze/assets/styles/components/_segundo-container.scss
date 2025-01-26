@@ -1,13 +1,8 @@
 .segunda__sessao {
-    &__titulo {
-        font-size: 1.3rem;
-        margin: 4rem 0 3rem 0;
-        font-weight: 700;
-    }
 
     &-imagem {
-        width: 320px;
-        height: 240x;
+        width: 70vw;
+        height: 30vh;
         border-radius: 10px;
     }
 
@@ -39,8 +34,8 @@
                  
 
                 &__imagem {
-                    width: 50px;
-                    height: 50px;
+                    width: 10vw;
+                    height: 10vh;
                     padding-right: 1rem;
                 }
 
@@ -88,4 +83,126 @@
 
 .display {
     display: none;
+}
+
+
+@media screen and (min-width: 520px) and (max-width: 770px) {
+    .segunda__sessao {
+
+        &-imagem {
+            width: 80vw;
+            height: 45vh;
+        }
+        
+        &-cards {
+            &__lista {
+
+                &__itens {
+
+                    &__container {
+                        
+                        &__titulo {
+                                font-size: 1.1rem;
+                        }
+        
+                        &__texto {
+                                font-size: 0.9rem;
+                        }
+        
+                        &__imagens {
+        
+                            &__texto {
+                                    font-size: 0.9rem;
+                            }
+                        }
+
+                        &__descricao {
+                                font-size: 0.9rem;;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 770px) and (max-width: 950px) {
+    .segunda__sessao {
+
+        &-imagem {
+            width: 75vw;
+            height: 55vh;
+        }
+        
+        &-cards {
+            &__lista {
+
+                &__itens {
+
+                    &__container {
+                        
+                        &__titulo {
+                                font-size: 1.3rem;
+                        }
+        
+                        &__texto {
+                                font-size: 1rem;
+                        }
+        
+                        &__imagens {
+        
+                            &__texto {
+                                    font-size: 1rem;
+                            }
+                        }
+
+                        &__descricao {
+                                font-size: 0.9rem;;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .segunda__sessao {
+
+        &-imagem {
+            width: 70vw;
+            height: 60vh;
+        }
+        
+        &-cards {
+            &__lista {
+
+                &__itens {
+
+                    &__container {
+                        
+                        &__titulo {
+                                font-size: 1.3rem;
+                        }
+        
+                        &__texto {
+                                font-size: 1rem;
+                        }
+        
+                        &__imagens {
+        
+                            &__texto {
+                                    font-size: 1rem;
+                            }
+                        }
+
+                        &__descricao {
+                                font-size: 0.9rem;;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
