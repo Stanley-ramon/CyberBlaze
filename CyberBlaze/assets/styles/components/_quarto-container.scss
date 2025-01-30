@@ -136,7 +136,7 @@
             padding: 1rem;
             font-family: "Montserrat", sans-serif;
             font-size: 0.9rem;
-            font-weight: 600;
+            font-weight: 700;
             text-transform: uppercase;
             border-radius: 9px;
             background: linear-gradient(to right, #FF7F50, #8A2BE2);
@@ -191,4 +191,122 @@
           }
       }
    } 
+}
+
+@media screen and (min-width: 520px) and (max-width: 770px) {
+  .quarta__sessao {
+     &__textos {
+
+      &__titulo {
+        font-size: 1.4rem;
+      }
+
+      &__texto {
+        font-size: 1rem;
+      }
+     }
+
+     &__imagem{
+      width: 55vw;
+      height: 18vh;
+      margin-bottom: 1rem;;
+     }
+
+     &__listas {
+      &__texto {
+        font-size: 0.9rem;
+      }
+     }
+     
+
+     &__segunda-div {
+       font-size: 0.9rem;
+
+      &__imagem {
+        width: 48vw;
+        height: 20vh;
+      }
+
+      &__listas {
+        &__link {
+          width:40%;
+        }
+      }
+     }
+  }
+}
+
+
+@media screen and (min-width: 770px) and (max-width: 950px) {
+  .quarta__sessao {
+     &__textos {
+
+      &__titulo {
+        font-size: 1.4rem;
+      }
+
+      &__texto {
+        font-size: 1rem;
+      }
+     }
+
+     &__imagem{
+      width: 52vw;
+      height: 22vh;
+      margin-bottom: 1rem;;
+     }
+
+     &__listas {
+      &__texto {
+        font-size: 0.9rem;
+      }
+     }
+     
+
+     &__segunda-div {
+       font-size: 0.9rem;
+
+      &__imagem {
+        width: 45vw;
+        height: 23vh;
+      }
+     }
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .quarta__sessao {
+     &__textos {
+
+      &__titulo {
+        font-size: 1.4rem;
+      }
+
+      &__texto {
+        font-size: 1rem;
+      }
+     }
+
+     &__imagem{
+      width: 52vw;
+      height: 25vh;
+      margin-bottom: 1rem;;
+     }
+
+     &__listas {
+      &__texto {
+        font-size: 0.9rem;
+      }
+     }
+     
+
+     &__segunda-div {
+       font-size: 0.9rem;
+
+      &__imagem {
+        width: 35vw;
+        height: 28vh;
+      }
+     }
+  }
 }

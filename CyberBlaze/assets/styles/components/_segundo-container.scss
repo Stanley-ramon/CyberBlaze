@@ -91,7 +91,7 @@
 
         &-imagem {
             width: 80vw;
-            height: 45vh;
+            height: 50vh;
         }
         
         &-cards {
@@ -131,7 +131,7 @@
     .segunda__sessao {
 
         &-imagem {
-            width: 75vw;
+            width: 80vw;
             height: 55vh;
         }
         
@@ -170,6 +170,10 @@
 @media screen and (min-width: 950px) {
     .segunda__sessao {
 
+        &__titulo {
+            font-size: 1.4rem;;
+        }
+
         &-imagem {
             width: 70vw;
             height: 60vh;
@@ -183,22 +187,22 @@
                     &__container {
                         
                         &__titulo {
-                                font-size: 1.3rem;
+                                font-size: 1.5rem;
                         }
         
                         &__texto {
-                                font-size: 1rem;
+                                font-size: 1.1rem;
                         }
         
                         &__imagens {
         
                             &__texto {
-                                    font-size: 1rem;
+                                    font-size: 1.1rem;
                             }
                         }
 
                         &__descricao {
-                                font-size: 0.9rem;;
+                                font-size: 1rem;;
                         }
                     }
                 }

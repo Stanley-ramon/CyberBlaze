@@ -1082,7 +1082,7 @@ body {
 @media screen and (min-width: 520px) and (max-width: 770px) {
   .segunda__sessao-imagem {
     width: 80vw;
-    height: 45vh;
+    height: 50vh;
   }
   .segunda__sessao-cards__lista__itens__container__titulo {
     font-size: 1.1rem;
@@ -1099,7 +1099,7 @@ body {
 }
 @media screen and (min-width: 770px) and (max-width: 950px) {
   .segunda__sessao-imagem {
-    width: 75vw;
+    width: 80vw;
     height: 55vh;
   }
   .segunda__sessao-cards__lista__itens__container__titulo {
@@ -1116,21 +1116,24 @@ body {
   }
 }
 @media screen and (min-width: 950px) {
+  .segunda__sessao__titulo {
+    font-size: 1.4rem;
+  }
   .segunda__sessao-imagem {
     width: 70vw;
     height: 60vh;
   }
   .segunda__sessao-cards__lista__itens__container__titulo {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .segunda__sessao-cards__lista__itens__container__texto {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .segunda__sessao-cards__lista__itens__container__imagens__texto {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .segunda__sessao-cards__lista__itens__container__descricao {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 .terceira__sessao {
@@ -1153,22 +1156,21 @@ body {
 .terceira__sessao-cards {
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
-  padding-right: 1.6rem;
+  padding: 2.5rem;
   gap: 2rem;
 }
 .terceira__sessao-cards__itens {
   display: flex;
+  gap: 1rem;
   text-align: start;
   font-size: 1rem;
   align-items: center;
   padding: 0.5rem;
 }
 .terceira__sessao-cards__itens-imagem {
-  width: 130px;
-  height: 90px;
-  margin: -1rem;
+  width: 17vw;
+  height: 12vh;
 }
 .terceira__sessao-cards__itens__texto {
   font-size: 0.8rem;
@@ -1180,6 +1182,51 @@ body {
   margin-bottom: 0.7rem;
 }
 
+@media screen and (min-width: 520px) and (max-width: 770px) {
+  .terceira__sessao__titulo {
+    font-size: 1.4rem;
+  }
+  .terceira__sessao-cards__itens-imagem {
+    width: 20vw;
+    height: 15vh;
+  }
+  .terceira__sessao-cards__itens__titulo {
+    font-size: 1.1rem;
+  }
+  .terceira__sessao-cards__itens__texto {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 950px) {
+  .terceira__sessao__titulo {
+    font-size: 1.4rem;
+  }
+  .terceira__sessao-cards__itens-imagem {
+    width: 27vw;
+    height: 20vh;
+  }
+  .terceira__sessao-cards__itens__titulo {
+    font-size: 1.3rem;
+  }
+  .terceira__sessao-cards__itens__texto {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 950px) {
+  .terceira__sessao__titulo {
+    font-size: 1.4rem;
+  }
+  .terceira__sessao-cards__itens-imagem {
+    width: 20vw;
+    height: 15vh;
+  }
+  .terceira__sessao-cards__itens__titulo {
+    font-size: 1.5rem;
+  }
+  .terceira__sessao-cards__itens__texto {
+    font-size: 1.1rem;
+  }
+}
 .quarta__sessao__textos {
   margin: 1rem 1.2rem;
   display: flex;
@@ -1303,7 +1350,7 @@ body {
   padding: 1rem;
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   border-radius: 9px;
   background: linear-gradient(to right, #FF7F50, #8A2BE2);
@@ -1346,6 +1393,78 @@ body {
   font-weight: 500;
 }
 
+@media screen and (min-width: 520px) and (max-width: 770px) {
+  .quarta__sessao__textos__titulo {
+    font-size: 1.4rem;
+  }
+  .quarta__sessao__textos__texto {
+    font-size: 1rem;
+  }
+  .quarta__sessao__imagem {
+    width: 55vw;
+    height: 18vh;
+    margin-bottom: 1rem;
+  }
+  .quarta__sessao__listas__texto {
+    font-size: 0.9rem;
+  }
+  .quarta__sessao__segunda-div {
+    font-size: 0.9rem;
+  }
+  .quarta__sessao__segunda-div__imagem {
+    width: 48vw;
+    height: 20vh;
+  }
+  .quarta__sessao__segunda-div__listas__link {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 950px) {
+  .quarta__sessao__textos__titulo {
+    font-size: 1.4rem;
+  }
+  .quarta__sessao__textos__texto {
+    font-size: 1rem;
+  }
+  .quarta__sessao__imagem {
+    width: 52vw;
+    height: 22vh;
+    margin-bottom: 1rem;
+  }
+  .quarta__sessao__listas__texto {
+    font-size: 0.9rem;
+  }
+  .quarta__sessao__segunda-div {
+    font-size: 0.9rem;
+  }
+  .quarta__sessao__segunda-div__imagem {
+    width: 45vw;
+    height: 23vh;
+  }
+}
+@media screen and (min-width: 950px) {
+  .quarta__sessao__textos__titulo {
+    font-size: 1.4rem;
+  }
+  .quarta__sessao__textos__texto {
+    font-size: 1rem;
+  }
+  .quarta__sessao__imagem {
+    width: 52vw;
+    height: 25vh;
+    margin-bottom: 1rem;
+  }
+  .quarta__sessao__listas__texto {
+    font-size: 0.9rem;
+  }
+  .quarta__sessao__segunda-div {
+    font-size: 0.9rem;
+  }
+  .quarta__sessao__segunda-div__imagem {
+    width: 35vw;
+    height: 28vh;
+  }
+}
 .section-games-carousel {
   margin: 5rem 0 1rem 0;
   margin-bottom: 2rem;
@@ -1386,8 +1505,9 @@ body {
   justify-content: center;
 }
 .section-games-carousel__slider__swipers__swiper__image {
-  height: 100%;
-  width: 100%;
+  margin: 0;
+  height: 80%;
+  width: 80%;
   border-radius: 9px;
 }
 @keyframes scroll-left {
@@ -1429,6 +1549,16 @@ body {
   margin: 0 27.5% 0 27.5%;
 }
 
+@media screen and (min-width: 520px) and (max-width: 770px) {
+  .section-games-carousel__title {
+    font-size: 1.4rem;
+  }
+  .section-games-carousel__slider__swipers__swiper__image {
+    height: 100%;
+    width: 100%;
+    border-radius: 9px;
+  }
+}
 .anydevice {
   margin: 5rem 0 2rem 0;
 }
