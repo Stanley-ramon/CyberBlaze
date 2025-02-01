@@ -1,13 +1,13 @@
 .segunda__sessao {
 
-    &-imagem {
-        width: 70vw;
-        height: 30vh;
-        border-radius: 10px;
-    }
-
+    
     &-cards {
         margin-top: 3.5rem;
+        &__imagem {
+            width: 70vw;
+            height: 30vh;
+            border-radius: 10px;
+        }
         &__lista {
             display: flex;
             flex-direction: column;
@@ -130,12 +130,12 @@
 @media screen and (min-width: 770px) and (max-width: 950px) {
     .segunda__sessao {
 
-        &-imagem {
-            width: 80vw;
-            height: 55vh;
-        }
         
         &-cards {
+            &__imagem {
+                width: 80vw;
+                height: 55vh;
+            }
             &__lista {
 
                 &__itens {
@@ -174,12 +174,15 @@
             font-size: 1.4rem;;
         }
 
-        &-imagem {
-            width: 70vw;
-            height: 60vh;
-        }
         
         &-cards {
+            display: flex;
+            align-items: center;
+
+            &__imagem {
+                width: 80vw;
+                height: 54vh;
+            }
             &__lista {
 
                 &__itens {
@@ -187,11 +190,11 @@
                     &__container {
                         
                         &__titulo {
-                                font-size: 1.5rem;
+                                font-size: 1.4rem;
                         }
         
                         &__texto {
-                                font-size: 1.1rem;
+                                font-size: 1rem;
                         }
         
                         &__imagens {

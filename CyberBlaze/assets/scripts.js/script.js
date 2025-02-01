@@ -49,12 +49,16 @@ window.addEventListener('load', () => {
     ['#games-carousel__slider-1', '#games-carousel__slider-2'].forEach(id => {
         configurarSwiper(id, {
             slidesPerView: 3,
-            spaceBetween: window.innerWidth >= 350 ? 30 : 10,
+            spaceBetween: window.innerWidth >= 350 ? 0 : 10,
             loop: false,
             autoplay: { delay: 0, disableOnInteraction: false, reverseDirection: true },
             speed: 3000,
             freeMode: true,
             freeModeMomentum: false,
+              breakpoints: {
+                0: { slidesPerView: 3 },   // Para telas menores que 950px
+                950: { slidesPerView: 5 }  // Para telas maiores ou iguais a 950px
+            }
         }, true);
     });
 });

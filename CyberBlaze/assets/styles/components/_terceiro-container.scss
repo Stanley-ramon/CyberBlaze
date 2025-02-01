@@ -26,13 +26,22 @@
 
       &__itens {
         display: flex;
+        justify-content: start;
         gap: 1rem;
         text-align: start;
         font-size: 1rem;
         align-items: center;
         padding: 0.5rem;
 
+        &-container {
+          display: flex;
+          text-align: start;
+          flex-direction: column;
+        }
+
         &-imagem {
+          display: flex;
+          align-items: start;
           width: 17vw;
           height: 12vh;
          
@@ -116,8 +125,15 @@
     }
 
     &-cards {
+      padding: 2.5rem 14rem 2.5rem 14rem;
 
       &__itens {
+         justify-content: center;
+        
+        &-container {
+          display: flex;
+          text-align: start;
+        }
 
         &-imagem {
           width: 20vw;

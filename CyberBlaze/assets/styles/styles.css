@@ -1005,13 +1005,13 @@ body {
        object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
   }
 }
-.segunda__sessao-imagem {
+.segunda__sessao-cards {
+  margin-top: 3.5rem;
+}
+.segunda__sessao-cards__imagem {
   width: 70vw;
   height: 30vh;
   border-radius: 10px;
-}
-.segunda__sessao-cards {
-  margin-top: 3.5rem;
 }
 .segunda__sessao-cards__lista {
   display: flex;
@@ -1098,7 +1098,7 @@ body {
   }
 }
 @media screen and (min-width: 770px) and (max-width: 950px) {
-  .segunda__sessao-imagem {
+  .segunda__sessao-cards__imagem {
     width: 80vw;
     height: 55vh;
   }
@@ -1119,15 +1119,19 @@ body {
   .segunda__sessao__titulo {
     font-size: 1.4rem;
   }
-  .segunda__sessao-imagem {
-    width: 70vw;
-    height: 60vh;
+  .segunda__sessao-cards {
+    display: flex;
+    align-items: center;
+  }
+  .segunda__sessao-cards__imagem {
+    width: 80vw;
+    height: 54vh;
   }
   .segunda__sessao-cards__lista__itens__container__titulo {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .segunda__sessao-cards__lista__itens__container__texto {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .segunda__sessao-cards__lista__itens__container__imagens__texto {
     font-size: 1.1rem;
@@ -1162,13 +1166,21 @@ body {
 }
 .terceira__sessao-cards__itens {
   display: flex;
+  justify-content: start;
   gap: 1rem;
   text-align: start;
   font-size: 1rem;
   align-items: center;
   padding: 0.5rem;
 }
+.terceira__sessao-cards__itens-container {
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+}
 .terceira__sessao-cards__itens-imagem {
+  display: flex;
+  align-items: start;
   width: 17vw;
   height: 12vh;
 }
@@ -1215,6 +1227,16 @@ body {
 @media screen and (min-width: 950px) {
   .terceira__sessao__titulo {
     font-size: 1.4rem;
+  }
+  .terceira__sessao-cards {
+    padding: 2.5rem 14rem 2.5rem 14rem;
+  }
+  .terceira__sessao-cards__itens {
+    justify-content: center;
+  }
+  .terceira__sessao-cards__itens-container {
+    display: flex;
+    text-align: start;
   }
   .terceira__sessao-cards__itens-imagem {
     width: 20vw;
@@ -1450,8 +1472,8 @@ body {
     font-size: 1rem;
   }
   .quarta__sessao__imagem {
-    width: 52vw;
-    height: 25vh;
+    width: 40vw;
+    height: 32vh;
     margin-bottom: 1rem;
   }
   .quarta__sessao__listas__texto {
@@ -1493,6 +1515,7 @@ body {
   /* Animação para movimento da esquerda para a direita*/
 }
 .section-games-carousel__slider__swipers {
+  margin: 0;
   display: flex;
   width: 200%; /* Largura do loop contínuo */
   animation: scroll 22s linear infinite; /* Movimento contínuo */
@@ -1505,7 +1528,6 @@ body {
   justify-content: center;
 }
 .section-games-carousel__slider__swipers__swiper__image {
-  margin: 0;
   height: 80%;
   width: 80%;
   border-radius: 9px;
@@ -1553,9 +1575,19 @@ body {
   .section-games-carousel__title {
     font-size: 1.4rem;
   }
+}
+@media screen and (min-width: 770px) and (max-width: 950px) {
+  .section-games-carousel__title {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 950px) {
+  .section-games-carousel__title {
+    font-size: 1.4rem;
+  }
   .section-games-carousel__slider__swipers__swiper__image {
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
     border-radius: 9px;
   }
 }
