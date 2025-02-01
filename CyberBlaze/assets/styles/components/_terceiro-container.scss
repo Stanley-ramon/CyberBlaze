@@ -125,27 +125,32 @@
     }
 
     &-cards {
-      padding: 2.5rem 14rem 2.5rem 14rem;
-
+      padding: 1rem 3rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
       &__itens {
-         justify-content: center;
+        padding: 0rem 2rem;
+        display: flex;
+        flex-direction: column;
         
         &-container {
           display: flex;
-          text-align: start;
+          text-align: center;
         }
 
         &-imagem {
-          width: 20vw;
+          width: 10vw;
           height: 15vh;
         }
 
         &__titulo {
-          font-size: 1.5rem;;
+          text-wrap: wrap;
+          font-size: 1.3rem;;
         }
 
         &__texto {
-          font-size: 1.1rem;
+          font-size: 1rem;
         }
       }
     }

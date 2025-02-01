@@ -1229,24 +1229,30 @@ body {
     font-size: 1.4rem;
   }
   .terceira__sessao-cards {
-    padding: 2.5rem 14rem 2.5rem 14rem;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   .terceira__sessao-cards__itens {
-    justify-content: center;
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
   }
   .terceira__sessao-cards__itens-container {
     display: flex;
-    text-align: start;
+    text-align: center;
   }
   .terceira__sessao-cards__itens-imagem {
-    width: 20vw;
+    width: 10vw;
     height: 15vh;
   }
   .terceira__sessao-cards__itens__titulo {
-    font-size: 1.5rem;
+    text-wrap: wrap;
+    font-size: 1.3rem;
   }
   .terceira__sessao-cards__itens__texto {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 .quarta__sessao__textos {
