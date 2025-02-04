@@ -276,6 +276,27 @@
 
 @media screen and (min-width: 950px) {
   .quarta__sessao {
+    &-div {
+      border: 1px solid white;
+      margin: 5% 25% 0% 25%;
+
+      &__buttons {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 5rem;
+        background-color: gray;
+
+        &-button {
+          font-size: 1rem;
+          font-weight: 700;
+          background: gray; 
+          color: white;
+          outline: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
      &__textos {
 
       &__titulo {
@@ -288,7 +309,7 @@
      }
 
      &__imagem{
-      width: 40vw;
+      width: 22vw;
       height: 32vh;
       margin-bottom: 1rem;;
      }
@@ -308,5 +329,83 @@
         height: 28vh;
       }
      }
+
+     .swiper,
+   #swiper-do-container-4 {  
+    .swiper-pagination {     // Corrigido para evitar problemas com o aninhamento
+        position: initial;
+        margin: 0.5em 0;
+          
+        .swiper-pagination-bullet {   // Corrigido para o nome correto
+          display: none;
+        }
+
+       }
+
+       .slider-container__4 {
+           display: flex;
+          .swiper-slide__botao {
+            text-decoration: none;
+            color: white;
+            border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
+            padding: 1rem;
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 9px;
+            background: linear-gradient(to right, #FF7F50, #8A2BE2);
+            width: 45%;
+          }
+       }
+   }
+
+   &__footer {
+    background: rgba(0, 0, 0, 0.5); /* Preto com 50% de transparência */
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    background-image: none;
+
+    &__lista{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       text-align: center;
+       align-items: center;
+       margin: 0 7rem;
+       gap: 2rem;
+       padding: 3rem 12rem;
+
+      &-items {
+        font-size: 1rem;;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 1rem;
+        
+        &__imagem {
+             height: 7vh;
+             width: 4vw;
+
+             &-android { 
+              height: 7vh;
+              width: 4vw;
+             }
+          }
+
+        &__texts {
+          text-wrap: wrap;
+          font-weight: 700;
+          font-size: 1rem;
+            &__text {
+               font-size: 0.7rem;
+               font-weight: 500;
+            }
+        }
+        }
+     }
+    } 
   }
 }

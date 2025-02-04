@@ -119,7 +119,9 @@
 
 @media screen and (min-width: 950px) {
   .terceira__sessao {
-
+    &-div {
+      border: 1px solid white;
+    }
     &__titulo {
       font-size: 1.4rem;
     }

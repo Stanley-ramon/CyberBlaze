@@ -86,3 +86,28 @@
         }
     }
 }
+
+
+@media screen and (min-width: 950px) {
+    .partners {
+        &__title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 2.5rem 0 2rem 0;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 3 colunas de largura igual */
+            grid-template-rows: repeat(3, auto); /* 4 linhas ajustáveis ao conteúdo */
+            list-style: none; /* Remove marcadores da lista */
+            gap: 0.7rem;
+            margin-bottom: 5rem;
+    
+            &-image {
+                width: 40%;
+                height: auto; /* Mantém a proporção */
+            }
+        }
+    }
+}

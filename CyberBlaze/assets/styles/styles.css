@@ -1225,6 +1225,9 @@ body {
   }
 }
 @media screen and (min-width: 950px) {
+  .terceira__sessao-div {
+    border: 1px solid white;
+  }
   .terceira__sessao__titulo {
     font-size: 1.4rem;
   }
@@ -1471,6 +1474,25 @@ body {
   }
 }
 @media screen and (min-width: 950px) {
+  .quarta__sessao-div {
+    border: 1px solid white;
+    margin: 5% 25% 0% 25%;
+  }
+  .quarta__sessao-div__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    background-color: gray;
+  }
+  .quarta__sessao-div__buttons-button {
+    font-size: 1rem;
+    font-weight: 700;
+    background: gray;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
   .quarta__sessao__textos__titulo {
     font-size: 1.4rem;
   }
@@ -1478,7 +1500,7 @@ body {
     font-size: 1rem;
   }
   .quarta__sessao__imagem {
-    width: 40vw;
+    width: 22vw;
     height: 32vh;
     margin-bottom: 1rem;
   }
@@ -1491,6 +1513,74 @@ body {
   .quarta__sessao__segunda-div__imagem {
     width: 35vw;
     height: 28vh;
+  }
+  .quarta__sessao .swiper .swiper-pagination,
+  .quarta__sessao #swiper-do-container-4 .swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+  }
+  .quarta__sessao .swiper .swiper-pagination .swiper-pagination-bullet,
+  .quarta__sessao #swiper-do-container-4 .swiper-pagination .swiper-pagination-bullet {
+    display: none;
+  }
+  .quarta__sessao .swiper .slider-container__4,
+  .quarta__sessao #swiper-do-container-4 .slider-container__4 {
+    display: flex;
+  }
+  .quarta__sessao .swiper .slider-container__4 .swiper-slide__botao,
+  .quarta__sessao #swiper-do-container-4 .slider-container__4 .swiper-slide__botao {
+    text-decoration: none;
+    color: white;
+    border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
+    padding: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 9px;
+    background: linear-gradient(to right, #FF7F50, #8A2BE2);
+    width: 45%;
+  }
+  .quarta__sessao__footer {
+    background: rgba(0, 0, 0, 0.5); /* Preto com 50% de transparência */
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-image: none;
+  }
+  .quarta__sessao__footer__lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    margin: 0 7rem;
+    gap: 2rem;
+    padding: 3rem 12rem;
+  }
+  .quarta__sessao__footer__lista-items {
+    font-size: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .quarta__sessao__footer__lista-items__imagem {
+    height: 7vh;
+    width: 4vw;
+  }
+  .quarta__sessao__footer__lista-items__imagem-android {
+    height: 7vh;
+    width: 4vw;
+  }
+  .quarta__sessao__footer__lista-items__texts {
+    text-wrap: wrap;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .quarta__sessao__footer__lista-items__texts__text {
+    font-size: 0.7rem;
+    font-weight: 500;
   }
 }
 .section-games-carousel {
@@ -1592,8 +1682,8 @@ body {
     font-size: 1.4rem;
   }
   .section-games-carousel__slider__swipers__swiper__image {
-    height: 50%;
-    width: 50%;
+    height: 38%;
+    width: 38%;
     border-radius: 9px;
   }
 }
@@ -1781,4 +1871,24 @@ body {
 }
 .partners__footer__dropdown-buttons__dropdown-list.active {
   display: block; /* Exibe o dropdown */
+}
+
+@media screen and (min-width: 950px) {
+  .partners__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2.5rem 0 2rem 0;
+  }
+  .partners__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 colunas de largura igual */
+    grid-template-rows: repeat(3, auto); /* 4 linhas ajustáveis ao conteúdo */
+    list-style: none; /* Remove marcadores da lista */
+    gap: 0.7rem;
+    margin-bottom: 5rem;
+  }
+  .partners__list-image {
+    width: 40%;
+    height: auto; /* Mantém a proporção */
+  }
 }/*# sourceMappingURL=styles.css.map */
