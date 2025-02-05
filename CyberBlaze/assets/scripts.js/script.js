@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
     createObserver(titulos, 'show');
     createObserver(elementosComAnimacao, 'jump-kick');
 });
-
 // Função genérica para configurar Swipers
 const configurarSwiper = (id, config, duplicar = false) => {
     if (duplicar) {
@@ -41,11 +40,23 @@ const configurarSwiper = (id, config, duplicar = false) => {
 };
 
 window.addEventListener('load', () => {
-    configurarSwiper('#swiper-do-container-4', {
+    const config = {
         slidesPerView: 1,
         spaceBetween: window.innerWidth >= 350 ? 55 : 10,
-        pagination: { el: '#swiper-do-container-4 .swiper-pagination', type: 'bullets' },
-    });
+    };
+
+    // Adiciona a paginação apenas se a largura da tela for menor que 950px
+    if (window.innerWidth < 950) {
+        config.pagination = {
+            el: '#swiper-do-container-4 .swiper-pagination',
+            type: 'bullets',
+        };
+    }
+
+    configurarSwiper('#swiper-do-container-4', config);
+});
+
+
     ['#games-carousel__slider-1', '#games-carousel__slider-2'].forEach(id => {
         configurarSwiper(id, {
             slidesPerView: 3,
@@ -61,7 +72,6 @@ window.addEventListener('load', () => {
             }
         }, true);
     });
-});
 
 // Reajusta os Swipers ao redimensionar a janela
 window.addEventListener('resize', () => window.dispatchEvent(new Event('load')));
