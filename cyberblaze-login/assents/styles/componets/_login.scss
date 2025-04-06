@@ -185,3 +185,29 @@
         }
     }
 }
+
+@media screen and (min-width: 0px) and (max-width: 520px) {
+    .main {
+        width: 100vw;
+        overflow: hidden;
+        height: 100vh;
+
+        &__titles {
+            .title {
+                font-size: 1.4rem;
+            }
+
+            .subtitle {
+                font-size: 1rem
+            }
+        }
+
+        .inputs {
+            .text {
+                text-align: start;
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+        }
+    }
+}

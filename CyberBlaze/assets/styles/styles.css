@@ -188,13 +188,14 @@ body {
   .header__navbar-buttons__login {
     font-size: 1rem;
     padding: 0.7rem 0.8rem;
-    background: rgb(103, 103, 220);
-    border-color: rgb(85, 85, 242);
+    background: #3A00FF;
+    border-color: #3A00FF;
     text-decoration: none;
     color: white;
-    border-radius: 8px;
+    border-radius: 10px;
     text-transform: uppercase;
     font-family: "Montserrat sans,serif";
+    font-weight: 700;
   }
   .header__navbar-buttons__login:hover {
     border-color: white;
@@ -306,8 +307,8 @@ body {
     margin-left: 1rem;
     font-size: 1rem;
     padding: 0 1.5rem;
-    background: rgb(85, 85, 242);
-    border-color: rgb(85, 85, 242);
+    background: #3A00FF;
+    border-color: #3A00FF;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -422,8 +423,8 @@ body {
     margin-left: 1rem;
     font-size: 1rem;
     padding: 0 1.5rem;
-    background: rgb(85, 85, 242);
-    border-color: rgb(85, 85, 242);
+    background: #3A00FF;
+    border-color: #3A00FF;
     color: white;
     text-decoration: none;
     text-align: center;

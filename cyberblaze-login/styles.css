@@ -221,6 +221,24 @@ body {
   color: rgb(255, 255, 255);
 }
 
+@media screen and (min-width: 0px) and (max-width: 520px) {
+  .main {
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
+  }
+  .main__titles .title {
+    font-size: 1.4rem;
+  }
+  .main__titles .subtitle {
+    font-size: 1rem;
+  }
+  .main .inputs .text {
+    text-align: start;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}
 .background {
   background-image: url("/cyberblaze-login/assents/imgs/CyberGlow-with- flame.webp");
   background-repeat: no-repeat;
@@ -274,4 +292,10 @@ body {
 .background .footer .copyright .text {
   font-size: 1rem;
   text-align: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 520px) {
+  .background {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
