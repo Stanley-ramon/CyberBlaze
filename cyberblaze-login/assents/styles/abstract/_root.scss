@@ -2,16 +2,11 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: linear-gradient(180deg, #000, #4B0082, #8A2BE2);
-    background-repeat: no-repeat;
-    height: 100vh;
+    overflow: hidden;
     color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    align-items: center;
-    justify-content: start;
     font-size: 1rem;
     font-weight: 400;
-   
 }
+
+
+//background: linear-gradient(180deg, #000, #4B0082, #8A2BE2);

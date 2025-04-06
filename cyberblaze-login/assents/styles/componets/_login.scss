@@ -1,49 +1,52 @@
-.main {
-    height: 100%;
+// Envolve .main e .background lado a lado
+.wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: start;
-    margin: 2rem 2rem 0 2rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    padding: 4rem 6rem 0 6rem;
+    width: 40vw;
+    background: linear-gradient(180deg, #000, #1b1a1c, #1e1822);
+    height: 100vh;
     gap: 3rem;
-    text-align: center;
-    
+
     &__titles {
         display: flex;
         flex-direction: column;
         text-align: start;
-       
-        font-size: 1.5rem;
+        align-items: start;
         text-transform: uppercase;
+        gap: 1rem;
 
-        &-title {
-            
+        .title {
+            font-size: 2rem;
         }
 
-        &-subtitle {
-            font-size: 1rem;
-            font-weight: 400;
+        .subtitle {
+            font-size: 1.1rem
         }
     }
-    
-    &__inputs {
+
+    .inputs {
         display: flex;
         flex-direction: column;
-        justify-content: start;
-        align-items: start;
         gap: 1rem;
         width: 100%;
+        margin-top: 2.5rem;
 
-        &-text {
-            font-size: 0.7rem;
+        .text {
+            text-align: start;
+            font-size: 1.5rem;
             font-weight: 700;
-            text-transform:uppercase;
         }
-        
-        
-        &-button__google {
+
+        .button__google {
+            margin-top: 1rem;
             display: flex;
             width: 100%;
-            padding: 0.2rem 2rem;
+            padding: 0.5rem 2rem;
             align-items: center;
             justify-content: center;
             border: none;
@@ -55,7 +58,7 @@
             gap: 0.4rem;
         }
 
-        &-divider {
+        .divider {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -70,95 +73,115 @@
                 height: 0.5px;
                 background-color: white;
             }
+
+            .text {
+                font-size: 1rem;
+                ;
+            }
         }
 
-        &-group {
+        .group {
             position: relative;
-           text-align: start;
-           width: 100%;
-           input::-ms-reveal, 
-           input::-ms-clear, 
-           input::-webkit-clear-button, 
-           input::-webkit-inner-spin-button, 
-           input::-webkit-reveal-button {
-               display: none; /* Remove os ícones padrão */
-           }
+            text-align: start;
+            width: 100%;
 
-            &__input {
-                padding-right: 2.5rem;;
+            input::-ms-reveal,
+            input::-ms-clear,
+            input::-webkit-clear-button,
+            input::-webkit-inner-spin-button,
+            input::-webkit-reveal-button {
+                display: none; //Remove os ícones padrão
+            }
+
+            .input {
+                padding: 0.5rem 2.5rem 0.5rem 0;
                 background: transparent;
                 color: white;
                 border: none;
                 border-bottom: 1px solid white;
                 outline: none;
-                width: 100%; /* Adicione esta linha */
+                width: 100%; // Adicione esta linha
                 box-sizing: border-box;
+                font-size: 1rem;
 
-            }
+                .password {
+                    position: absolute;
+                    right: 0.5rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
 
-            .toggle-password {
-                position: absolute;
-                right: 0.5rem;
-                top: 50%;
-                transform: translateY(-50%);
-                cursor: pointer;
-            }
-        
-            .toggle-password svg {
-                width: 19px;
-                height: 19px;
-                transition: fill 0.3s ease; /* Efeito suave ao mudar a cor */
-            }
-        }
-
-        &-check {
-              display: flex;
-              text-align: center;
-              align-items: center;
-              gap: 5rem;
-
-              &__container {
-                    display: flex;
-                    align-items: center;
-
-                    &-text {
-                        font-size: 0.7rem;
+                    .svg {
+                        width: 19px;
+                        height: 19px;
+                        transition: fill 0.3s ease; // Efeito suave ao mudar a cor
                     }
-
-              }
-
-              &__link {
-                font-size: 0.9rem;;
-                color:rgb(255, 255, 255);
-              }
-        }
-       
-        &-button__login {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            background: linear-gradient(to right, #FF7F50, #8A2BE2);
-            color:white;
-            width: 100%;
-            font-size: 1rem;
-            padding: 0.7rem 1.5rem;
-            border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
-            border-radius: 10px;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-        
-        &-create {
-            display: flex;
-            gap: 0.5rem;
-            color: rgb(231, 227, 227);
-            font-size: 0.9rem;
-
-            &__link {
-                color: black;
+                }
             }
         }
 
+        .inputs__check {
+            display: flex;
+            justify-content: space-between;
+            gap: 5rem;
+
+            .container {
+                display: flex;
+                text-align: center;
+                align-items: center;
+                gap: 0.5rem;
+
+
+                .text {
+                    font-size: 0.7rem;
+                }
+            }
+
+            .link {
+                margin-left: auto;
+                flex-wrap: nowrap;
+                font-size: 0.9rem;
+                color: rgb(255, 255, 255);
+            }
+        }
+
+        .container__1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+
+            .button__login {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                //background: linear-gradient(to right, #FF7F50, #8A2BE2);
+                //background: linear-gradient(to right, #4157ec, #122db3);
+                background: #3A00FF;
+                color: white;
+                width: 100%;
+                font-size: 1rem;
+                padding: 0.7rem 1.5rem;
+                //border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
+                border: 2px solid #3A00FF;
+                border-radius: 10px;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            .create {
+                display: flex;
+                gap: 0.5rem;
+                color: rgb(231, 227, 227);
+                font-size: 0.9rem;
+
+                .link {
+                    font-size: 0.9rem;
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
     }
 }

@@ -1,74 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4467754145506663"
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../CyberBlaze/assets/imgs/header/chama roxa circular.png">
     <link rel="stylesheet" href="./styles.css">
     <title>Jogos em nuvem Cyberblaze</title>
 </head>
+
 <body>
-    <section class="main">
-        <div class="main__titles">
-        <h1 class="main__titles-title">Cyberblaze</h1>
-        <p class="main__titles-subtitle">cloud gaming</p>
-        </div>
-        <form class="main__inputs">
-            <h3 class="main__inputs-text">entre na sua conta</h3>
-            <button class="main__inputs-button__google" >
-                <img src="./assents/imgs/Google-logo.png" alt="logo do google"> continuar com o Google
-            </button>
-            <div class="main__inputs-divider">
-                <span class="main__inputs-divider__text">ou</span>
+    <div class="wrapper">
+
+        <!-- Parte esquerda: formulário -->
+
+        <section class="main">
+            <div class="main__titles">
+                <h1 class="title">ＣＹＢΞＲＢＬΛＺΞ</h1>
+                <p class="subtitle">cloud gaming</p>
             </div>
-            <div class="main__inputs-group">   
-                <label for="email"></label>
-                <input class="main__inputs-group__input" type="email" id="email" placeholder="E-mail"> 
-            </div>
-            <div class="main__inputs-group">
-                <label for="senha"></label>
-                <input class="main__inputs-group__input" type="password" id="senha" placeholder="Senha">
-                <span class="toggle-password" onclick="togglePassword()">
-                    <!-- Ícone do olho -->
-                    <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
-                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 13c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
-                    </svg>
-                </span> 
-            </div>
-            <div class="main__inputs-check">
-                <div class="main__inputs-check__container">
-                    <input type="checkbox" id="permitir">
-                    <p class="main__inputs-check__container-text">Lembrar de mim</p>
+
+            <form class="inputs">
+                <h3 class="text">Faça login na sua conta</h3>
+                <button class="button__google">
+                    <img src="./assents/imgs/Google-logo.png" alt="logo do google"> continuar com o Google
+                </button>
+                <div class="divider">
+                    <span class="text">ou</span>
                 </div>
-                <a class="main__inputs-check__link" href="#">esqueceu a senha</a>
+                <div class="group">
+                    <label for="email"></label>
+                    <input class="input email" type="email" id="email" placeholder="E-mail">
+                </div>
+                <div class="group">
+                    <label for="senha"></label>
+                    <input class="input password" type="password" id="senha" placeholder="Senha">
+                    <span onclick="togglePassword()">
+                        <!-- Ícone do olho -->
+                        <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 13c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="inputs__check">
+                    <div class="container">
+                        <input type="checkbox" id="permitir">
+                        <p class="text">Lembrar de mim</p>
+                    </div>
+                    <a class="link" href="#">esqueceu a senha</a>
+                </div>
+                <div class="container__1">
+                    <button class="button__login" id="button">Entrar</button>
+                    <P class="create">Novo no CyberBlaze?<a class="link" href="#">criar uma conta</a></P>
+                </div>
+            </form>
+        </section>
+
+        <!-- Parte direita: imagem de fundo -->
+
+        <div class="background">
+            <div class="texts">
+                <h2 class="title">Sua nova central de jogos em cloud</h2>
+                <p class="text"> Curta os melhores jogos rodando em um servidor remoto com performance máxima.</p>
             </div>
-            <button id="button" class="main__inputs-button__login">Entrar</button>
-            <P class="main__inputs-create">Novo no CyberBlaze?<a href="#" class="main__inputs-create__link">criar uma conta</a></P>
-        </form>
-    </section>
 
-    <footer class="footer">
-        <ul class="footer__list">
-            <li>
-                <a href="#" class="footer__list-link">politica de privacidade</a>
-            </li>
-            <li>
-                <a href="#" class="footer__list-link">termos e condições</a>
-            </li>
-            <li>
-                <a href="#" class="footer__list-link">dados da conta</a>
-            </li>
-            <li>
-                <a href="#" class="footer__list-link">politica de cookies</a>
-            </li>
-        </ul>
+            <footer class="footer">
+                <ul class="list">
+                    <li>
+                        <a href="#" class="link">politica de privacidade</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">termos e condições</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">dados da conta</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">politica de cookies</a>
+                    </li>
+                </ul>
 
-        <div class="footer__copyright">
-            <p class="footer__copyright-text">® 2025 CyberBlaze. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.</p>
+                <div class="copyright">
+                    <p class="text">® 2025 CyberBlaze. Todos os direitos reservados. Serviço de assinatura paga.
+                        Conteúdo sujeito a disponibilidade.</p>
+                </div>
         </div>
-    </footer>
+    </div>
+
     <script src="./assents/script.js/script.js" defer></script>
 </body>
+
 </html>

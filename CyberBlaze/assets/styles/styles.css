@@ -98,8 +98,8 @@ body {
   .header__navbar-buttons__login {
     font-size: 1rem;
     padding: 0.7rem 0.8rem;
-    background: rgb(103, 103, 220);
-    border-color: rgb(85, 85, 242);
+    background: #3A00FF;
+    border-color: #3A00FF;
     text-decoration: none;
     color: white;
     border-radius: 8px;

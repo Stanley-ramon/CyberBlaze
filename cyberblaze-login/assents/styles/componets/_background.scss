@@ -1,0 +1,63 @@
+.background {
+    background-image: url("/cyberblaze-login/assents/imgs/CyberGlow-with-\ flame.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    .texts {
+        margin-top: 35%;
+        align-items: center;
+
+        .title {
+            font-size: 2.3rem;
+        }
+
+        .text {
+            font-size: 1.1rem;
+            text-wrap: wrap;
+            padding: 1rem 5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+
+    .footer {
+        margin-bottom: 5%;
+        display: flex;
+        gap: 1rem;
+        padding: 0rem 2rem 1.2rem 2rem;
+        color: #FFFFFF;
+
+        .list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+
+            .link {
+                color: #FFFFFF;
+                font-size: 1rem;
+            }
+        }
+
+        .copyright {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            padding: 0 3rem;
+
+            .text {
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}
