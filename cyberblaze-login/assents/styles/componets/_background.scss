@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: center;
     width: 100vw;
-    height: 100vh;
+    height: auto;
 
     display: flex;
     flex-direction: column;
@@ -15,6 +15,7 @@
     .texts {
         margin-top: 35%;
         align-items: center;
+        text-align: center;
 
         .title {
             font-size: 2.3rem;
@@ -60,10 +61,4 @@
             }
         }
     }
-}
-
-@media screen and (min-width: 0px) and (max-width: 520px) {
-   .background{
-     display: none;
-   }
 }

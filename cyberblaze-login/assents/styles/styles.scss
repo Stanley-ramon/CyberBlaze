@@ -1,0 +1,10 @@
+@use './abstract/reset';
+@use './abstract/root';
+
+@use './componets/login';
+@use './componets/background';
+@use './componets/about';
+
+@use './responsive/desktop';
+@use './responsive/tablet';
+@use './responsive/mobile';

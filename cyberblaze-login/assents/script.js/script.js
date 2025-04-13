@@ -35,7 +35,7 @@ function exibirAlerta() {
 
 function enviarFormulario() {
     if (!emailEstaVazio() && !senhaEstaVazia()) {
-        alert("Formulário enviado com sucesso!");
+        alert("FORMULÁRIO ENVIADO COM SUCESSO!");
         limparCampos();
     } else {
         exibirAlerta();
@@ -49,8 +49,28 @@ function limparCampos() {
 
 button.addEventListener("click", enviarFormulario);
 
-button.addEventListener("keydown", function(event) {
-    if(event.key === "Enter") {
+document.addEventListener("keydown", function (event) {
+    const form = document.querySelector("form.inputs");
+    const activeElement = document.activeElement;
+
+    if (form.contains(activeElement) && event.key === "Enter") {
+        event.preventDefault(); // Impede que o botão "sobre" ou qualquer outro seja acionado
         enviarFormulario();
     }
-})
+});
+
+
+function toggleAbout() {
+    const panel = document.getElementById("aboutPanel");
+    const buttonAbout = document.getElementById("about");
+
+    if (!panel.classList.contains('open')) {
+        panel.classList.remove('closing');
+        panel.classList.add('open');
+        buttonAbout.classList.add('open');
+    } else {
+        panel.classList.remove('open');
+        panel.classList.add('closing');
+        buttonAbout.classList.remove('open');
+    }
+}

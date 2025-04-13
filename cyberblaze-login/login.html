@@ -6,8 +6,8 @@
         crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../CyberBlaze/assets/imgs/header/chama roxa circular.png">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./assents/imgs/chama roxa circular.webp">
+    <link rel="stylesheet" href="./assents/styles/styles.css">
     <title>Jogos em nuvem Cyberblaze</title>
 </head>
 
@@ -25,7 +25,8 @@
             <form class="inputs">
                 <h3 class="text">Faça login na sua conta</h3>
                 <button class="button__google">
-                    <img src="./assents/imgs/Google-logo.png" alt="logo do google"> continuar com o Google
+                    <img src="./assents/imgs/Google-logo.png" alt="logo do google" class="google"> continuar com o
+                    Google
                 </button>
                 <div class="divider">
                     <span class="text">ou</span>
@@ -89,7 +90,59 @@
                         Conteúdo sujeito a disponibilidade.</p>
                 </div>
         </div>
+        <footer class="footer">
+            <ul class="list">
+                <li>
+                    <a href="#" class="link">politica de privacidade</a>
+                </li>
+                <li>
+                    <a href="#" class="link">termos e condições</a>
+                </li>
+                <li>
+                    <a href="#" class="link">dados da conta</a>
+                </li>
+                <li>
+                    <a href="#" class="link">politica de cookies</a>
+                </li>
+            </ul>
+
+            <div class="copyright">
+                <p class="text">® 2025 CyberBlaze. Todos os direitos reservados. Serviço de assinatura paga.
+                    Conteúdo sujeito a disponibilidade.</p>
+            </div>
     </div>
+    <button class="about" id="about" onclick="toggleAbout()">sobre CyberBlaze</button>
+
+    <!-- Página puxada (inicialmente escondida) -->
+    <div class="about-panel" id="aboutPanel">
+        <div class="about-content">
+            <article class="items">
+                <img src="./assents/imgs/ic-power.svg" alt="" class="img">
+                <div class="texts">
+                    <h4 class="title">Dispositivos de comutação</h4>
+                    <p class="text">Aproveite o acesso fácil aos melhores jogos no Windows, macOS, Linux, iOS, Android, Android TV!</p>
+                </div>
+            </article>
+            <article class="items">
+                <img src="./assents/imgs/ic-limit.svg" alt="" class="img">
+                <div class="texts">
+                    <h4 class="title">Streaming de jogabilidade</h4>
+                    <p class="text">Jogue o tempo que quiser, não temos limites de tempo de sessão! Catálogo completo de jogos, 1080p/60 FPS, quase qualquer dispositivo e sistema operacional - sem limites com uma assinatura.</p>
+                </div>
+            </article>
+            <article class="items">
+                <img src="./assents/imgs/ic-stream.svg" alt="" class="img">
+                <div class="texts">
+                    <h4 class="title">Streaming de jogabilidade</h4>
+                    <p class="text">Transmita sua sessão de jogo no Boosteroid ao vivo para o Youtube</p>
+                </div>
+            </article>
+            <button class="close-about" onclick="toggleAbout() ">Fechar</button>
+
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
 
     <script src="./assents/script.js/script.js" defer></script>
 </body>

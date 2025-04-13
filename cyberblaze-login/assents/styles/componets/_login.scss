@@ -1,198 +1,25 @@
-// Envolve .main e .background lado a lado
 .wrapper {
     display: flex;
+    flex: 1;
+    overflow: hidden;
     width: 100vw;
+
     height: 100vh;
-}
 
-.main {
-    padding: 4rem 6rem 0 6rem;
-    width: 40vw;
-    background: linear-gradient(180deg, #000, #1b1a1c, #1e1822);
-    height: 100vh;
-    gap: 3rem;
-
-    &__titles {
-        display: flex;
-        flex-direction: column;
-        text-align: start;
-        align-items: start;
-        text-transform: uppercase;
-        gap: 1rem;
-
-        .title {
-            font-size: 2rem;
-        }
-
-        .subtitle {
-            font-size: 1.1rem
-        }
-    }
-
-    .inputs {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        width: 100%;
-        margin-top: 2.5rem;
-
-        .text {
-            text-align: start;
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-
-        .button__google {
-            margin-top: 1rem;
-            display: flex;
-            width: 100%;
-            padding: 0.5rem 2rem;
-            align-items: center;
-            justify-content: center;
-            border: none;
-            border-radius: 8px;
-            color: rgb(92, 87, 87);
-            font-size: 0.7rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            gap: 0.4rem;
-        }
-
-        .divider {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            width: 100%;
-            margin: 1rem 0;
-
-            &::before,
-            &::after {
-                content: "";
-                flex: 1;
-                height: 0.5px;
-                background-color: white;
-            }
-
-            .text {
-                font-size: 1rem;
-                ;
-            }
-        }
-
-        .group {
-            position: relative;
-            text-align: start;
-            width: 100%;
-
-            input::-ms-reveal,
-            input::-ms-clear,
-            input::-webkit-clear-button,
-            input::-webkit-inner-spin-button,
-            input::-webkit-reveal-button {
-                display: none; //Remove os ícones padrão
-            }
-
-            .input {
-                padding: 0.5rem 2.5rem 0.5rem 0;
-                background: transparent;
-                color: white;
-                border: none;
-                border-bottom: 1px solid white;
-                outline: none;
-                width: 100%; // Adicione esta linha
-                box-sizing: border-box;
-                font-size: 1rem;
-
-                .password {
-                    position: absolute;
-                    right: 0.5rem;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    cursor: pointer;
-
-                    .svg {
-                        width: 19px;
-                        height: 19px;
-                        transition: fill 0.3s ease; // Efeito suave ao mudar a cor
-                    }
-                }
-            }
-        }
-
-        .inputs__check {
-            display: flex;
-            justify-content: space-between;
-            gap: 5rem;
-
-            .container {
-                display: flex;
-                text-align: center;
-                align-items: center;
-                gap: 0.5rem;
-
-
-                .text {
-                    font-size: 0.7rem;
-                }
-            }
-
-            .link {
-                margin-left: auto;
-                flex-wrap: nowrap;
-                font-size: 0.9rem;
-                color: rgb(255, 255, 255);
-            }
-        }
-
-        .container__1 {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            gap: 1rem;
-
-            .button__login {
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                align-items: center;
-                //background: linear-gradient(to right, #FF7F50, #8A2BE2);
-                //background: linear-gradient(to right, #4157ec, #122db3);
-                background: #3A00FF;
-                color: white;
-                width: 100%;
-                font-size: 1rem;
-                padding: 0.7rem 1.5rem;
-                //border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
-                border: 2px solid #3A00FF;
-                border-radius: 10px;
-                text-transform: uppercase;
-                font-weight: 700;
-            }
-
-            .create {
-                display: flex;
-                gap: 0.5rem;
-                color: rgb(231, 227, 227);
-                font-size: 0.9rem;
-
-                .link {
-                    font-size: 0.9rem;
-                    color: rgb(255, 255, 255);
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 0px) and (max-width: 520px) {
     .main {
-        width: 100vw;
-        overflow: hidden;
-        height: 100vh;
+        padding: 4rem 6rem 0 6rem;
+        width: 40vw;
+        background: linear-gradient(180deg, #000, #1b1a1c, #1e1822);
+        gap: 3rem;
 
         &__titles {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            align-items: start;
+            text-transform: uppercase;
+            gap: 1rem;
+
             .title {
                 font-size: 1.4rem;
             }
@@ -203,11 +30,170 @@
         }
 
         .inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+            margin-top: 2.5rem;
+
             .text {
                 text-align: start;
-                font-size: 1.2rem;
+                font-size: 1.5rem;
                 font-weight: 700;
             }
+
+            .button__google {
+                margin-top: 1rem;
+                display: flex;
+                width: 100%;
+                padding: 0.5rem 2rem;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                border-radius: 8px;
+                color: rgb(92, 87, 87);
+                font-size: 0.7rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                gap: 0.4rem;
+                flex-wrap: nowrap;
+
+                .google {
+                    height: 28px;
+                    width: 28px;
+                }
+            }
+
+            .divider {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                width: 100%;
+                margin: 1rem 0;
+
+                &::before,
+                &::after {
+                    content: "";
+                    flex: 1;
+                    height: 0.5px;
+                    background-color: white;
+                }
+
+                .text {
+                    font-size: 1rem;
+                    ;
+                }
+            }
+
+            .group {
+                position: relative;
+                text-align: start;
+                width: 100%;
+
+                input::-ms-reveal,
+                input::-ms-clear,
+                input::-webkit-clear-button,
+                input::-webkit-inner-spin-button,
+                input::-webkit-reveal-button {
+                    display: none; //Remove os ícones padrão
+                }
+
+                .input {
+                    padding: 0.5rem 2.5rem 0.5rem 0;
+                    background: transparent;
+                    color: white;
+                    border: none;
+                    border-bottom: 1px solid white;
+                    outline: none;
+                    width: 100%; // Adicione esta linha
+                    box-sizing: border-box;
+                    font-size: 1rem;
+
+                    .password {
+                        position: absolute;
+                        right: 0.5rem;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        cursor: pointer;
+
+                        .svg {
+                            width: 19px;
+                            height: 19px;
+                            transition: fill 0.3s ease; // Efeito suave ao mudar a cor
+                        }
+                    }
+                }
+            }
+
+            .inputs__check {
+                display: flex;
+                justify-content: space-between;
+                gap: 5rem;
+
+                .container {
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    gap: 0.5rem;
+
+
+                    .text {
+                        font-size: 0.7rem;
+                    }
+                }
+
+                .link {
+                    margin-left: auto;
+                    flex-wrap: nowrap;
+                    font-size: 0.9rem;
+                    color: rgb(255, 255, 255);
+                }
+            }
+
+            .container__1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1rem;
+
+
+                .button__login {
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                    //background: linear-gradient(to right, #FF7F50, #8A2BE2);
+                    //background: linear-gradient(to right, #4157ec, #122db3);
+                    background: #3A00FF;
+                    color: white;
+                    width: 100%;
+                    font-size: 1rem;
+                    padding: 0.7rem 1.5rem;
+                    //border: 2px solid linear-gradient(to right, #f4855d, #4b0082);
+                    border: 2px solid #3A00FF;
+                    border-radius: 10px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+
+                .create {
+                    display: flex;
+                    gap: 0.5rem;
+                    color: rgb(231, 227, 227);
+                    font-size: 0.9rem;
+
+                    .link {
+                        font-size: 0.9rem;
+                        color: rgb(255, 255, 255);
+                    }
+                }
+            }
         }
+    }
+
+    .footer {
+        display: none;
     }
 }
