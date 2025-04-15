@@ -306,14 +306,6 @@ body {
     opacity: 0;
   }
 }
-@keyframes expandir {
-  0% {
-    width: 40vw;
-  }
-  100% {
-    width: 100vw;
-  }
-}
 @keyframes darkStripeFlow {
   0% {
     background-position: 0% 50%;
@@ -338,7 +330,7 @@ body {
   cursor: pointer;
   left: 50%;
   transform: translate(-50%, 25%);
-  width: 40%;
+  width: 40vw;
   bottom: 0;
   z-index: 1001;
   background: linear-gradient(135deg, #3a0ca3, #7209b7, #f72585, #3a0ca3, #0d0221, #3a0ca3, #f72585, #7209b7, #3a0ca3);
@@ -470,7 +462,7 @@ body {
     display: none;
   }
   .wrapper .footer {
-    margin-bottom: 7%;
+    margin-bottom: 3%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -504,8 +496,11 @@ body {
     bottom: 0;
     z-index: 1001;
   }
+  /*.about.open {
+      bottom: 88vh;
+  }*/
   .about-panel .about-content {
-    padding: 2.5rem 0 3rem 0;
+    padding: 2rem 0 3rem 0;
     width: 75vw;
     display: flex;
     height: 100vh;
