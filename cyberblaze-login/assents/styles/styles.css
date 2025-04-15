@@ -437,7 +437,7 @@ body {
     padding: 0;
   }
   .wrapper .main {
-    padding: 2rem 0 0 0;
+    padding: 0.5rem 0 0 0;
     background: none;
     width: 70vw;
   }
@@ -496,9 +496,9 @@ body {
     bottom: 0;
     z-index: 1001;
   }
-  /*.about.open {
-      bottom: 88vh;
-  }*/
+  .about.open {
+    bottom: 87vh;
+  }
   .about-panel .about-content {
     padding: 2rem 0 3rem 0;
     width: 75vw;
