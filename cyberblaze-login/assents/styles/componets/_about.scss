@@ -98,7 +98,8 @@
 
 
 .about-panel {
-  display: flex;
+  overflow: scroll;
+  padding-top: 8%;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -127,14 +128,15 @@
   }
 
   .about-content {
+    
     padding: 3rem 0 2rem 0;
-    width: 48vw;
+    width: 80vw;
     display: flex;
     height: 100vh;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: start;
+    text-align: start;
     opacity: 1;
     animation: fadeIn 0.5s ease 0.3s forwards;
     gap: 2rem;

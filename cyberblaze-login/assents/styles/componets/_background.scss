@@ -8,9 +8,11 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+    align-items: start;
+    text-align: start;
+    justify-content: start;
+    padding-left: 5%;
+    gap: 30%;
 
     .texts {
         margin-top: 35%;
@@ -31,17 +33,20 @@
     }
 
     .footer {
-        margin-bottom: 5%;
+        margin-bottom: 0;
         display: flex;
+        flex-direction: column;
+        justify-content: start;
         gap: 1rem;
-        padding: 0rem 2rem 1.2rem 2rem;
+        padding: 0;
         color: #FFFFFF;
+        align-items: start;
 
         .list {
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
             gap: 1.2rem;
+            align-items: start;
 
             .link {
                 color: #FFFFFF;
@@ -51,13 +56,13 @@
 
         .copyright {
             display: flex;
-            text-align: center;
-            align-items: center;
-            padding: 0 3rem;
+            text-align: start;
+            align-items: start;
+            padding: 0;
 
             .text {
                 font-size: 1rem;
-                text-align: center;
+                text-align: start;
             }
         }
     }

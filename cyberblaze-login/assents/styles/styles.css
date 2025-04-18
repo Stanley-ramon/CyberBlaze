@@ -239,9 +239,11 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
+  align-items: start;
+  text-align: start;
+  justify-content: start;
+  padding-left: 5%;
+  gap: 30%;
 }
 .background .texts {
   margin-top: 35%;
@@ -259,17 +261,20 @@ body {
   font-weight: bold;
 }
 .background .footer {
-  margin-bottom: 5%;
+  margin-bottom: 0;
   display: flex;
+  flex-direction: column;
+  justify-content: start;
   gap: 1rem;
-  padding: 0rem 2rem 1.2rem 2rem;
+  padding: 0;
   color: #FFFFFF;
+  align-items: start;
 }
 .background .footer .list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 1.2rem;
+  align-items: start;
 }
 .background .footer .list .link {
   color: #FFFFFF;
@@ -277,13 +282,13 @@ body {
 }
 .background .footer .copyright {
   display: flex;
-  text-align: center;
-  align-items: center;
-  padding: 0 3rem;
+  text-align: start;
+  align-items: start;
+  padding: 0;
 }
 .background .footer .copyright .text {
   font-size: 1rem;
-  text-align: center;
+  text-align: start;
 }
 
 @keyframes slideUp {
@@ -350,7 +355,8 @@ body {
 }
 
 .about-panel {
-  display: flex;
+  overflow: scroll;
+  padding-top: 8%;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -378,13 +384,13 @@ body {
 }
 .about-panel .about-content {
   padding: 3rem 0 2rem 0;
-  width: 48vw;
+  width: 80vw;
   display: flex;
   height: 100vh;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: start;
+  text-align: start;
   opacity: 1;
   animation: fadeIn 0.5s ease 0.3s forwards;
   gap: 2rem;
@@ -425,7 +431,167 @@ body {
   cursor: pointer;
 }
 
-@media screen and (min-width: 0px) and (max-width: 520px) {
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+  .wrapper .main {
+    width: 70%;
+    padding: 4rem 2rem 2rem 2rem;
+  }
+  .wrapper .main__titles .title {
+    font-size: 1.3rem;
+  }
+  .wrapper .main .inputs .text {
+    font-size: 1.3rem;
+  }
+  .wrapper .background {
+    width: auto;
+  }
+  .wrapper .background .texts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35%;
+    gap: 1rem;
+  }
+  .wrapper .background .texts .title {
+    font-size: 2rem;
+    padding: 0;
+  }
+  .wrapper .background .texts .text {
+    font-size: 0.9rem;
+    padding: 1rem 1rem 0 0;
+  }
+  .wrapper .background .footer {
+    padding: 0;
+    margin-top: 7%;
+    margin-bottom: 8%;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .wrapper .background .footer .list {
+    padding: 0;
+    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .wrapper .background .footer .list .link {
+    font-size: 0.9rem;
+  }
+  .wrapper .background .footer .copyright {
+    margin-bottom: 10%;
+    padding: 0;
+    text-align: start;
+    align-items: start;
+  }
+  .wrapper .background .footer .copyright .text {
+    font-size: 0.9rem;
+    text-align: start;
+  }
+  .about {
+    padding: 0.5rem;
+    border-radius: 10px 10px 0 0;
+    font-size: 0.9rem;
+    width: 25%;
+    bottom: 0;
+    z-index: 1001;
+  }
+  .about-panel {
+    overflow: scroll;
+  }
+  .about-panel .about-content {
+    width: 80vw;
+    padding: 8rem 0 2rem 0;
+    gap: 5rem;
+  }
+  .about-panel .about-content .items .texts {
+    padding: 0;
+  }
+  .about-panel .about-content .close-about {
+    margin: 0;
+    padding: 0.5rem 1rem;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 770px) {
+  .wrapper .main {
+    width: 55vw;
+    padding: 4rem 2rem 2rem 2rem;
+  }
+  .wrapper .main__titles .title {
+    font-size: 1.3rem;
+  }
+  .wrapper .main .inputs .text {
+    font-size: 1.3rem;
+  }
+  .wrapper .background {
+    width: auto;
+  }
+  .wrapper .background .texts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35%;
+    gap: 1rem;
+  }
+  .wrapper .background .texts .title {
+    font-size: 2rem;
+    padding: 0;
+  }
+  .wrapper .background .texts .text {
+    font-size: 0.9rem;
+    padding: 1rem 1rem 0 0;
+  }
+  .wrapper .background .footer {
+    padding: 0;
+    margin-top: 10%;
+    margin-bottom: 8%;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .wrapper .background .footer .list {
+    padding: 0;
+    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .wrapper .background .footer .list .link {
+    font-size: 0.9rem;
+  }
+  .wrapper .background .footer .copyright {
+    margin-bottom: 10%;
+    padding: 0;
+    text-align: start;
+    align-items: start;
+  }
+  .wrapper .background .footer .copyright .text {
+    font-size: 0.9rem;
+    text-align: start;
+  }
+  .about {
+    padding: 0.5rem;
+    border-radius: 10px 10px 0 0;
+    font-size: 0.9rem;
+    width: 25%;
+    bottom: 0;
+    z-index: 1001;
+  }
+  .about-panel {
+    overflow: scroll;
+  }
+  .about-panel .about-content {
+    width: 80vw;
+    padding: 8rem 0 2rem 0;
+    gap: 5rem;
+  }
+  .about-panel .about-content .items .texts {
+    padding: 0;
+  }
+  .about-panel .about-content .close-about {
+    margin: 0;
+    padding: 0.5rem 1rem;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
   .wrapper {
     display: flex;
     overflow: scroll;
@@ -492,15 +658,18 @@ body {
     padding: 0.5rem 0.5rem;
     border-radius: 10px 10px 0 0;
     font-size: 0.9rem;
-    width: 42%;
+    width: 40%;
     bottom: 0;
     z-index: 1001;
   }
   .about.open {
     bottom: 94vh;
   }
+  .about-panel {
+    overflow: scroll;
+  }
   .about-panel .about-content {
-    padding: 2rem 0 3rem 0;
+    padding: 7rem 0 3rem 0;
     width: 75vw;
     display: flex;
     height: 100dvh;
@@ -511,7 +680,7 @@ body {
     text-align: center;
     opacity: 1;
     animation: fadeIn 0.5s ease 0.3s forwards;
-    gap: 1rem;
+    gap: 3rem;
   }
   .about-panel .about-content .items {
     display: flex;
@@ -531,11 +700,11 @@ body {
   .about-panel .about-content .items .texts .title {
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
   .about-panel .about-content .items .texts .text {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: rgb(148, 139, 139);
   }
   .about-panel .about-content .close-about {
