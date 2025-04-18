@@ -666,7 +666,7 @@ body {
     z-index: 1001;
   }
   .about.open {
-    bottom: 93dvh;
+    bottom: 96dvh;
   }
   .about-panel {
     overflow: scroll;
