@@ -1,3 +1,13 @@
+function setVH() {
+    const vh = window.innerHeight * 0.01;
+
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+window.addEventListener("load", setVH);
+window.addEventListener("resize", setVH);
+
+
 function togglePassword() {
     const passwordInput = document.getElementById('senha');
     const eyeIcon = document.getElementById('eye-icon');

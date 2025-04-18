@@ -503,7 +503,8 @@ body {
     padding: 2rem 0 3rem 0;
     width: 75vw;
     display: flex;
-    height: 100vh;
+    height: 100dvh;
+    height: calc(var(--vh, 1vh) * 100);
     flex-direction: column;
     justify-content: center;
     align-items: center;
