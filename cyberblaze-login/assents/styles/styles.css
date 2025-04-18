@@ -345,9 +345,9 @@ body {
 }
 
 .about.open {
-  bottom: 93vh;
-  width: 100vw;
-  padding: 1.7rem 0;
+  bottom: 93dvh;
+  width: 100dvw;
+  padding: 1.3rem 0;
   border-radius: 0 0 12px 12px;
   background: linear-gradient(135deg, #3a0ca3, #7209b7, #f72585, #3a0ca3, #0d0221, #3a0ca3, #f72585, #7209b7, #3a0ca3);
   background-size: 300% 300%;
@@ -360,8 +360,8 @@ body {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   background: #1e1822;
   color: white;
   display: none;
@@ -383,10 +383,10 @@ body {
   animation: slideDown 0.8s ease forwards;
 }
 .about-panel .about-content {
-  padding: 3rem 0 2rem 0;
-  width: 80vw;
+  padding: 5rem 0 2rem 0;
+  width: 80dvw;
   display: flex;
-  height: 100vh;
+  height: 100dvh;
   flex-direction: column;
   justify-content: center;
   align-items: start;
@@ -401,6 +401,7 @@ body {
   text-align: center;
   align-items: center;
   gap: 2rem;
+  margin-left: 10%;
 }
 .about-panel .about-content .items .img {
   height: 8rem;
@@ -421,6 +422,8 @@ body {
   color: rgb(148, 139, 139);
 }
 .about-panel .about-content .close-about {
+  display: block;
+  margin: 2rem auto 0 auto;
   margin-top: 2rem;
   padding: 0.5rem 1rem;
   background: #3A00FF;
@@ -500,14 +503,14 @@ body {
   }
   .about-panel .about-content {
     width: 80vw;
-    padding: 8rem 0 2rem 0;
+    padding: 12rem 0 2rem 0;
     gap: 5rem;
   }
   .about-panel .about-content .items .texts {
     padding: 0;
   }
   .about-panel .about-content .close-about {
-    margin: 0;
+    margin-bottom: 15%;
     padding: 0.5rem 1rem;
   }
 }
@@ -580,14 +583,14 @@ body {
   }
   .about-panel .about-content {
     width: 80vw;
-    padding: 8rem 0 2rem 0;
+    padding: 12rem 0 2rem 0;
     gap: 5rem;
   }
   .about-panel .about-content .items .texts {
     padding: 0;
   }
   .about-panel .about-content .close-about {
-    margin: 0;
+    margin-bottom: 15%;
     padding: 0.5rem 1rem;
   }
 }
@@ -655,7 +658,7 @@ body {
     text-align: center;
   }
   .about {
-    padding: 0.5rem 0.5rem;
+    padding: 0.2rem 0.5rem;
     border-radius: 10px 10px 0 0;
     font-size: 0.9rem;
     width: 40%;
@@ -663,14 +666,14 @@ body {
     z-index: 1001;
   }
   .about.open {
-    bottom: 94vh;
+    bottom: 93dvh;
   }
   .about-panel {
     overflow: scroll;
   }
   .about-panel .about-content {
-    padding: 7rem 0 3rem 0;
-    width: 75vw;
+    padding: 9rem 0 3rem 0;
+    width: 85dvw;
     display: flex;
     height: 100dvh;
     height: calc(var(--vh, 1vh) * 100);
@@ -710,5 +713,6 @@ body {
   .about-panel .about-content .close-about {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
+    margin-bottom: 3rem;
   }
 }/*# sourceMappingURL=styles.css.map */

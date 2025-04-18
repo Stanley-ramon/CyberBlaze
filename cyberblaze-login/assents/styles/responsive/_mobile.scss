@@ -79,7 +79,7 @@
     }
 
     .about {
-        padding: 0.5rem 0.5rem;
+        padding: 0.2rem 0.5rem;
         border-radius: 10px 10px 0 0;
         font-size: 0.9rem;
         width: 40%;
@@ -89,15 +89,15 @@
     }
 
     .about.open {
-        bottom: 94vh;
+        bottom: 93dvh;
     } 
 
 
     .about-panel {
         overflow: scroll;
         .about-content {
-            padding: 7rem 0 3rem 0;
-            width: 75vw;
+            padding: 9rem 0 3rem 0;
+            width: 85dvw;
             display: flex;
             height: 100dvh;
             height: calc(var(--vh, 1vh) * 100);
@@ -143,6 +143,7 @@
             .close-about {
                 margin-top: 1rem;
                 padding: 0.5rem 1rem;
+                margin-bottom: 3rem;;
             }
         }
     }
