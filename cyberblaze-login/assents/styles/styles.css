@@ -93,7 +93,7 @@ body {
 .wrapper .main .inputs {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.7rem;
   width: 100%;
   margin-top: 2.5rem;
 }
@@ -199,7 +199,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 .wrapper .main .inputs .container__1 .button__login {
   display: flex;
@@ -330,7 +330,7 @@ body {
   cursor: pointer;
   left: 50%;
   transform: translate(-50%, 25%);
-  width: 40vw;
+  width: 27vw;
   bottom: 0;
   z-index: 1001;
   background: linear-gradient(135deg, #3a0ca3, #7209b7, #f72585, #3a0ca3, #0d0221, #3a0ca3, #f72585, #7209b7, #3a0ca3);
@@ -342,7 +342,7 @@ body {
 .about.open {
   bottom: 93vh;
   width: 100vw;
-  padding: 1.5rem 0;
+  padding: 1.7rem 0;
   border-radius: 0 0 12px 12px;
   background: linear-gradient(135deg, #3a0ca3, #7209b7, #f72585, #3a0ca3, #0d0221, #3a0ca3, #f72585, #7209b7, #3a0ca3);
   background-size: 300% 300%;
@@ -428,32 +428,32 @@ body {
 @media screen and (min-width: 0px) and (max-width: 520px) {
   .wrapper {
     display: flex;
+    overflow: scroll;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: 100vh;
     background: linear-gradient(180deg, #000, #1b1a1c, #1e1822);
-    overflow: hidden;
-    padding: 0;
+    justify-content: center;
   }
   .wrapper .main {
+    margin: 27% 0 7% 0;
     padding: 0.5rem 0 0 0;
     background: none;
-    width: 70vw;
+    width: 80vw;
+    height: 100%;
   }
   .wrapper .main__titles {
-    gap: 0.5rem;
+    gap: 0.7rem;
   }
   .wrapper .main__titles .title {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   .wrapper .main__titles .subtitle {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
   .wrapper .main .inputs {
-    margin-top: 1rem;
-    padding-bottom: 2rem;
-    gap: 0.6rem;
+    margin-top: 1.2rem;
+    gap: 1.7rem;
   }
   .wrapper .main .inputs .text {
     font-size: 1rem;
@@ -462,10 +462,11 @@ body {
     display: none;
   }
   .wrapper .footer {
-    margin-bottom: 3%;
+    margin-bottom: 10%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 80vw;
     color: #FFFFFF;
   }
   .wrapper .footer .list {
@@ -482,7 +483,6 @@ body {
     display: flex;
     text-align: center;
     align-items: center;
-    padding: 0 1.8rem;
   }
   .wrapper .footer .copyright .text {
     font-size: 0.9rem;
@@ -497,7 +497,7 @@ body {
     z-index: 1001;
   }
   .about.open {
-    bottom: 87vh;
+    bottom: 94vh;
   }
   .about-panel .about-content {
     padding: 2rem 0 3rem 0;
