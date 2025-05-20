@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    .name {
+        font-size: 1.2rem;
+        padding: 1rem;
+        color: rgb(180, 140, 65);
+        font-weight: bold;
+
+        .link {
+            text-decoration: none;
+            color: white;
+            
+        }
+    }
+}

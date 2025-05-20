@@ -335,7 +335,7 @@ body {
   cursor: pointer;
   left: 50%;
   transform: translate(-50%, 25%);
-  width: 27vw;
+  width: 30vw;
   bottom: 0;
   z-index: 1001;
   background: linear-gradient(135deg, #3a0ca3, #7209b7, #f72585, #3a0ca3, #0d0221, #3a0ca3, #f72585, #7209b7, #3a0ca3);

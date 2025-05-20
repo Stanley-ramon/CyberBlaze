@@ -1,0 +1,83 @@
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .header {
+        padding: 2.4% 2%;
+
+        &__left {
+            gap: 0.7rem;
+
+            .title {
+                &__logo {
+                    height: 2.2rem;
+                    width: 2.2rem;
+                }
+
+                &__name {
+                    display: none;
+                }
+            }
+
+            .separator {
+                display: none;
+            }
+
+            .button-subscrib {
+                padding: 0.6rem 0.5rem;
+                border-radius: 7px;
+
+                &__img {
+                    display: block;
+                }
+
+
+                &__name {
+                    display: none;
+                }
+            }
+        }
+
+        &__right {
+            gap: 0.8rem;
+
+            .search {
+                display: flex;
+                height: 1rem;
+                width: 1.5rem;
+                align-items: center;
+                justify-content: center;
+
+                // Define o tamanho padrão como pequeno (pra parecer só o botão)
+                width: auto;
+                height: auto;
+
+                &.active .search__input {
+                    width: 130px;
+                    opacity: 1;
+                    padding: 0.3rem 0.8rem;
+                    font-size: 0.9rem;;
+                }
+            }
+
+            .question {
+                display: none;
+            }
+
+            .button-profile {
+                margin-right: 1rem;
+                padding: 0.5rem;
+
+                &__img {
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
+
+                &__name {
+                    display: none;
+                }
+            }
+
+            .log-out {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,2 +1,24 @@
+// Abstract
 @use './abstract/root';
-@use './componets/jogos';
+@use './abstract/reset';
+
+// Componentes gerais
+@use './components/header'  as compHeader;
+@use './components/wrapper' as compMain;
+@use './components/content-panel' as compContentPanel;
+@use './components/footer' as compFooter;
+
+// Responsive: mobile
+@use './responsive/mobile/header' as mobileHeader;
+@use './responsive/mobile/wrapper' as mobileMain;
+@use './responsive/mobile/content-panel' as mobileContentPanel;
+
+// Responsive: Tablet
+@use './responsive/tablet/header' as tabletHeader;
+
+// Responsive: Desktop
+@use './responsive/desktop/header' as desktopHeader;
+
+
+
+

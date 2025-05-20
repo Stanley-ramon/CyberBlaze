@@ -1,16 +1,9 @@
 body {
-    padding: 0;
-    margin: 0;
+    background: black;
     box-sizing: border-box;
-    background-image: url("/cyberblaze-games/assets/imgs/Captura\ de\ tela\ 2024-10-20\ 100447.png");
-    background-image: 50vw;
-    background-size: cover; /* Faz a imagem cobrir todo o background */
-    background-position: center; /* Centraliza a imagem */
-    backdrop-filter: blur(5px); /* Aplica o efeito de desfoque */
-    -webkit-backdrop-filter: blur(5px); /* Compatibilidade com navegadores webkit */
-    height: 100vh; /* O body cobre a altura total da viewport */
-    margin: 0; /* Remove a margem do body */
-    display: flex;
-    text-align: center;
-    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    height: 100dvh;
+    width: 100dvw;
+     overflow-x: hidden;
 }

@@ -1,17 +1,477 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<!-- INICIADO NO DIA 18/04/2025 AS 6:00 HORAS DA NOITE -->
+<!--dia 19/04/2025 iniciado as 9:30.a.m o header e a responsividade ate 6:30.p.m /dia todo -->
+<!-- dia 20/04/2025 iniciado as 9:30.a.m concluindo   o header junto com a responsividade 4:50.p.m dia todo-->
+<!-- dia 21/04/2025 iniciado as 9:00.a.m o wrapper dia todo-->
+ <!-- dia 24/04/2025 iniciado as 6:30.p.m botoes filters e wrapper trasicoes. ate as 9:00.p.m-->
+  <!-- dia 26/04/2025 iniciado as 5:30.a.m colocado as logos nos wrappers e hover nos butoes nav ate as 6:30.p.m -->
+   <!-- dia 27/04/2025 iniciado as 9:30.a.m covertendo todas as imagens para svg e webp ate as 10:50.a.m -->
+    <!-- dia 14/05/2025 iniciado as 9:20.p.m colocando funcao ativa nos botoes de navegaçao ate as 9:40.p.m -->
+     <!-- dia 17/05/2025 iniciado as 3:20 p.m fazendo o conteudos que correspondem a navbar ate as 7:00.p.m -->
+      <!-- dia 18/05/2025 iniciado as 12:00.p.m colocandos imgs da biblioteca e responsividade do wrappers ate as 4:10.p.m -->
+
 <head>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4467754145506663"
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberBlaze</title>
     <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
-<body class="jogos">
-    <a  class="jogos__botao" href="../index.html">Voltar</a>
-    <h1 class="jogos__titulo">Em desenvolvimento...</h1>
-    <a href="https://www.instagram.com/Stanley_478" class="jogos__link">@Stanley_478</a>
-    
+
+<body>
+    <header class="header">
+        <div class="header__left">
+            <h1 class="title">
+                <img class="title__logo" src="./assets/imgs/header/webp/design_da_chama_roxa-com o fundo removido.webp">
+                <strong class="title__name">
+                    ＣＹＢΞＲＢＬΛＺΞ
+                </strong>
+            </h1>
+            <span class="separator">|</span>
+            <button class="button-subscrib">
+                <img class="button-subscrib__img" src="./assets/imgs/header/svg/se inscrever.svg">
+                <strong class="button-subscrib__name">
+                    Inscreva-se e jogue
+                </strong>
+            </button>
+        </div>
+
+        <div class="header__right">
+            <div class="search buttons " id="searchButton">
+                <input class="search__input" type="search" placeholder="pesquisar">
+                <img class="lupa" src="./assets/imgs/header/svg/icon-search (1).svg" alt="search">
+            </div>
+            <a href="#" class="question buttons">
+                <img class="?" src="./assets/imgs/header/svg/icon-question.svg" alt="Questions">
+            </a>
+            <button class="button-profile buttons">
+                <img class="button-profile__img" src="./assets/imgs/header/webp/perfil.webp" alt="perfil">
+                <strong class="button-profile__name">
+                    Stanley Ramon
+                </strong>
+            </button>
+            <button class="log-out buttons">
+                <img src="./assets/imgs/header/svg/logout.svg" alt="Logout">
+            </button>
+        </div>
+    </header>
+
+    <section class="wrapper">
+        <div class="background-overlay"></div>
+        <div class="wrapper-1">
+            <div class="wrapper-1__titles">
+                <img class="wrapper-1__img" src="./assets/imgs/wrappers/webp/logo-gta5.webp" alt="Logo GTA-5">
+                <h3 class="title">esta aqui</h3>
+                <h4 class="subtitle">Caos e aventura em mundo aberto.</h4>
+            </div>
+            <button class="play">Jogar</button>
+        </div>
+
+        <div class="wrapper-2">
+            <div class="wrapper-2__titles">
+                <img class="wrapper-2__img" src="./assets/imgs/wrappers/webp/logo.days-gone.webp" alt="Logo Days-Gone">
+                <h3 class="title">Aventura e sobrevivencia</h3>
+                <h4 class="subtitle">Sobrevivência e ação em um mundo pós-apocalíptico.</h4>
+            </div>
+            <button class="play">Se inscrever</button>
+        </div>
+
+        <div class="wrapper-3">
+            <div class="wrapper-3__titles">
+                <img class="wrapper-3__img" src="./assets/imgs/wrappers/webp/logo.call-of-duty-III.webp" alt="logo MW-III">
+                <h3 class="title">Combate e muita ação</h3>
+                <h4 class="subtitle">Guerra intensa e ação explosiva.</h4>
+            </div>
+            <button class="play">saiba mais</button>
+        </div>
+
+        <div class="wrapper-4">
+            <div class="wrapper-4__titles">
+                <img class="wrapper-4__img" src="./assets/imgs/wrappers/webp/logo.ghost-wire.webp" alt="Logo ghost-wire">
+                <h3 class="title">Ghost Wire Tokyo</h3>
+                <h4 class="subtitle">Mistério sobrenatural em uma Tóquio deserta.</h4>
+            </div>
+            <button class="play">se inscrever</button>
+        </div>
+
+        <div class="wrapper-5">
+            <div class="wrapper-5__titles">
+                <img class="wrapper-5__img" src="./assets/imgs/wrappers/webp/logo-gta5.webp">
+                <h3 class="title">ＣＹＢΞＲＢＬΛＺΞ</h3>
+                <h4 class="subtitle">a melhor de todas as pataformas</h4>
+            </div>
+            <button class="play">se inscrever</button>
+        </div>
+
+        <ul class="wrapper__buttons-background">
+            <li>
+                <button class="scroll" data-index="0"></button>
+            </li>
+            <li>
+                <button class="scroll" data-index="1"></button>
+            </li>
+            <li>
+                <button class="scroll" data-index="2"></button>
+            </li>
+            <li>
+                <button class="scroll" data-index="3"></button>
+            </li>
+            <li>
+                <button class="scroll" data-index="4"></button>
+            </li>
+        </ul>
+
+        <div class="wrapper-navbar">
+            <nav class="navbar">
+                <div class="buttons">
+                    <button class="tab-button active">Meus Jogos</button>
+                    <button class="tab-button">Biblioteca</button>
+                    <button class="tab-button">Instalar</button>
+                    <button class="tab-button">
+                        <img class="img-Fanatico" src="./assets/imgs/wrappers/svg/fanatico.svg">
+                        Fanatico
+                    </button>
+                </div>
+
+                <div class="filters">
+                    <label class="button filter">
+                        <input type="checkbox" class="button__check" />
+                        <span class="custom-check"></span>
+                        <span class="button__label">Livre</span>
+                    </label>
+
+                    <label class="button filter">
+                        <input type="checkbox" class="button__check" />
+                        <span class="custom-check"></span>
+                        <span class="button__label">Controlador</span>
+                    </label>
+
+                    <div class="filters__list">
+                        <button class="button active" onclick="toggleDropdown('legal-list')">todas as plataformas</button>
+                        <ul class="list" id="partners-list">
+                            <li class="list__item">Todas as plataformas </li>
+                            <li class="list__item">battle.net</li>
+                            <li class="list__item">EA</li>
+                            <li class="list__item">Loja de Jogos épicos</li>
+                            <li class="list__item">Jogos Rockstar</li>
+                            <li class="list__item">Vapor</li>
+                            <li class="list__item">Conexão Ubsoft</li>
+                            <li class="list__item">Wargaming.net</li>
+                            <li class="list__item">Xboxe</li>
+                        </ul>
+                    </div>
+                    <div class="filters__list">
+                        <button class="button" onclick="toggleDropdown('legal-list')">todas as plataformas <span>></span></button>
+                        <ul class="list" id="partners-list">
+                            <li class="list__item">Todas as plataformas </li>
+                            <li class="list__item">battle.net</li>
+                            <li class="list__item">EA</li>
+                            <li class="list__item">Loja de Jogos épicos</li>
+                            <li class="list__item">Jogos Rockstar</li>
+                            <li class="list__item">Vapor</li>
+                            <li class="list__item">Conexão Ubsoft</li>
+                            <li class="list__item">Wargaming.net</li>
+                            <li class="list__item">Xboxe</li>
+                        </ul>
+                    </div>                                                        
+                    <div class="filters__list">
+                        <button class="button" onclick="toggleDropdown('legal-list')">Recentes<span>></span></button>
+                        <ul class="list" id="legal-list">
+                            <li class="list__item">Popular</li>
+                            <li class="list__item">Novos</li>
+                            <li class="list__item">De A a Z</li>
+                            <li class="list__item">Z para A</li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="content-panel"> 
+        <div class="content-section active" id="meus-jogos">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/Dead Island 2.jpeg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                 <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/call of duty modern of war III.jpeg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                 <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/Metro-2033-Redux.png">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                 <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/visage game.jpg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+            </ul>
+        </div>
+         <div class="content-section" id="biblioteca">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/Dying Light.jpg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                 <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/counter-strike-2.jpg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                 <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/Clair Obscur Expedition 33.jpg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/eFootball™.jpg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/farming simulator 2025.jpg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/fortnite.jpg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/Ghostwire Tokyo.png">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/High on Life.jpg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/Metro-2033-Redux.png">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/R.E.P.O..jpg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                 <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/Dead Island 2.jpeg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                 <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/cyber punk 2077.jpeg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                 <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/euro truck simulator 2.jpg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                 <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/visage game.jpg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                 <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/The Hunting God.jpg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/Satisfactory.png">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/call of duty modern of war III.jpeg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/fishing planet.jpeg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/fallout 76.png">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/once human.jpg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+
+            </ul>
+        </div>
+         <div class="content-section" id="instalar">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/cyber punk 2077.jpeg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                 <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/euro truck simulator 2.jpg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                 <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/once human.jpg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                 <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/Satisfactory.png">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+            </ul>
+        </div>
+         <div class="content-section" id="fanatico">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/farming simulator 2025.jpg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                 <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/eFootball™.jpg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                 <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/Ghostwire Tokyo.png">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+                 <li class="nav-item">
+                    <div class="nav-item__container">
+                        <img class="img" src="./assets/imgs/library/webp/fishing planet.jpeg">
+                        <button class="bnt-play">play</button>
+                        <button class="bnt-add"><img src="">+</button>
+                    </div>
+                    <p>licença nescessária</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <P class="name">Em desenvolvimento <a class="link" href="https://www.instagram.com/stanley_478">@
+                Stanley_478</a></P>
+    </footer>
+
+    <div class="overlay" id="overlay"></div>
+    <script src="./assets/styles/scripts.js/scripts.js"></script>
 </body>
+
 </html>
