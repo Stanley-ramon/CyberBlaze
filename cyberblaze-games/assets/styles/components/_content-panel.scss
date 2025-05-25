@@ -10,41 +10,45 @@
 
         .nav-list {
             display: flex;
-            padding-left: 5%;
-            gap: 1.5rem;
             flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem;
+            padding-left: 5%;
 
             .nav-item {
+                flex-grow: 1;
+
                 &:hover {
+
                     .bnt-play,
                     .bnt-add {
                         display: block;
                     }
                 }
+
                 &__container {
                     position: relative;
-                    display: inline-block;
+                    width: 100%;
                     display: flex;
                     text-align: center;
                     align-items: center;
 
                     .img {
-                        display: block;
-                        height: auto;
-                        height: 180px;
                         width: 180px;
+                        height: 180px;
                         border-radius: 1rem;
+
                     }
 
                     .bnt-play {
                         display: none;
                         position: absolute;
                         bottom: 5%;
-                        left: 5%;
+                        left: 3%;
                         width: fit-content;
                         border: none;
                         font-size: 1rem;
-                        padding: 0.6rem 2.3rem;
+                        padding: 0.6rem 2rem;
                         background: rgb(28, 15, 214);
                         color: white;
                         border-radius: 10px;
@@ -70,9 +74,7 @@
                             background: orange;
                         }
                     }
-
                 }
-
 
             }
         }

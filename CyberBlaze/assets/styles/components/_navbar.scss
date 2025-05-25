@@ -6,15 +6,15 @@
     text-align: center;
 
     &__logo-image {
-        height: 60px;
-        width: 80px;
-        margin: 1rem 0 0 0.7rem;
+      height: 2.2rem;
+      width: 2.2rem;
+      margin: 1rem 0 0 0.7rem;
     }
 
     &__logo-text {
-        display: none;
+      display: none;
     }
-  
+
     &__navbar {
       display: flex;
       position: relative;
@@ -23,89 +23,90 @@
       text-align: center;
       align-items: center;
 
-        &-buttons {
+      &-buttons {
 
-          &__language {
-            display: none;
-          }
+        &__language {
+          display: none;
+        }
 
-          &__login {
-              font-size: 1rem;
-              padding: 0.7rem 0.8rem;
-              background:#3A00FF;
-              border-color:#3A00FF;
-              text-decoration: none;
-              color: white;
-              border-radius: 8px;
-              text-transform: uppercase;
-              font-family: "Montserrat sans,serif";
-          
-            &:hover {
-              border-color: white;
-              font-size: 1.1rem;
-              font-weight: 700;
-              text-transform: uppercase;
-            }
+        &__login {
+          font-size: 0.8rem;
+          padding: 0.5rem 0.8rem;
+          background: #3A00FF;
+          border-color: #3A00FF;
+          text-decoration: none;
+          color: white;
+          border-radius: 8px;
+          text-transform: uppercase;
+          font-family: "Montserrat sans,serif";
+
+          &:hover {
+            border-color: white;
+            font-size: 0.9rem;
+            font-weight: 500;
           }
         }
-  
-          &-button {
-              display: none; // Esconde o checkbox
-          }
-  
-          &-label {
-              cursor: pointer;
-              position: relative;
-              z-index: 10;
-  
-              .header__navbar-label__menu-humburguer {
-                  transition: transform 0.3s ease;
-                  display: flex; // Para alinhar os traços corretamente
-                  flex-direction: column; // Organiza os traços em coluna
-                  gap: 4px; // Espaçamento entre os traços
-              }
-          }
-  
-          &-list {
-              display: none; // Esconde a lista inicialmente
-              position: absolute; // Posiciona a lista em relação ao seu contêiner pai
-              top: 200%; // Distância do topo
-              right: 0; // Alinha à direita
-              background: #444; // Cor de fundo da lista
-              border-radius: 5px; // Bordas arredondadas
-              z-index:10000; // Garante que a lista fique abaixo do 'X'
+      }
 
-              &__flag {
-                display: none;
+      &-button {
+        display: none; // Esconde o checkbox
+      }
 
-              }
-  
-              &__link {
-                  color: #fff;
-                  text-decoration: none;
-                  padding: 0.5rem 1rem; // Mais espaçamento para os links
-                  display: block;
-  
-                  &:hover {
-                      background: #555; // Efeito de hover
-                  }
-              }
+      &-label {
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+
+        .header__navbar-label__menu-humburguer {
+          transition: transform 0.3s ease;
+          display: flex; // Para alinhar os traços corretamente
+          flex-direction: column; // Organiza os traços em coluna
+          gap: 4px; // Espaçamento entre os traços
+        }
+      }
+
+      &-list {
+        display: none; // Esconde a lista inicialmente
+        position: absolute; // Posiciona a lista em relação ao seu contêiner pai
+        top: 200%; // Distância do topo
+        right: 0; // Alinha à direita
+        background: #444; // Cor de fundo da lista
+        border-radius: 5px; // Bordas arredondadas
+        z-index: 10000; // Garante que a lista fique abaixo do 'X'
+
+        &__flag {
+          display: none;
+
+        }
+
+        &__link {
+          color: #fff;
+          text-decoration: none;
+          padding: 0.5rem 1rem; // Mais espaçamento para os links
+          display: block;
+
+          &:hover {
+            background: #555; // Efeito de hover
           }
-  
-          // Mostra a lista e transforma o menu-hambúrguer em 'X' ao clicar
-          &-button:checked ~ &-list {
-              display: block; // Exibe a lista
-          }
-  
-          &-button:checked ~ &__label .header__navbar-label__menu-humburguer rect:nth-of-type(1) {
-              transform: rotate(45deg) translate(5px, 5px); // Rotação do primeiro traço
-          }
-          &-button:checked ~ &__label .header__navbar-label__menu-humburguer rect:nth-of-type(2) {
-              display: none; // Esconde o segundo traço
-          }
-          &-button:checked ~ &__label .header__navbar-label__menu-humburguer rect:nth-of-type(3) {
-              transform: rotate(-45deg) translate(5px, -5px); // Rotação do terceiro traço
-          }
+        }
+      }
+
+      // Mostra a lista e transforma o menu-hambúrguer em 'X' ao clicar
+      &-button:checked~&-list {
+        display: block; // Exibe a lista
+      }
+
+      &-button:checked~&__label .header__navbar-label__menu-humburguer rect:nth-of-type(1) {
+        transform: rotate(45deg) translate(5px, 5px); // Rotação do primeiro traço
+      }
+
+      &-button:checked~&__label .header__navbar-label__menu-humburguer rect:nth-of-type(2) {
+        display: none; // Esconde o segundo traço
+      }
+
+      &-button:checked~&__label .header__navbar-label__menu-humburguer rect:nth-of-type(3) {
+        transform: rotate(-45deg) translate(5px, -5px); // Rotação do terceiro traço
+      }
     }
   }
 }
@@ -117,15 +118,15 @@
     align-items: center;
 
     &__logo-image {
-        height: 60px;
-        width: 80px;
-        margin: 1rem 0 0 0.7rem;
+      height: 60px;
+      width: 80px;
+      margin: 1rem 0 0 0.7rem;
     }
 
     &__logo-text {
-        display: none;
+      display: none;
     }
-  
+
     &__navbar {
       display: flex;
       position: relative;
@@ -134,358 +135,361 @@
       text-align: center;
       align-items: center;
 
-        &-buttons {
+      &-buttons {
 
-          &__language {
-            display: none;
-          }
+        &__language {
+          display: none;
+        }
 
-          &__login {
-              font-size: 1rem;
-              padding: 0.7rem 0.8rem;
-              background: #3A00FF;
-              border-color:#3A00FF;
-              text-decoration: none;
-              color: white;
-              border-radius: 10px;
-              text-transform: uppercase;
-              font-family: "Montserrat sans,serif";
-              font-weight: 700;
-          
-            &:hover {
-              border-color: white;
-              font-size: 1.1rem;
-              font-weight: 700;
-              text-transform: uppercase;
-            }
+        &__login {
+          font-size: 1rem;
+          padding: 0.7rem 0.8rem;
+          background: #3A00FF;
+          border-color: #3A00FF;
+          text-decoration: none;
+          color: white;
+          border-radius: 10px;
+          text-transform: uppercase;
+          font-family: "Montserrat sans,serif";
+          font-weight: 700;
+
+          &:hover {
+            border-color: white;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
           }
         }
-  
-          &-button {
-              display: none; // Esconde o checkbox
-          }
-  
-          &-label {
-              cursor: pointer;
-              position: relative;
-              z-index: 10;
-  
-              .header__navbar-label__menu-humburguer {
-                  transition: transform 0.3s ease;
-                  display: flex; // Para alinhar os traços corretamente
-                  flex-direction: column; // Organiza os traços em coluna
-                  gap: 4px; // Espaçamento entre os traços
-              }
-          }
-  
-          &-list {
-              display: none; // Esconde a lista inicialmente
-              position: absolute; // Posiciona a lista em relação ao seu contêiner pai
-              top: 200%; // Distância do topo
-              right: 0; // Alinha à direita
-              background: #444; // Cor de fundo da lista
-              border-radius: 5px; // Bordas arredondadas
-              z-index:10000; // Garante que a lista fique abaixo do 'X'
+      }
 
-              &__flag {
-                display: none;
+      &-button {
+        display: none; // Esconde o checkbox
+      }
 
-              }
-  
-              &__link {
-                  color: #fff;
-                  text-decoration: none;
-                  padding: 0.5rem 1rem; // Mais espaçamento para os links
-                  display: block;
-  
-                  &:hover {
-                      background: #555; // Efeito de hover
-                  }
-              }
+      &-label {
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+
+        .header__navbar-label__menu-humburguer {
+          transition: transform 0.3s ease;
+          display: flex; // Para alinhar os traços corretamente
+          flex-direction: column; // Organiza os traços em coluna
+          gap: 4px; // Espaçamento entre os traços
+        }
+      }
+
+      &-list {
+        display: none; // Esconde a lista inicialmente
+        position: absolute; // Posiciona a lista em relação ao seu contêiner pai
+        top: 200%; // Distância do topo
+        right: 0; // Alinha à direita
+        background: #444; // Cor de fundo da lista
+        border-radius: 5px; // Bordas arredondadas
+        z-index: 10000; // Garante que a lista fique abaixo do 'X'
+
+        &__flag {
+          display: none;
+
+        }
+
+        &__link {
+          color: #fff;
+          text-decoration: none;
+          padding: 0.5rem 1rem; // Mais espaçamento para os links
+          display: block;
+
+          &:hover {
+            background: #555; // Efeito de hover
           }
-  
-          // Mostra a lista e transforma o menu-hambúrguer em 'X' ao clicar
-          &-button:checked ~ &-list {
-              display: block; // Exibe a lista
-          }
-  
-          &-button:checked ~ &__label .header__navbar-label__menu-humburguer rect:nth-of-type(1) {
-              transform: rotate(45deg) translate(5px, 5px); // Rotação do primeiro traço
-          }
-          &-button:checked ~ &__label .header__navbar-label__menu-humburguer rect:nth-of-type(2) {
-              display: none; // Esconde o segundo traço
-          }
-          &-button:checked ~ &__label .header__navbar-label__menu-humburguer rect:nth-of-type(3) {
-              transform: rotate(-45deg) translate(5px, -5px); // Rotação do terceiro traço
-          }
+        }
+      }
+
+      // Mostra a lista e transforma o menu-hambúrguer em 'X' ao clicar
+      &-button:checked~&-list {
+        display: block; // Exibe a lista
+      }
+
+      &-button:checked~&__label .header__navbar-label__menu-humburguer rect:nth-of-type(1) {
+        transform: rotate(45deg) translate(5px, 5px); // Rotação do primeiro traço
+      }
+
+      &-button:checked~&__label .header__navbar-label__menu-humburguer rect:nth-of-type(2) {
+        display: none; // Esconde o segundo traço
+      }
+
+      &-button:checked~&__label .header__navbar-label__menu-humburguer rect:nth-of-type(3) {
+        transform: rotate(-45deg) translate(5px, -5px); // Rotação do terceiro traço
+      }
     }
   }
 }
 
-  @media screen and (min-width: 770px) and (max-width: 950px)  {
-    .header {
+@media screen and (min-width: 770px) and (max-width: 950px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 0 0 3%;
+    text-align: center;
+
+    &__logo {
       display: flex;
-      justify-content: space-between;
-      align-items: center;  
-      margin: 2% 0 0 3%;
-      text-align: center;
+      align-items: center;
 
-      &__logo {
-        display: flex;
+      &-image {
+        height: 60px;
+        width: 80px;
+      }
+
+      &-text {
+        text-align: center;
         align-items: center;
+        font-size: 20px;
+        text-transform: uppercase;
+        gap: 0.5rem;
+        color: white;
+        display: block;
+      }
+    }
 
-        &-image {
-          height: 60px;
-          width: 80px;
-        }
+    &__navbar {
+      margin: 0 4% 0 5%;
+      display: flex;
+      position: relative;
+      align-items: center;
 
-        &-text {
+      &-buttons {
+        display: flex;
+        justify-content: space-between;
+
+        &__language {
+          display: flex;
           text-align: center;
           align-items: center;
-          font-size: 20px;
-          text-transform: uppercase;
-          gap: 0.5rem;
+          text-decoration: none;
           color: white;
-          display: block;
-        }
-      }
-    
-      &__navbar {
-        margin: 0 4% 0 5%;
-        display: flex;
-        position: relative;
-        align-items: center;
+          border: 1px solid white;
+          border-radius: 7px;
+          font-size: 0.6rem;
+          padding: 0.1rem 0.6rem;
+          gap: 0.2rem;
 
-        &-buttons {
+          &-flag {
+            height: 2rem;
+            width: 2rem;
+          }
+        }
+
+        &__login {
           display: flex;
-          justify-content: space-between;
-
-          &__language {
-            display: flex;
-            text-align: center;
-            align-items: center;
-            text-decoration: none;
-            color: white;
-            border: 1px solid white;
-            border-radius: 7px;
-            font-size: 0.6rem;
-            padding: 0.1rem 0.6rem;
-            gap: 0.2rem;
-
-            &-flag {
-              height: 2rem;
-              width: 2rem;
-            }
-          }
-
-          &__login {
-            display: flex;
-            margin-left: 1rem;
-            font-size: 1rem;
-            padding: 0 1.5rem;;
-            background:#3A00FF;
-            border-color: #3A00FF;
-            color: white;
-            text-decoration: none;
-            text-align: center;
-            align-items: center;
-            border-radius: 10px;
-            font-weight: 700;
-          }
-        }
-
-        &-button {
-          display: none;
-        }
-
-        &-label {
           margin-left: 1rem;
-          cursor: pointer;
-          position: relative;
-          z-index: 10;
-
-          &__menu-humburguer {
-              transition: transform 0.3s ease;
-              display: flex; // Para alinhar os traços corretamente
-              flex-direction: column; // Organiza os traços em coluna
-              gap: 4px; // Espaçamento entre os traços
-          }
-        }
-        
-        &-list {
-          display: none; // Esconde a lista inicialmente
-          position: absolute; // Posiciona a lista em relação ao seu contêiner pai
-          padding: 10%;
-          top: 200%; // Distância do topo
-          right: 0; // Alinha à direita
-          background: #444; // Cor de fundo da lista
-          border-radius: 5px; // Bordas arredondadas
-          z-index:10000; // Garante que a lista fique abaixo do 'X'
-
-          &__link {
-            display: flex;
-            justify-content: start;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: white;
-            margin: 0.4rem 1rem 1rem 0;
-            text-align: start;
-            align-items: center;
-        
-            &:hover {
-              color: orange;
-            }
-          }
-
-          &__flag {
-            display: none;
-          }
-        }
-      
-          // Mostra a lista e transforma o menu-hambúrguer em 'X' ao clicar
-        &-button:checked ~ &-list {
-          display: block; // Exibe a lista
-        }
-        
-      }
-      
-    }
-    
-  }
-
-  @media screen and (min-width: 950px) {
-    .header {
-      display: flex;
-      position: fixed;
-      background: black;
-      width: 100vw;
-      justify-content: space-between;
-      padding: 1.5rem;
-      top: 0;
-      left: 0;
-      z-index: 2;
-      align-items: center;  
-      text-align: center;
-
-      &__logo {
-        display: flex;
-        align-items: center;
-
-        &-image {
-          height: 60px;
-          width: 80px;
-        }
-
-        &-text {
+          font-size: 1rem;
+          padding: 0 1.5rem;
+          ;
+          background: #3A00FF;
+          border-color: #3A00FF;
+          color: white;
+          text-decoration: none;
           text-align: center;
           align-items: center;
-          font-size: 20px;
-          text-transform: uppercase;
-          gap: 0.5rem;
-          color: white;
-          display: block;
+          border-radius: 10px;
+          font-weight: 700;
         }
       }
-    
-      &__navbar {
-        margin: 0 4% 0 5%;
-        display: flex;
+
+      &-button {
+        display: none;
+      }
+
+      &-label {
+        margin-left: 1rem;
+        cursor: pointer;
         position: relative;
-        align-items: center;
+        z-index: 10;
 
-        &-buttons {
+        &__menu-humburguer {
+          transition: transform 0.3s ease;
+          display: flex; // Para alinhar os traços corretamente
+          flex-direction: column; // Organiza os traços em coluna
+          gap: 4px; // Espaçamento entre os traços
+        }
+      }
+
+      &-list {
+        display: none; // Esconde a lista inicialmente
+        position: absolute; // Posiciona a lista em relação ao seu contêiner pai
+        padding: 10%;
+        top: 200%; // Distância do topo
+        right: 0; // Alinha à direita
+        background: #444; // Cor de fundo da lista
+        border-radius: 5px; // Bordas arredondadas
+        z-index: 10000; // Garante que a lista fique abaixo do 'X'
+
+        &__link {
           display: flex;
-          justify-content: space-between;
+          justify-content: start;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: white;
+          margin: 0.4rem 1rem 1rem 0;
+          text-align: start;
+          align-items: center;
 
-          &__language {
-            display: flex;
-            text-align: center;
-            align-items: center;
-            text-decoration: none;
-            color: white;
-            border: 1px solid white;
-            border-radius: 7px;
-            font-size: 0.6rem;
-            padding: 0.1rem 0.6rem;
-            gap: 0.2rem;
-
-            &-flag {
-              height: 2rem;
-              width: 2rem;
-            }
-          }
-
-          &__login {
-            display: flex;
-            margin-left: 1rem;
-            font-size: 1rem;
-            padding: 0 1.5rem;;
-            background:#3A00FF;
-            border-color:#3A00FF;
-            color: white;
-            text-decoration: none;
-            text-align: center;
-            align-items: center;
-            border-radius: 10px;
-            font-weight: 700;
+          &:hover {
+            color: orange;
           }
         }
 
-        &-button {
+        &__flag {
           display: none;
         }
-
-        &-label {
-          margin-left: 1rem;
-          cursor: pointer;
-          position: relative;
-          z-index: 10;
-
-          &__menu-humburguer {
-              transition: transform 0.3s ease;
-              display: flex; // Para alinhar os traços corretamente
-              flex-direction: column; // Organiza os traços em coluna
-              gap: 4px; // Espaçamento entre os traços
-          }
-        }
-        
-        &-list {
-          display: none; // Esconde a lista inicialmente
-          position: absolute; // Posiciona a lista em relação ao seu contêiner pai
-          padding: 10%;
-          top: 200%; // Distância do topo
-          right: 0; // Alinha à direita
-          background: #444; // Cor de fundo da lista
-          border-radius: 5px; // Bordas arredondadas
-          z-index:10000; // Garante que a lista fique abaixo do 'X'
-
-          &__link {
-            display: flex;
-            justify-content: start;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: white;
-            margin: 0.4rem 1rem 1rem 0;
-            text-align: start;
-            align-items: center;
-        
-            &:hover {
-              color: orange;
-            }
-          }
-
-          &__flag {
-            display: none;
-          }
-        }
-      
-          // Mostra a lista e transforma o menu-hambúrguer em 'X' ao clicar
-        &-button:checked ~ &-list {
-          display: block; // Exibe a lista
-        }
-        
       }
-      
+
+      // Mostra a lista e transforma o menu-hambúrguer em 'X' ao clicar
+      &-button:checked~&-list {
+        display: block; // Exibe a lista
+      }
+
     }
+
   }
-  
+
+}
+
+@media screen and (min-width: 950px) {
+  .header {
+    display: flex;
+    position: fixed;
+    background: black;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 1.5rem;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    align-items: center;
+    text-align: center;
+
+    &__logo {
+      display: flex;
+      align-items: center;
+
+      &-image {
+        height: 60px;
+        width: 80px;
+      }
+
+      &-text {
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+        text-transform: uppercase;
+        gap: 0.5rem;
+        color: white;
+        display: block;
+      }
+    }
+
+    &__navbar {
+      margin: 0 4% 0 5%;
+      display: flex;
+      position: relative;
+      align-items: center;
+
+      &-buttons {
+        display: flex;
+        justify-content: space-between;
+
+        &__language {
+          display: flex;
+          text-align: center;
+          align-items: center;
+          text-decoration: none;
+          color: white;
+          border: 1px solid white;
+          border-radius: 7px;
+          font-size: 0.6rem;
+          padding: 0.1rem 0.6rem;
+          gap: 0.2rem;
+
+          &-flag {
+            height: 2rem;
+            width: 2rem;
+          }
+        }
+
+        &__login {
+          display: flex;
+          margin-left: 1rem;
+          font-size: 1rem;
+          padding: 0 1.5rem;
+          ;
+          background: #3A00FF;
+          border-color: #3A00FF;
+          color: white;
+          text-decoration: none;
+          text-align: center;
+          align-items: center;
+          border-radius: 10px;
+          font-weight: 700;
+        }
+      }
+
+      &-button {
+        display: none;
+      }
+
+      &-label {
+        margin-left: 1rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+
+        &__menu-humburguer {
+          transition: transform 0.3s ease;
+          display: flex; // Para alinhar os traços corretamente
+          flex-direction: column; // Organiza os traços em coluna
+          gap: 4px; // Espaçamento entre os traços
+        }
+      }
+
+      &-list {
+        display: none; // Esconde a lista inicialmente
+        position: absolute; // Posiciona a lista em relação ao seu contêiner pai
+        padding: 10%;
+        top: 200%; // Distância do topo
+        right: 0; // Alinha à direita
+        background: #444; // Cor de fundo da lista
+        border-radius: 5px; // Bordas arredondadas
+        z-index: 10000; // Garante que a lista fique abaixo do 'X'
+
+        &__link {
+          display: flex;
+          justify-content: start;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: white;
+          margin: 0.4rem 1rem 1rem 0;
+          text-align: start;
+          align-items: center;
+
+          &:hover {
+            color: orange;
+          }
+        }
+
+        &__flag {
+          display: none;
+        }
+      }
+
+      // Mostra a lista e transforma o menu-hambúrguer em 'X' ao clicar
+      &-button:checked~&-list {
+        display: block; // Exibe a lista
+      }
+
+    }
+
+  }
+}

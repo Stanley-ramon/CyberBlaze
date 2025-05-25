@@ -208,7 +208,7 @@ table {
   gap: 2rem;
   height: 70dvh;
   width: 100dvw;
-  background-image: linear-gradient(to right, #000, rgba(255, 255, 255, 0)), url("/cyberblaze-games/assets/imgs/wrappers/webp/GTA-5.webp");
+  background-image: linear-gradient(to right, #000, rgba(255, 255, 255, 0)), url("/cyberblaze-games/assets/imgs/wrappers/webp/ghost-wire.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -237,7 +237,7 @@ table {
 .wrapper-1, .wrapper-2, .wrapper-3, .wrapper-4, .wrapper-5 {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 0.8rem;
 }
 .wrapper-1__img, .wrapper-2__img, .wrapper-3__img, .wrapper-4__img, .wrapper-5__img {
   height: 10rem;
@@ -400,9 +400,13 @@ table {
 }
 .content-panel .content-section .nav-list {
   display: flex;
-  padding-left: 5%;
-  gap: 1.5rem;
   flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-left: 5%;
+}
+.content-panel .content-section .nav-list .nav-item {
+  flex-grow: 1;
 }
 .content-panel .content-section .nav-list .nav-item:hover .bnt-play,
 .content-panel .content-section .nav-list .nav-item:hover .bnt-add {
@@ -410,28 +414,26 @@ table {
 }
 .content-panel .content-section .nav-list .nav-item__container {
   position: relative;
-  display: inline-block;
+  width: 100%;
   display: flex;
   text-align: center;
   align-items: center;
 }
 .content-panel .content-section .nav-list .nav-item__container .img {
-  display: block;
-  height: auto;
-  height: 180px;
   width: 180px;
+  height: 180px;
   border-radius: 1rem;
 }
 .content-panel .content-section .nav-list .nav-item__container .bnt-play {
   display: none;
   position: absolute;
   bottom: 5%;
-  left: 5%;
+  left: 3%;
   width: -moz-fit-content;
   width: fit-content;
   border: none;
   font-size: 1rem;
-  padding: 0.6rem 2.3rem;
+  padding: 0.6rem 2rem;
   background: rgb(28, 15, 214);
   color: white;
   border-radius: 10px;
@@ -536,10 +538,11 @@ table {
 @media screen and (min-width: 0px) and (max-width: 600px) {
   .wrapper {
     width: 100%;
-    height: 53dvh;
+    height: 70dvh;
+    padding: 0 0 5% 5%;
   }
   .wrapper-1, .wrapper-2, .wrapper-3, .wrapper-4, .wrapper-5 {
-    padding-top: 10%;
+    padding-top: 20%;
   }
   .wrapper-1__img, .wrapper-2__img, .wrapper-3__img, .wrapper-4__img, .wrapper-5__img {
     height: 6rem;
@@ -552,11 +555,11 @@ table {
     flex-direction: column;
   }
   .wrapper-1__titles .title, .wrapper-2__titles .title, .wrapper-3__titles .title, .wrapper-4__titles .title, .wrapper-5__titles .title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
   }
   .wrapper-1__titles .subtitle, .wrapper-2__titles .subtitle, .wrapper-3__titles .subtitle, .wrapper-4__titles .subtitle, .wrapper-5__titles .subtitle {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-wrap: wrap;
     font-weight: 500;
   }
@@ -670,63 +673,63 @@ table {
     display: none;
   }
 }
-.content-panel .content-section .nav-list {
-  display: flex;
-  padding-left: 5%;
-  gap: 1rem;
-  flex-wrap: wrap;
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .content-panel .content-section .nav-list .nav-item {
+    width: calc(50% - 0.5rem);
+    max-width: 400px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(50% - 0.5rem);
+  }
+  .content-panel .content-section .nav-list .nav-item:hover .bnt-play,
+  .content-panel .content-section .nav-list .nav-item:hover .bnt-add {
+    display: inline-block;
+  }
+  .content-panel .content-section .nav-list .nav-item__container {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  .content-panel .content-section .nav-list .nav-item__container .img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .content-panel .content-section .nav-list .nav-item__container .bnt-play {
+    display: none;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: -moz-fit-content;
+    width: fit-content;
+    border: none;
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+    background: rgb(28, 15, 214);
+    color: white;
+    border-radius: 10px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  .content-panel .content-section .nav-list .nav-item__container .bnt-play:hover {
+    background: orange;
+  }
+  .content-panel .content-section .nav-list .nav-item__container .bnt-add {
+    display: none;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    cursor: pointer;
+    border: none;
+    padding: 0.3rem 0.7rem;
+    border-radius: 10px;
+  }
+  .content-panel .content-section .nav-list .nav-item__container .bnt-add:hover {
+    background: orange;
+  }
 }
-.content-panel .content-section .nav-list .nav-item:hover .bnt-play,
-.content-panel .content-section .nav-list .nav-item:hover .bnt-add {
-  display: block;
-}
-.content-panel .content-section .nav-list .nav-item__container {
-  position: relative;
-  display: inline-block;
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
-.content-panel .content-section .nav-list .nav-item__container .img {
-  display: block;
-  height: auto;
-  height: 155px;
-  width: 155px;
-  border-radius: 1rem;
-}
-.content-panel .content-section .nav-list .nav-item__container .bnt-play {
-  display: none;
-  position: absolute;
-  bottom: 5%;
-  left: 5%;
-  width: -moz-fit-content;
-  width: fit-content;
-  border: none;
-  font-size: 1rem;
-  padding: 0.6rem 2.3rem;
-  background: rgb(28, 15, 214);
-  color: white;
-  border-radius: 10px;
-  font-weight: 400;
-  cursor: pointer;
-}
-.content-panel .content-section .nav-list .nav-item__container .bnt-play:hover {
-  background: orange;
-}
-.content-panel .content-section .nav-list .nav-item__container .bnt-add {
-  display: none;
-  position: absolute;
-  bottom: 10%;
-  right: 5%;
-  cursor: pointer;
-  border: none;
-  padding: 0.3rem 0.7rem;
-  border-radius: 10px;
-}
-.content-panel .content-section .nav-list .nav-item__container .bnt-add:hover {
-  background: orange;
-}
-
 @media screen and (min-width: 601px) and (max-width: 777px) {
   .header {
     padding: 2.4% 2%;
